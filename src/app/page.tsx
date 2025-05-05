@@ -65,20 +65,22 @@ function PersonSlider() {
   }, [idx, people.length]);
   const person = people[idx];
   return (
-    <section className={`relative py-16 min-h-[480px] flex flex-col md:flex-row items-center overflow-hidden ${person.bg}`}>
-      {/* LEFT TEXT WITH GRADIENT (gradient now on section) */}
-      <div className="relative z-10 w-full md:w-[48%] text-left bg-white/80 rounded-2xl p-8 shadow-lg transition-all duration-700 ease-in-out md:mr-6">
-        <h2 className="text-3xl font-heading font-bold mb-2 text-primary-dark">{person.name}</h2>
-        <p className="mb-4 text-primary-dark/80 text-base max-w-lg">{person.bio}</p>
-        <Button href={person.button.href} variant="primary">{person.button.label}</Button>
-      </div>
-      {/* RIGHT PHOTO, LARGER, NO PURPLE BORDER, CLOSER TO TEXT */}
-      <div className="w-full md:w-[44%] flex justify-center items-center h-full mt-8 md:mt-0">
-        <img 
-          src={person.image} 
-          alt={person.name} 
-          className="w-[90vw] max-w-[360px] h-auto object-contain rounded-2xl shadow-xl bg-white/30 transition-all duration-700 ease-in-out" 
-        />
+    <section className={`relative py-16 min-h-[480px] ${person.bg}`}>
+      <div className="max-w-5xl mx-auto w-full flex flex-col-reverse md:flex-row items-center px-4">
+        {/* LEFT TEXT WITH GRADIENT (gradient now on section) */}
+        <div className="relative w-full md:w-[48%] max-w-lg md:ml-8 bg-white/80 rounded-2xl p-6 shadow-lg transition-all duration-700 ease-in-out">
+          <h2 className="text-3xl font-heading font-bold mb-2 text-primary-dark">{person.name}</h2>
+          <p className="mb-4 text-primary-dark/80 text-base">{person.bio}</p>
+          <Button href={person.button.href} variant="primary">{person.button.label}</Button>
+        </div>
+        {/* RIGHT PHOTO, LARGER, NO PURPLE BORDER, CLOSER TO TEXT */}
+        <div className="w-full md:w-[44%] flex justify-center items-center h-full mb-8 md:mb-0">
+          <img 
+            src={person.image} 
+            alt={person.name} 
+            className="w-[90vw] max-w-[360px] h-auto object-contain rounded-2xl shadow-xl bg-white/30 transition-all duration-700 ease-in-out" 
+          />
+        </div>
       </div>
     </section>
   );
