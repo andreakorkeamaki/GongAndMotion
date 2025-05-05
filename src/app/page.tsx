@@ -38,7 +38,7 @@ function PersonSlider() {
         <>
           Open Floor International Movement teacher, currently in training at BISO – Dynamic Movement Facilitator Training (2 years).<br/>
           Biodynamic massage therapist, psychotherapist, and medical qigong teacher. 35 years of experience in Australia, Sweden, the UK, and Ireland.<br/>
-          "I teach from the heart and feel it is a privilege to guide others to deeper awareness of themselves and all that they are."
+          &ldquo;I teach from the heart and feel it is a privilege to guide others to deeper awareness of themselves and all that they are.&rdquo;
         </>
       ),
       button: { href: "/qigong", label: "Discover Qigong" },
@@ -62,7 +62,7 @@ function PersonSlider() {
       setIdx((idx + 1) % people.length);
     }, 5000);
     return () => clearTimeout(timer);
-  }, [idx]);
+  }, [idx, people.length]);
   const person = people[idx];
   return (
     <section className={`relative py-16 min-h-[480px] flex items-center overflow-hidden ${person.bg}`}>
