@@ -1,4 +1,6 @@
+"use client";
 import Head from "next/head";
+import Image from 'next/image';
 import Button from "./components/Button";
 
 const services = [
@@ -24,6 +26,72 @@ const services = [
   },
 ];
 
+import { useState, useEffect } from "react";
+
+function PersonSlider() {
+  const people = [
+    {
+      name: "Eileen Murray",
+      image: "/eileen-hero.webp",
+      bg: "bg-gradient-to-l from-green-100 via-white/80 to-transparent",
+      bio: (
+        <>
+          Open Floor International Movement teacher, currently in training at BISO – Dynamic Movement Facilitator Training (2 years).<br/>
+          Biodynamic massage therapist, psychotherapist, and medical qigong teacher. 35 years of experience in Australia, Sweden, the UK, and Ireland.<br/>
+          "I teach from the heart and feel it is a privilege to guide others to deeper awareness of themselves and all that they are."
+        </>
+      ),
+      button: { href: "/qigong", label: "Discover Qigong" },
+    },
+    {
+      name: "Kari Korkeamaki",
+      image: "/kari-hero.webp",
+      bg: "bg-gradient-to-l from-accent-purple/20 via-white/80 to-transparent",
+      bio: (
+        <>
+          Has played gong for 12 years and offered many gong baths in various formats—together with yoga, at festivals, individual sessions, with hypnosis, and outdoors in nature.<br/>
+          Assisted with gong at Open Floor in Ireland and Sweden. Sees both gong and dance as beautiful ways to discover your inner world, free from inhibitions and to let in new, fresh life.
+        </>
+      ),
+      button: { href: "/gongbath", label: "Discover Gong Bath" },
+    },
+  ];
+  const [idx, setIdx] = useState(0);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIdx((idx + 1) % people.length);
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, [idx]);
+  const person = people[idx];
+  return (
+    <section className={`relative py-16 min-h-[480px] flex items-center overflow-hidden ${person.bg}`}>
+      {/* LEFT TEXT WITH GRADIENT (gradient now on section) */}
+      <div className="flex-1 relative z-10 max-w-xl mx-auto md:ml-8 text-left bg-white/80 rounded-2xl p-8 shadow-lg transition-all duration-700 ease-in-out">
+        <h2 className="text-3xl font-heading font-bold mb-2 text-primary-dark">{person.name}</h2>
+        <p className="mb-4 text-primary-dark/80 text-base max-w-lg">{person.bio}</p>
+        <Button href={person.button.href} variant="primary">{person.button.label}</Button>
+      </div>
+      {/* RIGHT PHOTO, LARGER, NO PURPLE BORDER, CLOSER TO TEXT */}
+      <div className="flex-1 hidden md:flex justify-start items-center h-full transition-all duration-700 ease-in-out" style={{marginLeft: '20px'}}>
+        <img 
+          src={person.image} 
+          alt={person.name} 
+          className="w-[460px] h-[540px] object-contain rounded-2xl shadow-xl bg-white/30 transition-all duration-700 ease-in-out" 
+        />
+      </div>
+      {/* Mobile: photo above */}
+      <div className="md:hidden flex justify-center mb-6 w-full transition-all duration-700 ease-in-out">
+        <img 
+          src={person.image} 
+          alt={person.name} 
+          className="w-64 h-80 object-contain rounded-2xl shadow-xl bg-white/30 transition-all duration-700 ease-in-out" 
+        />
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -31,28 +99,34 @@ export default function Home() {
         <title>Gong and Motion – Regenerate your body and mind</title>
         <meta name="description" content="Discover Qigong, massage, gong bath and Dancing Mindfulness: events and sessions for your holistic well-being. Book now!" />
       </Head>
-      <section className="relative bg-gradient-to-br from-primary-light via-background to-accent/30 py-20 px-4 flex flex-col items-center justify-center text-center min-h-[60vh]">
-        <div className="max-w-2xl mx-auto">
+      <section className="relative py-20 px-4 flex flex-col items-center justify-center text-center min-h-[60vh]">
+        {/* Background image */}
+        <div className="absolute inset-0 -z-10">
+          <Image src="/header-bg.webp" alt="Holistic Healing" fill className="object-cover object-right" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent" />
+        </div>
+        <div className="relative max-w-2xl mx-0 ml-8 text-left bg-transparent">
           <h1 className="text-5xl sm:text-6xl font-heading font-bold mb-6 text-primary-dark drop-shadow-lg">Regenerate your body and mind</h1>
           <p className="text-lg sm:text-xl mb-8 text-primary-dark/80">Sound, movement, and holistic healing for your well-being. Discover our unique events and treatments in Sweden.</p>
           <Button href="/events" variant="primary" className="text-lg px-8 py-3 shadow-lg">Discover Events</Button>
         </div>
       </section>
-      {/* Section Divider */}
+      {/* --- SLIDER PERSONE --- */}
+      <PersonSlider />
       <div className="w-full flex justify-center">
         <div className="h-1 w-24 rounded-full bg-accent-purple/60 mb-12"></div>
       </div>
       <section className="py-16 bg-background">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-heading font-bold mb-10 text-center text-primary-dark">Our Services</h2>
-          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
+          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4 items-stretch">
             {services.map((service) => (
               <div
                 key={service.title}
-                className="rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 flex flex-col items-center text-center border border-primary/10 hover:-translate-y-1 hover:scale-105"
+                className="flex flex-col h-full justify-between rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 items-center text-center border border-primary/10 hover:-translate-y-1 hover:scale-105"
               >
                 <h3 className="text-xl font-heading font-semibold mb-2 text-primary-dark">{service.title}</h3>
-                <p className="text-primary-dark/80 mb-4 text-sm">{service.description}</p>
+                <p className="text-primary-dark/80 mb-4 text-sm flex-1">{service.description}</p>
                 <Button href={service.href} variant="secondary">Learn More</Button>
               </div>
             ))}
@@ -63,46 +137,44 @@ export default function Home() {
       <div className="w-full flex justify-center">
         <div className="h-1 w-24 rounded-full bg-primary/50 mb-12"></div>
       </div>
-      <section className="py-16 bg-primary-light/60">
-        <div className="max-w-4xl mx-auto px-4 flex flex-col md:flex-row gap-8 items-center justify-center">
-          <div className="flex-1 text-center md:text-left">
-            <h2 className="text-2xl font-heading font-bold mb-2 text-primary-dark">Experience the Healing Power of Sound</h2>
-            <p className="mb-4 text-primary-dark/80">Join our next Gong Bath or Sound Healing event and feel the transformation.</p>
-            <Button href="/events" variant="primary">Upcoming Events</Button>
+      <section className="py-16 bg-gradient-to-b from-accent-purple/10 via-background to-green-50">
+        <h2 className="text-3xl font-heading font-bold text-center mb-12 text-primary-dark">What People Say</h2>
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch h-full">
+          {/* Testimonial 1 */}
+          <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col justify-between h-full items-center">
+            <img src="/nina.jpg" alt="Nina" className="w-14 h-14 rounded-full object-cover mb-4 border-2 border-accent-purple/40 shadow" />
+            <p className="italic text-primary-dark/90 text-lg text-center flex-1 flex items-start">
+              “After three sessions I regained full mobility in my shoulder. A deeply healing experience.”
+            </p>
+            <span className="block text-accent-purple font-semibold text-base text-center mt-8">
+              Nina, doctor
+            </span>
           </div>
-          <div className="flex-1 text-center md:text-left">
-            <h2 className="text-2xl font-heading font-bold mb-2 text-primary-dark">Contact Our Team</h2>
-            <p className="mb-4 text-primary-dark/80">Questions, private sessions, or collaborations? We’re here for you.</p>
-            <Button href="/contact" variant="secondary">Contact Us</Button>
+          {/* Testimonial 2 */}
+          <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col justify-between h-full items-center">
+            <img src="/kari.jpg" alt="Kari" className="w-14 h-14 rounded-full object-cover mb-4 border-2 border-accent-purple/40 shadow" />
+            <p className="italic text-primary-dark/90 text-lg text-center flex-1 flex items-start">
+              “Gong yourself back to life. I felt a transformation after the sound bath!”
+            </p>
+            <span className="block text-accent-purple font-semibold text-base text-center mt-8">
+              Kari, musician
+            </span>
+          </div>
+          {/* Testimonial 3 */}
+          <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col justify-between h-full items-center">
+            <img src="/sofia.jpg" alt="Sofia" className="w-14 h-14 rounded-full object-cover mb-4 border-2 border-accent-purple/40 shadow" />
+            <p className="italic text-primary-dark/90 text-lg text-center flex-1 flex items-start">
+              “The Qigong workshop gave me new energy and inner peace. Highly recommended!”
+            </p>
+            <span className="block text-accent-purple font-semibold text-base text-center mt-8">
+              Sofia, therapist
+            </span>
           </div>
         </div>
       </section>
       {/* Section Divider */}
       <div className="w-full flex justify-center">
         <div className="h-1 w-24 rounded-full bg-accent/60 mb-12"></div>
-      </div>
-      <section className="py-16 bg-gradient-to-br from-accent-purple/10 via-background to-primary-light">
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-heading font-bold mb-10 text-center text-primary-dark">What People Say</h2>
-          <div className="grid gap-8 md:grid-cols-3">
-            <div className="rounded-2xl bg-white/90 shadow-lg p-6 border border-accent-purple/10 flex flex-col items-center">
-              <p className="text-primary-dark/90 italic mb-4">“After three sessions I regained full mobility in my shoulder. A deeply healing experience.”</p>
-              <span className="font-semibold text-accent-purple">Nina, doctor</span>
-            </div>
-            <div className="rounded-2xl bg-white/90 shadow-lg p-6 border border-accent-purple/10 flex flex-col items-center">
-              <p className="text-primary-dark/90 italic mb-4">“Gong yourself back to life. I felt a transformation after the sound bath!”</p>
-              <span className="font-semibold text-accent-purple">Kari, musician</span>
-            </div>
-            <div className="rounded-2xl bg-white/90 shadow-lg p-6 border border-accent-purple/10 flex flex-col items-center">
-              <p className="text-primary-dark/90 italic mb-4">“The Qigong workshop gave me new energy and inner peace. Highly recommended!”</p>
-              <span className="font-semibold text-accent-purple">Sofia, therapist</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Section Divider */}
-      <div className="w-full flex justify-center">
-        <div className="h-1 w-24 rounded-full bg-accent-purple/60 mb-12"></div>
       </div>
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
