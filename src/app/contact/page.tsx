@@ -1,4 +1,5 @@
-import Head from 'next/head';
+import Head from "next/head";
+import Button from "../components/Button";
 
 export default function Contact() {
   return (
@@ -7,18 +8,23 @@ export default function Contact() {
         <title>Contact – Gong and Motion</title>
         <meta name="description" content="Write or call us for information and bookings. We are here for you!" />
       </Head>
-      <main className="max-w-xl mx-auto p-4">
-        <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
-        <p className="mb-2">Email: <a className="text-blue-600 underline" href="mailto:gongandmotion@gmail.com">gongandmotion@gmail.com</a></p>
-        <p className="mb-2">Phone/WhatsApp: <a className="text-blue-600 underline" href="tel:+46700501673">+46 70 050 1673</a></p>
-        <p className="mb-4">Or fill out the form below for a quick response.</p>
-        <form className="flex flex-col gap-2">
-          <input className="border rounded p-2" type="text" placeholder="Your Name" required />
-          <input className="border rounded p-2" type="email" placeholder="Your Email" required />
-          <textarea className="border rounded p-2" placeholder="Your Message" required />
-          <button type="submit" className="btn-primary">Send</button>
-        </form>
-      </main>
+      <section className="bg-gradient-to-br from-accent-purple/20 via-primary-light to-background py-16 px-4 text-center">
+        <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">Contact Us</h1>
+        <p className="text-lg mb-8 text-primary-dark/80 max-w-2xl mx-auto">Write or call us for information and bookings. We are here for you!</p>
+      </section>
+      <section className="bg-background py-12 px-4">
+        <div className="max-w-xl mx-auto rounded-2xl shadow-lg bg-white/90 p-8 border border-accent-purple/10">
+          <p className="mb-2 text-primary-dark/90">Email: <a className="text-accent-purple underline" href="mailto:gongandmotion@gmail.com">gongandmotion@gmail.com</a></p>
+          <p className="mb-2 text-primary-dark/90">Phone/WhatsApp: <a className="text-accent-purple underline" href="tel:+46700501673">+46 70 050 1673</a></p>
+          <p className="mb-4 text-primary-dark/80">Or fill out the form below for a quick response.</p>
+          <form className="flex flex-col gap-3">
+            <input className="border border-accent-purple rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-accent-purple" type="text" placeholder="Your Name" required />
+            <input className="border border-accent-purple rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-accent-purple" type="email" placeholder="Your Email" required />
+            <textarea className="border border-accent-purple rounded-2xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-accent-purple" placeholder="Your Message" required />
+            <Button type="submit" variant="primary" className="mt-2">Send</Button>
+          </form>
+        </div>
+      </section>
     </>
   );
 }

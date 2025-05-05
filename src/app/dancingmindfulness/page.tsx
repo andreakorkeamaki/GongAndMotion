@@ -1,4 +1,5 @@
-import Head from 'next/head';
+import Head from "next/head";
+import Button from "../components/Button";
 
 export default function DancingMindfulness() {
   return (
@@ -7,16 +8,20 @@ export default function DancingMindfulness() {
         <title>Dancing Mindfulness – Move Your Body, Free Your Mind</title>
         <meta name="description" content="A blend of mindful dance and movement meditation: awaken energy and creativity." />
       </Head>
-      <main className="max-w-2xl mx-auto p-4">
-        <h1 className="text-3xl font-bold mb-4">Dancing Mindfulness</h1>
-        <p className="mb-2">A dynamic practice for:</p>
-        <ul className="list-disc ml-6 mb-4">
-          <li>Body expression and inner freedom</li>
-          <li>Mind-body connection</li>
-          <li>Joy and lightness in every step</li>
-        </ul>
-        <a href="/events" className="btn-primary">Join the next session</a>
-      </main>
+      <section className="bg-gradient-to-br from-accent-purple/20 via-background to-primary-light py-16 px-4 text-center">
+        <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">Dancing Mindfulness</h1>
+        <p className="text-lg mb-8 text-primary-dark/80 max-w-2xl mx-auto">A dynamic practice for body expression, joy, and mind-body connection. Awaken energy and creativity with mindful movement and dance meditation.</p>
+        <Button href="/events" variant="primary" className="text-lg px-8 py-3">Join the next session</Button>
+      </section>
+      <section className="bg-background py-12 px-4">
+        <div className="max-w-3xl mx-auto rounded-2xl shadow-lg bg-white/90 p-8 border border-accent-purple/10">
+          <ul className="list-disc ml-6 mb-6 text-left text-primary-dark/90">
+            <li>Body expression and inner freedom</li>
+            <li>Mind-body connection</li>
+            <li>Joy and lightness in every step</li>
+          </ul>
+        </div>
+      </section>
     </>
   );
 }

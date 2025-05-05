@@ -1,4 +1,5 @@
-import Head from 'next/head';
+import Head from "next/head";
+import Button from "../components/Button";
 
 export default function Events() {
   return (
@@ -7,40 +8,45 @@ export default function Events() {
         <title>Events – Gong and Motion</title>
         <meta name="description" content="Discover and book our events: sound healing, Qigong workshops, massage, and mindful dance." />
       </Head>
-      <main className="max-w-2xl mx-auto p-4">
-        <h1 className="text-3xl font-bold mb-4">Upcoming Events</h1>
-        <table className="min-w-full mb-4">
-          <thead>
-            <tr>
-              <th className="text-left">Date</th>
-              <th className="text-left">Event</th>
-              <th className="text-left">Location</th>
-              <th className="text-left">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>June 14, 2025</td>
-              <td>Medical Qigong Workshop</td>
-              <td>Stockholm</td>
-              <td><a href="/contact" className="btn-primary">Sign up</a></td>
-            </tr>
-            <tr>
-              <td>June 21, 2025</td>
-              <td>Evening Gong Bath</td>
-              <td>Gothenburg</td>
-              <td><a href="/contact" className="btn-primary">Join</a></td>
-            </tr>
-            <tr>
-              <td>June 28, 2025</td>
-              <td>Biodynamic Massage Intensive</td>
-              <td>Malmö</td>
-              <td><a href="/contact" className="btn-primary">Book</a></td>
-            </tr>
-          </tbody>
-        </table>
-        <a href="/contact" className="btn-secondary">Contact us for more info</a>
-      </main>
+      <section className="bg-gradient-to-br from-accent-purple/30 via-primary-light to-background py-16 px-4 text-center">
+        <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">Upcoming Events</h1>
+        <p className="text-lg mb-8 text-primary-dark/80 max-w-2xl mx-auto">Discover and book our events: sound healing, Qigong workshops, massage, and mindful dance for your holistic well-being.</p>
+      </section>
+      <section className="bg-background py-12 px-4">
+        <div className="max-w-4xl mx-auto rounded-2xl shadow-lg bg-white/90 p-8 border border-accent-purple/10">
+          <table className="min-w-full mb-6">
+            <thead>
+              <tr>
+                <th className="text-left pb-2">Date</th>
+                <th className="text-left pb-2">Event</th>
+                <th className="text-left pb-2">Location</th>
+                <th className="text-left pb-2">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>June 14, 2025</td>
+                <td>Medical Qigong Workshop</td>
+                <td>Stockholm</td>
+                <td><Button href="/contact" variant="primary" className="text-sm">Sign Up</Button></td>
+              </tr>
+              <tr>
+                <td>June 21, 2025</td>
+                <td>Evening Gong Bath</td>
+                <td>Gothenburg</td>
+                <td><Button href="/contact" variant="primary" className="text-sm">Join</Button></td>
+              </tr>
+              <tr>
+                <td>June 28, 2025</td>
+                <td>Biodynamic Massage Intensive</td>
+                <td>Malmö</td>
+                <td><Button href="/contact" variant="primary" className="text-sm">Book</Button></td>
+              </tr>
+            </tbody>
+          </table>
+          <Button href="/contact" variant="secondary">Contact us for more info</Button>
+        </div>
+      </section>
     </>
   );
 }
