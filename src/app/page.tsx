@@ -151,17 +151,17 @@ export default function Home() {
   const [hoveredService, setHoveredService] = useState<number | null>(null);
   const testimonials = [
     {
-      img: "/nina.jpg",
+      img: "/eileen-hero.webp",
       text: "After three sessions I regained full mobility in my shoulder. A deeply healing experience.",
       author: "Nina, doctor",
     },
     {
-      img: "/kari.jpg",
+      img: "/kari-hero.webp",
       text: "Gong yourself back to life. I felt a transformation after the sound bath!",
       author: "Kari, musician",
     },
     {
-      img: "/sofia.jpg",
+      img: "/qigong-servizio.webp",
       text: "The Qigong workshop gave me new energy and inner peace. Highly recommended!",
       author: "Sofia, therapist",
     },
@@ -226,7 +226,7 @@ export default function Home() {
       </div>
       <section className="py-16 bg-gradient-to-b from-accent-purple/10 via-background to-green-50 px-2 sm:px-4">
         <h2 className="text-3xl font-heading font-bold text-center mb-12 text-primary-dark">What People Say</h2>
-        {/* SCROLLER COMMENTI SISTEMATO */}
+        {/* Testimonials scroller fixed */}
         <div className="relative w-full overflow-x-hidden">
           <motion.div
             className="flex gap-8"
