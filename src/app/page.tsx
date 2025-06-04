@@ -151,17 +151,19 @@ export default function Home() {
   const [hoveredService, setHoveredService] = useState<number | null>(null);
   const testimonials = [
     {
-      img: "/nina.jpg",
+      // Original image missing from repository – using existing placeholder
+      img: "/eileen-hero.webp",
       text: "After three sessions I regained full mobility in my shoulder. A deeply healing experience.",
       author: "Nina, doctor",
     },
     {
-      img: "/kari.jpg",
+      img: "/kari-hero.webp",
       text: "Gong yourself back to life. I felt a transformation after the sound bath!",
       author: "Kari, musician",
     },
     {
-      img: "/sofia.jpg",
+      // Original image missing from repository – using existing placeholder
+      img: "/kari-hero.webp",
       text: "The Qigong workshop gave me new energy and inner peace. Highly recommended!",
       author: "Sofia, therapist",
     },
