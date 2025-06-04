@@ -1,4 +1,9 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Overview
+
+This is a [Next.js](https://nextjs.org) application built with the App Router (\`src/app\`).
+It uses **TypeScript**, **Tailwind CSS** and **Framer Motion** for animations.
+
+The site is deployed on **Vercel**. Netlify configuration files have been removed.
 
 ## Getting Started
 
@@ -19,6 +24,17 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Project Structure
+
+```
+src/app/        # pages and components using the Next.js App Router
+│   layout.tsx  # common layout with header and footer
+│   page.tsx    # homepage (client component)
+│   components/ # Button, Header and Footer
+│   qigong/     # other sections as folders with page.tsx
+public/         # static images
+```
 
 ## Learn More
 
