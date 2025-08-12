@@ -1,8 +1,8 @@
 "use client";
-import Head from "next/head";
 import Image from 'next/image';
 import Button from "./components/Button";
 import { motion, AnimatePresence } from "framer-motion";
+const MotionImage = motion(Image as any);
 
 const services = [
   {
@@ -84,55 +84,49 @@ function PersonSlider() {
       </div>
       <div className="max-w-5xl mx-auto w-full flex flex-col-reverse md:flex-row items-center px-4 relative z-10">
         {/* LEFT TEXT WITH GRADIENT (gradient now on section) */}
-        <div className="relative w-full md:w-[48%] max-w-lg md:ml-8 bg-white/80 rounded-2xl p-6 shadow-lg transition-all duration-700 ease-in-out">
-          <div className="flex flex-col" style={{ minHeight: '220px' }}>
+        <div className="relative w-full md:w-[48%] max-w-lg md:ml-8 bg-white/80 rounded-2xl p-6 shadow-lg">
+          <div className="flex flex-col h-[320px] md:h-[360px]">
             <AnimatePresence mode="wait">
-              <motion.h2
-                key={person.name}
-                className="text-3xl font-heading font-bold mb-2 text-primary-dark"
-                initial={{ opacity: 0, y: 30 }}
+              <motion.div
+                key={person.name + '-content'}
+                className="flex flex-col h-full"
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -30 }}
-                transition={{ duration: 0.5 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.6, ease: "easeInOut" }}
               >
-                {person.name}
-              </motion.h2>
-              <motion.div
-                key={person.name + '-bio'}
-                className="mb-4 text-primary-dark/80 text-base flex-grow"
-                initial={{ opacity: 0, x: 30 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -30 }}
-                transition={{ duration: 0.5 }}
-              >
-                {person.bio}
-              </motion.div>
-              <motion.div
-                key={person.name + '-button'}
-                className="mt-auto"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                <Button href={person.button.href} variant="primary">{person.button.label}</Button>
+                <h2 className="text-3xl font-heading font-bold mb-4 text-primary-dark">
+                  {person.name}
+                </h2>
+                <div className="mb-6 text-primary-dark/80 text-base flex-grow overflow-y-auto">
+                  {person.bio}
+                </div>
+                <div className="mt-auto">
+                  <Button href={person.button.href} variant="primary">{person.button.label}</Button>
+                </div>
               </motion.div>
             </AnimatePresence>
           </div>
         </div>
-        {/* RIGHT PHOTO, LARGER, NO PURPLE BORDER, CLOSER TO TEXT */}
+        {/* RIGHT PHOTO, STABLE SIZE WITH ASPECT RATIO WRAPPER */}
         <div className="w-full md:w-[44%] flex justify-center items-center h-full mb-8 md:mb-0">
           <AnimatePresence mode="wait">
-            <motion.img
-              key={person.name + '-img'}
-              src={person.image}
-              alt={person.name}
-              className="w-[90vw] max-w-[360px] h-auto object-contain rounded-2xl shadow-xl bg-white/30 transition-all duration-700 ease-in-out"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 1.05 }}
-              transition={{ duration: 0.6 }}
-            />
+            <div
+              key={person.name + '-img-wrap'}
+              className="relative w-[90vw] max-w-[360px] aspect-[3/4] rounded-2xl shadow-xl bg-white/30 overflow-hidden transition-all duration-700 ease-in-out"
+            >
+              <MotionImage
+                src={person.image}
+                alt={person.name}
+                fill
+                sizes="(max-width: 768px) 90vw, 360px"
+                className="object-cover"
+                initial={{ opacity: 0, scale: 0.98 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 1.02 }}
+                transition={{ duration: 0.6 }}
+              />
+            </div>
           </AnimatePresence>
         </div>
       </div>
@@ -168,14 +162,10 @@ export default function Home() {
   ];
   return (
     <>
-      <Head>
-        <title>Gong and Motion – Regenerate your body and mind</title>
-        <meta name="description" content="Discover Qigong, massage, gong bath and Dancing Mindfulness: events and sessions for your holistic well-being. Book now!" />
-      </Head>
       <section className="relative py-20 px-4 flex flex-col items-center justify-center text-center min-h-[60vh]">
         {/* Background image */}
         <div className="absolute inset-0 -z-10">
-          <Image src="/header-bg.webp" alt="Holistic Healing" fill className="object-cover object-right" />
+          <Image src="/header-bg.webp" alt="Holistic Healing" fill priority className="object-cover object-right" />
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent" />
         </div>
         <div className="relative w-full max-w-2xl mx-auto px-4 text-center md:text-left">
@@ -239,7 +229,7 @@ export default function Home() {
                 key={i}
                 className="flex-shrink-0 flex flex-col items-center justify-center w-[340px] max-w-full px-6"
               >
-                <img src={t.img} alt={t.author} className="w-14 h-14 rounded-full object-cover mb-4 border-2 border-accent-purple/40 shadow" />
+                <Image src={t.img} alt={t.author} width={56} height={56} className="w-14 h-14 rounded-full object-cover mb-4 border-2 border-accent-purple/40 shadow" />
                 <p className="italic text-primary-dark/90 text-base sm:text-lg text-center mb-4">“{t.text}”</p>
                 <span className="block text-accent-purple font-semibold text-base text-center">{t.author}</span>
               </div>
@@ -256,8 +246,9 @@ export default function Home() {
           <h2 className="text-2xl font-heading font-bold mb-4 text-primary-dark">Stay Connected</h2>
           <p className="mb-6 text-primary-dark/80">Subscribe to our newsletter for event updates, exclusive content, and wellness tips.</p>
           <form className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-xl mx-auto">
-            <input type="email" placeholder="Your email" className="border border-primary rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-accent w-full sm:w-auto" />
-            <Button variant="primary">Subscribe</Button>
+            <label htmlFor="newsletter-email" className="sr-only">Your email</label>
+            <input id="newsletter-email" name="email" type="email" placeholder="Your email" className="border border-primary rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-accent w-full sm:w-auto" />
+            <Button type="submit" variant="primary">Subscribe</Button>
           </form>
         </div>
       </section>

@@ -1,13 +1,15 @@
-import Head from "next/head";
+import type { Metadata } from "next";
 import Button from "../components/Button";
+
+export const metadata: Metadata = {
+  title: "Gong Bath – Transformative Vibrations",
+  description:
+    "Surrender to the regenerative power of the gong: sound, deep relaxation, and inner renewal.",
+};
 
 export default function GongBath() {
   return (
     <>
-      <Head>
-        <title>Gong Bath – Transformative Vibrations</title>
-        <meta name="description" content="Surrender to the regenerative power of the gong: sound, deep relaxation, and inner renewal." />
-      </Head>
       <section className="bg-gradient-to-br from-primary-light via-background to-accent-purple/30 py-16 px-4 text-center">
         <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">Gong Bath</h1>
         <p className="text-lg mb-8 text-primary-dark/80 max-w-2xl mx-auto">Led by Kari Korkeamaki, experience sound waves for transformation and purification. Group and private sessions available.</p>

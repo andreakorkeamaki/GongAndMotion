@@ -9,11 +9,7 @@ export default function Footer() {
         <div className="flex flex-col md:items-end gap-2 text-sm">
           <span>Contact: <a href="mailto:gongandmotion@gmail.com" className="underline hover:text-accent">gongandmotion@gmail.com</a></span>
           <span>Phone/WhatsApp: <a href="tel:+46700501673" className="underline hover:text-accent">+46 70 050 1673</a></span>
-          <div className="flex gap-3 mt-2">
-            {/* Social links placeholder */}
-            <a href="#" className="hover:text-accent">Instagram</a>
-            <a href="#" className="hover:text-accent">Facebook</a>
-          </div>
+          {/* Add social links here when available */}
         </div>
       </div>
     </footer>

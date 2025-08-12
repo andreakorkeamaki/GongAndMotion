@@ -1,13 +1,15 @@
-import Head from "next/head";
+import type { Metadata } from "next";
 import Button from "../components/Button";
+
+export const metadata: Metadata = {
+  title: "Dancing Mindfulness – Move Your Body, Free Your Mind",
+  description:
+    "A blend of mindful dance and movement meditation: awaken energy and creativity.",
+};
 
 export default function DancingMindfulness() {
   return (
     <>
-      <Head>
-        <title>Dancing Mindfulness – Move Your Body, Free Your Mind</title>
-        <meta name="description" content="A blend of mindful dance and movement meditation: awaken energy and creativity." />
-      </Head>
       <section className="bg-gradient-to-br from-accent-purple/20 via-background to-primary-light py-16 px-4 text-center">
         <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">Dancing Mindfulness</h1>
         <p className="text-lg mb-8 text-primary-dark/80 max-w-2xl mx-auto">A dynamic practice for body expression, joy, and mind-body connection. Awaken energy and creativity with mindful movement and dance meditation.</p>

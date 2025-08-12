@@ -1,13 +1,15 @@
-import Head from "next/head";
+import type { Metadata } from "next";
 import Button from "../components/Button";
+
+export const metadata: Metadata = {
+  title: "Biodynamic Massage – Body and Soul in Balance",
+  description:
+    "Experience tailored treatment: initial consultation, biodynamic techniques, and integrated care for your total well-being.",
+};
 
 export default function Massage() {
   return (
     <>
-      <Head>
-        <title>Biodynamic Massage – Body and Soul in Balance</title>
-        <meta name="description" content="Experience tailored treatment: initial consultation, biodynamic techniques, and integrated care for your total well-being." />
-      </Head>
       <section className="bg-gradient-to-br from-accent-purple/20 via-primary-light to-background py-16 px-4 text-center">
         <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">Biodynamic Massage</h1>
         <p className="text-lg mb-8 text-primary-dark/80 max-w-2xl mx-auto">Every session begins with a conversation to understand your needs. Then, we create a personalized journey for body and soul.</p>

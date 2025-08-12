@@ -1,13 +1,15 @@
-import Head from "next/head";
+import type { Metadata } from "next";
 import Button from "../components/Button";
+
+export const metadata: Metadata = {
+  title: "Events – Gong and Motion",
+  description:
+    "Discover and book our events: sound healing, Qigong workshops, massage, and mindful dance.",
+};
 
 export default function Events() {
   return (
     <>
-      <Head>
-        <title>Events – Gong and Motion</title>
-        <meta name="description" content="Discover and book our events: sound healing, Qigong workshops, massage, and mindful dance." />
-      </Head>
       <section className="bg-gradient-to-br from-accent-purple/30 via-primary-light to-background py-16 px-4 text-center">
         <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">Upcoming Events</h1>
         <p className="text-lg mb-8 text-primary-dark/80 max-w-2xl mx-auto">Discover and book our events: sound healing, Qigong workshops, massage, and mindful dance for your holistic well-being.</p>

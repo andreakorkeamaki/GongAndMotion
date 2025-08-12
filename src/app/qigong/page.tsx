@@ -1,13 +1,15 @@
-import Head from "next/head";
+import type { Metadata } from "next";
 import Button from "../components/Button";
+
+export const metadata: Metadata = {
+  title: "Qigong – Self-healing Techniques | Gong and Motion",
+  description:
+    "Learn to cultivate health, emotional balance, and spiritual growth with our medical Qigong workshops in Sweden.",
+};
 
 export default function Qigong() {
   return (
     <>
-      <Head>
-        <title>Qigong – Self-healing Techniques | Gong and Motion</title>
-        <meta name="description" content="Learn to cultivate health, emotional balance, and spiritual growth with our medical Qigong workshops in Sweden." />
-      </Head>
       <section className="bg-gradient-to-br from-primary-light via-accent-purple/20 to-background py-16 px-4 text-center">
         <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">Medical Qigong</h1>
         <p className="text-lg mb-8 text-primary-dark/80 max-w-2xl mx-auto">Learn to cultivate health, emotional balance, and spiritual growth with our medical Qigong workshops in Sweden.</p>

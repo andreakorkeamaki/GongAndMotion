@@ -15,8 +15,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.gongandmotion.com"),
   title: "Gong and Motion – Regenerate your body and mind",
-  description: "Discover Qigong, massage, gong bath and Dancing Mindfulness: events and sessions for your holistic well-being. Book now!",
+  description:
+    "Discover Qigong, massage, gong bath and Dancing Mindfulness: events and sessions for your holistic well-being. Book now!",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Gong and Motion – Regenerate your body and mind",
+    description:
+      "Discover Qigong, massage, gong bath and Dancing Mindfulness: events and sessions for your holistic well-being. Book now!",
+    url: "/",
+    siteName: "Gong and Motion",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Gong and Motion",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gong and Motion – Regenerate your body and mind",
+    description:
+      "Discover Qigong, massage, gong bath and Dancing Mindfulness: events and sessions for your holistic well-being. Book now!",
+    images: ["/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({
@@ -25,7 +53,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-primary-dark font-sans`}>
         <Header />
         <main className="min-h-[80vh]">{children}</main>
