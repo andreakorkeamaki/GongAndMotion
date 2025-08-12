@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Button from "./components/Button";
 import { motion, AnimatePresence } from "framer-motion";
-const MotionImage = motion(Image as any);
+const MotionImage = motion(Image);
 
 const services = [
   {
@@ -183,11 +183,13 @@ export default function Home() {
         {/* SFONDO IMMAGINE SERVIZIO */}
         <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
           {serviceImages.map((img, i) => (
-            <img
+            <Image
               key={img}
               src={img}
               alt={services[i].title}
-              className={`object-cover w-full h-full absolute left-0 top-0 transition-opacity duration-700 ease-in-out ${hoveredService === i ? 'opacity-30 scale-100' : 'opacity-0'}`}
+              fill
+              sizes="100vw"
+              className={`object-cover transition-opacity duration-700 ease-in-out ${hoveredService === i ? 'opacity-30 scale-100' : 'opacity-0'}`}
               style={{ filter: 'blur(1.5px)' }}
             />
           ))}
