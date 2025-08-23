@@ -54,13 +54,13 @@ function getLocaleFromRequest(request: NextRequest): string | undefined {
   // Find the first supported locale
   for (const { language } of preferredLanguages) {
     // Check for exact match (e.g., 'sv')
-    if (locales.includes(language as any)) {
+    if (locales.includes(language as typeof locales[number])) {
       return language;
     }
     
     // Check for language prefix (e.g., 'sv-SE' -> 'sv')
     const languagePrefix = language.split('-')[0];
-    if (locales.includes(languagePrefix as any)) {
+    if (locales.includes(languagePrefix as typeof locales[number])) {
       return languagePrefix;
     }
   }

@@ -10,7 +10,7 @@ export const getClientDictionary = async (locale: Locale) => {
       const dict = await import('./dictionaries/en.json');
       return dict.default;
     }
-  } catch (error) {
+  } catch {
     console.warn('Failed to load dictionary, falling back to English');
     const dict = await import('./dictionaries/en.json');
     return dict.default;

@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Button from "../components/Button";
 import PersonSlider from "../components/PersonSlider";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { getClientDictionary } from "@/i18n/client-dictionaries";
 import { type Locale } from "@/i18n/config";
 import { useState, useEffect, use } from "react";
@@ -43,7 +43,7 @@ export default function HomePage({
   params: Promise<{ locale: Locale }>;
 }) {
   const resolvedParams = use(params);
-  const [dict, setDict] = useState<any>(null);
+  const [dict, setDict] = useState<Record<string, any> | null>(null);
   const [hoveredService, setHoveredService] = useState<number | null>(null);
   
   const testimonials = [
@@ -152,7 +152,7 @@ export default function HomePage({
                 className="flex-shrink-0 flex flex-col items-center justify-center w-[340px] max-w-full px-6"
               >
                 <Image src={t.img} alt={t.author} width={56} height={56} className="w-14 h-14 rounded-full object-cover mb-4 border-2 border-accent-purple/40 shadow" />
-                <p className="italic text-primary-dark/90 text-base sm:text-lg text-center mb-4">"{t.text}"</p>
+                <p className="italic text-primary-dark/90 text-base sm:text-lg text-center mb-4">&ldquo;{t.text}&rdquo;</p>
                 <span className="block text-accent-purple font-semibold text-base text-center">{t.author}</span>
               </div>
             ))}

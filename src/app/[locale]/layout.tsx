@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { use } from "react";
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));

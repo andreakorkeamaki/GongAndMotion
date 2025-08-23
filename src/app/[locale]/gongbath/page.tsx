@@ -22,7 +22,7 @@ export default function GongBath() {
             <li>A journey to your true Self</li>
             <li>Group and private sessions</li>
           </ul>
-          <blockquote className="italic border-l-4 pl-4 mb-4 border-accent-purple/50 text-primary-dark/80">"Gong yourself back to life."</blockquote>
+          <blockquote className="italic border-l-4 pl-4 mb-4 border-accent-purple/50 text-primary-dark/80">&ldquo;Gong yourself back to life.&rdquo;</blockquote>
         </div>
       </section>
     </>

@@ -22,7 +22,7 @@ export default function Massage() {
             <li>Personalized dialogue</li>
             <li>Intuition and expertise of Eileen Murray</li>
           </ul>
-          <blockquote className="italic border-l-4 pl-4 mb-4 border-accent-purple/50 text-primary-dark/80">"After three sessions I regained full mobility in my shoulder. A deeply healing experience." – Nina, doctor</blockquote>
+          <blockquote className="italic border-l-4 pl-4 mb-4 border-accent-purple/50 text-primary-dark/80">&ldquo;After three sessions I regained full mobility in my shoulder. A deeply healing experience.&rdquo; – Nina, doctor</blockquote>
         </div>
       </section>
     </>
