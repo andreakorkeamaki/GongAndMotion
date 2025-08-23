@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 export default function RootRedirect() {
   const router = useRouter();
@@ -33,9 +34,9 @@ export default function RootRedirect() {
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-accent-purple mx-auto mb-4"></div>
         <p className="text-primary-dark/80">Detecting language...</p>
         <p className="text-sm text-primary-dark/60 mt-2">
-          <a href="/en" className="text-accent-purple hover:underline">English</a>
+          <Link href="/en" className="text-accent-purple hover:underline">English</Link>
           {' | '}
-          <a href="/sv" className="text-accent-purple hover:underline">Svenska</a>
+          <Link href="/sv" className="text-accent-purple hover:underline">Svenska</Link>
         </p>
       </div>
     </div>
