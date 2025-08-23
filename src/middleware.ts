@@ -26,17 +26,44 @@ export function middleware(request: NextRequest) {
   // Redirect if there is no locale in the pathname
   const locale = getLocaleFromRequest(request) || defaultLocale;
   
+  console.log('Final selected locale:', locale);
+  console.log('Redirecting to:', `/${locale}${pathname}`);
+  
   return NextResponse.redirect(
     new URL(`/${locale}${pathname}`, request.url)
   );
 }
 
 function getLocaleFromRequest(request: NextRequest): string | undefined {
-  // Get the Accept-Language header
+  // Get all headers for debugging
   const acceptLanguage = request.headers.get('accept-language');
+  const userAgent = request.headers.get('user-agent');
+  const url = request.url;
   
+  console.log('=== LANGUAGE DETECTION DEBUG ===');
+  console.log('URL:', url);
+  console.log('User-Agent:', userAgent);
   console.log('Accept-Language header:', acceptLanguage);
   console.log('Supported locales:', locales);
+  console.log('Default locale:', defaultLocale);
+  
+  // Temporary fix: Check if request comes from Swedish context
+  // This is a fallback while we debug the main issue
+  if (acceptLanguage) {
+    const lowerLang = acceptLanguage.toLowerCase();
+    console.log('Lowercase Accept-Language:', lowerLang);
+    
+    // More aggressive Swedish detection
+    if (lowerLang.includes('sv') || 
+        lowerLang.includes('swedish') || 
+        lowerLang.includes('sverige') ||
+        lowerLang.startsWith('sv-') ||
+        lowerLang.includes('sv,') ||
+        lowerLang.includes('sv;')) {
+      console.log('Swedish detected in Accept-Language header');
+      return 'sv';
+    }
+  }
   
   if (!acceptLanguage) {
     console.log('No Accept-Language header, using default locale:', defaultLocale);
@@ -74,12 +101,6 @@ function getLocaleFromRequest(request: NextRequest): string | undefined {
     if (locales.includes(languagePrefix as typeof locales[number])) {
       console.log('Language prefix match found:', languagePrefix);
       return languagePrefix;
-    }
-    
-    // Additional check for common Swedish variants
-    if (language.includes('sv') || languagePrefix === 'sv') {
-      console.log('Swedish variant detected:', language);
-      return 'sv';
     }
   }
 
