@@ -7,6 +7,30 @@ import { getClientDictionary } from "@/i18n/client-dictionaries";
 import { type Locale } from "@/i18n/config";
 import { useState, useEffect, use } from "react";
 
+interface Dictionary {
+  home: {
+    title: string;
+    description: string;
+    hero_title: string;
+    hero_subtitle: string;
+  };
+  common: {
+    home: string;
+    services: string;
+    events: string;
+    contact: string;
+    book_now: string;
+    learn_more: string;
+    testimonials: string;
+  };
+  services: {
+    qigong: string;
+    massage: string;
+    gongbath: string;
+    dancingmindfulness: string;
+  };
+}
+
 const services = [
   {
     title: "Qigong",
@@ -43,7 +67,7 @@ export default function HomePage({
   params: Promise<{ locale: Locale }>;
 }) {
   const resolvedParams = use(params);
-  const [dict, setDict] = useState<Record<string, any> | null>(null);
+  const [dict, setDict] = useState<Dictionary | null>(null);
   const [hoveredService, setHoveredService] = useState<number | null>(null);
   
   const testimonials = [
@@ -124,7 +148,7 @@ export default function HomePage({
                 onMouseEnter={() => setHoveredService(i)}
                 onMouseLeave={() => setHoveredService(null)}
               >
-                <h3 className="text-xl font-heading font-semibold mb-2 text-primary-dark z-10 relative">{service.title}</h3>
+                <h3 className="text-xl font-bold text-primary-dark mb-4 z-10 relative">{service.title}</h3>
                 <p className="text-primary-dark/80 mb-4 text-sm flex-1 z-10 relative">{service.description}</p>
                 <Button href={service.href} variant="secondary" className="z-10 relative">{dict.common.learn_more}</Button>
               </div>
@@ -137,7 +161,7 @@ export default function HomePage({
         <div className="h-1 w-24 rounded-full bg-primary/50 mb-12"></div>
       </div>
       <section className="py-16 bg-gradient-to-b from-accent-purple/10 via-background to-green-50 px-2 sm:px-4">
-        <h2 className="text-3xl font-heading font-bold text-center mb-12 text-primary-dark">What People Say</h2>
+        <h2 className="text-3xl font-heading font-bold text-center mb-12 text-primary-dark">{dict?.common.testimonials || "What People Say"}</h2>
         {/* Testimonials scroller fixed */}
         <div className="relative w-full overflow-x-hidden">
           <motion.div
