@@ -1,7 +1,9 @@
 "use client";
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -16,6 +18,16 @@ const navLinks = [
 export default function Header() {
   const [open, setOpen] = useState(false);
   const drawerRef = useRef<HTMLDivElement | null>(null);
+  const pathname = usePathname();
+  
+  // Get current locale from pathname
+  const currentLocale = pathname.split('/')[1] || 'en';
+  
+  // Create locale-aware navigation links
+  const getLocalizedHref = (href: string) => {
+    if (href === '/') return `/${currentLocale}`;
+    return `/${currentLocale}${href}`;
+  };
 
   // Close on Escape and manage initial focus when opening
   useEffect(() => {
@@ -43,16 +55,19 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-background shadow-sm">
       <nav className="flex justify-between items-center max-w-5xl mx-auto px-4 py-3">
-        <Link href="/" className="text-2xl font-heading font-bold text-primary-dark tracking-tight">
+        <Link href={`/${currentLocale}`} className="text-2xl font-heading font-bold text-primary-dark tracking-tight">
           Gong and Motion
         </Link>
-        <ul className="hidden md:flex gap-6 text-primary-dark font-semibold">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <Link href={link.href} className="hover:text-accent transition-colors">{link.label}</Link>
-            </li>
-          ))}
-        </ul>
+        <div className="hidden md:flex items-center gap-6">
+          <ul className="flex gap-6 text-primary-dark font-semibold">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={getLocalizedHref(link.href)} className="hover:text-accent transition-colors">{link.label}</Link>
+              </li>
+            ))}
+          </ul>
+          <LanguageSwitcher />
+        </div>
         {/* Mobile menu hamburger */}
         <button
           className="md:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none"
@@ -112,10 +127,13 @@ export default function Header() {
               <ul className="flex flex-col gap-4 text-primary-dark font-semibold">
                 {navLinks.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="hover:text-accent transition-colors" onClick={() => setOpen(false)}>{link.label}</Link>
+                    <Link href={getLocalizedHref(link.href)} className="hover:text-accent transition-colors" onClick={() => setOpen(false)}>{link.label}</Link>
                   </li>
                 ))}
               </ul>
+              <div className="mt-4 pt-4 border-t border-gray-200">
+                <LanguageSwitcher />
+              </div>
             </div>
             <style jsx>{`
               @keyframes slide-in {

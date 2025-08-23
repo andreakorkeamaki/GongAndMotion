@@ -1,0 +1,22 @@
+{
+  "common": {
+    "home": "Hem",
+    "services": "Tjänster",
+    "events": "Evenemang",
+    "contact": "Kontakt",
+    "book_now": "Boka Nu",
+    "learn_more": "Läs Mer"
+  },
+  "home": {
+    "title": "Gong and Motion – Återskapa din kropp och sinne",
+    "description": "Upptäck Qigong, massage, gongbad och Dancing Mindfulness: evenemang och sessioner för ditt holistiska välbefinnande. Boka nu!",
+    "hero_title": "Återskapa din kropp och sinne",
+    "hero_subtitle": "Upptäck Qigong, massage, gongbad och Dancing Mindfulness"
+  },
+  "services": {
+    "qigong": "Qigong",
+    "massage": "Massage",
+    "gongbath": "Gongbad",
+    "dancingmindfulness": "Dancing Mindfulness"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "common": {
+    "home": "Home",
+    "services": "Services",
+    "events": "Events",
+    "contact": "Contact",
+    "book_now": "Book Now",
+    "learn_more": "Learn More"
+  },
+  "home": {
+    "title": "Gong and Motion – Regenerate your body and mind",
+    "description": "Discover Qigong, massage, gong bath and Dancing Mindfulness: events and sessions for your holistic well-being. Book now!",
+    "hero_title": "Regenerate your body and mind",
+    "hero_subtitle": "Discover Qigong, massage, gong bath and Dancing Mindfulness"
+  },
+  "services": {
+    "qigong": "Qigong",
+    "massage": "Massage",
+    "gongbath": "Gong Bath",
+    "dancingmindfulness": "Dancing Mindfulness"
+  }
+}
