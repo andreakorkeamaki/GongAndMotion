@@ -35,7 +35,10 @@ function getLocaleFromRequest(request: NextRequest): string | undefined {
   // Get the Accept-Language header
   const acceptLanguage = request.headers.get('accept-language');
   
+  console.log('Accept-Language header:', acceptLanguage);
+  
   if (!acceptLanguage) {
+    console.log('No Accept-Language header, using default locale:', defaultLocale);
     return defaultLocale;
   }
 
@@ -51,20 +54,29 @@ function getLocaleFromRequest(request: NextRequest): string | undefined {
     })
     .sort((a, b) => b.quality - a.quality);
 
+  console.log('Parsed preferred languages:', preferredLanguages);
+
   // Find the first supported locale
   for (const { language } of preferredLanguages) {
+    console.log('Checking language:', language);
+    
     // Check for exact match (e.g., 'sv')
     if (locales.includes(language as typeof locales[number])) {
+      console.log('Exact match found:', language);
       return language;
     }
     
     // Check for language prefix (e.g., 'sv-SE' -> 'sv')
     const languagePrefix = language.split('-')[0];
+    console.log('Checking language prefix:', languagePrefix);
+    
     if (locales.includes(languagePrefix as typeof locales[number])) {
+      console.log('Language prefix match found:', languagePrefix);
       return languagePrefix;
     }
   }
 
+  console.log('No supported language found, using default:', defaultLocale);
   return defaultLocale;
 }
 
