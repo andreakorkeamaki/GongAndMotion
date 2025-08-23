@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { defaultLocale, locales } from './i18n/config';
+import { defaultLocale, locales } from './src/i18n/config';
 
 export function middleware(request: NextRequest) {
   // Check if there is any supported locale in the pathname
