@@ -36,6 +36,7 @@ function getLocaleFromRequest(request: NextRequest): string | undefined {
   const acceptLanguage = request.headers.get('accept-language');
   
   console.log('Accept-Language header:', acceptLanguage);
+  console.log('Supported locales:', locales);
   
   if (!acceptLanguage) {
     console.log('No Accept-Language header, using default locale:', defaultLocale);
@@ -48,7 +49,7 @@ function getLocaleFromRequest(request: NextRequest): string | undefined {
     .map((lang) => {
       const [language, quality = '1'] = lang.trim().split(';q=');
       return {
-        language: language.toLowerCase(),
+        language: language.toLowerCase().trim(),
         quality: parseFloat(quality),
       };
     })
@@ -67,12 +68,18 @@ function getLocaleFromRequest(request: NextRequest): string | undefined {
     }
     
     // Check for language prefix (e.g., 'sv-SE' -> 'sv')
-    const languagePrefix = language.split('-')[0];
+    const languagePrefix = language.split('-')[0].trim();
     console.log('Checking language prefix:', languagePrefix);
     
     if (locales.includes(languagePrefix as typeof locales[number])) {
       console.log('Language prefix match found:', languagePrefix);
       return languagePrefix;
+    }
+    
+    // Additional check for common Swedish variants
+    if (language.includes('sv') || languagePrefix === 'sv') {
+      console.log('Swedish variant detected:', language);
+      return 'sv';
     }
   }
 
