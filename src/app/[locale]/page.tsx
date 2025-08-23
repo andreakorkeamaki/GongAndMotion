@@ -100,6 +100,10 @@ export default function HomePage({
 
   return (
     <>
+      {/* Debug Info - Shows detected locale */}
+      <div className="fixed top-0 right-0 bg-red-500 text-white p-2 text-xs z-50 rounded-bl">
+        Detected: {resolvedParams.locale}
+      </div>
       <section className="relative py-20 px-4 flex flex-col items-center justify-center text-center min-h-[60vh]">
         {/* Background image */}
         <div className="absolute inset-0 -z-10">
@@ -123,9 +127,14 @@ export default function HomePage({
       <div className="w-full flex justify-center">
         <div className="h-1 w-24 rounded-full bg-accent-purple/60 mb-12"></div>
       </div>
-      <section className="py-16 bg-background relative overflow-hidden">
-        {/* SFONDO IMMAGINE SERVIZIO */}
-        <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
+      {/* Debug Info */}
+      <div className="fixed top-0 right-0 bg-red-500 text-white p-2 text-xs z-50">
+        Locale: {resolvedParams.locale}
+      </div>
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+        {/* Background Images */}
+        <div className="absolute inset-0 z-0">
           {serviceImages.map((img, i) => (
             <Image
               key={img}
