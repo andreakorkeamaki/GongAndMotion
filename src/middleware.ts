@@ -29,8 +29,12 @@ export function middleware(request: NextRequest) {
   console.log('Final selected locale:', locale);
   console.log('Redirecting to:', `/${locale}${pathname}`);
   
+  // TEMPORARY: Force Swedish for testing
+  const testLocale = 'sv'; // Change this to test
+  console.log('FORCING LOCALE TO:', testLocale);
+  
   return NextResponse.redirect(
-    new URL(`/${locale}${pathname}`, request.url)
+    new URL(`/${testLocale}${pathname}`, request.url)
   );
 }
 
