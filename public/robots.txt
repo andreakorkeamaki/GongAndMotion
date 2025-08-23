@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.gongandmotion.com/sitemap.xml
+Host: https://www.gongandmotion.com

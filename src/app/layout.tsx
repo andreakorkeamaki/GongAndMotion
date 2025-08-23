@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/header-bg.jpg",
         width: 1200,
         height: 630,
         alt: "Gong and Motion",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Gong and Motion – Regenerate your body and mind",
     description:
       "Discover Qigong, massage, gong bath and Dancing Mindfulness: events and sessions for your holistic well-being. Book now!",
-    images: ["/og-image.jpg"],
+    images: ["/header-bg.jpg"],
   },
 };
 
