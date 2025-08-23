@@ -51,9 +51,10 @@ export async function generateMetadata({
 
 export default function LocaleLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }) {
   return children;
 }
