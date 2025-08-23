@@ -13,6 +13,13 @@ interface Dictionary {
     description: string;
     hero_title: string;
     hero_subtitle: string;
+    our_services: string;
+    testimonial_1: string;
+    testimonial_1_author: string;
+    testimonial_2: string;
+    testimonial_2_author: string;
+    testimonial_3: string;
+    testimonial_3_author: string;
   };
   common: {
     home: string;
@@ -22,34 +29,42 @@ interface Dictionary {
     book_now: string;
     learn_more: string;
     testimonials: string;
+    stay_connected: string;
+    newsletter_description: string;
+    your_email: string;
+    subscribe: string;
   };
   services: {
     qigong: string;
     massage: string;
     gongbath: string;
     dancingmindfulness: string;
+    qigong_description: string;
+    massage_description: string;
+    gongbath_description: string;
+    dancingmindfulness_description: string;
   };
 }
 
-const services = [
+const getServices = (dict: Dictionary) => [
   {
-    title: "Qigong",
-    description: "Self-healing, energy balance, and spiritual growth through ancient movement and breath techniques.",
+    title: dict.services.qigong,
+    description: dict.services.qigong_description,
     href: "/qigong",
   },
   {
-    title: "Biodynamic Massage",
-    description: "Holistic treatments tailored to your needs. Mind and body in harmony for deep relaxation.",
+    title: dict.services.massage,
+    description: dict.services.massage_description,
     href: "/massage",
   },
   {
-    title: "Gong Bath",
-    description: "Immersive sound journeys for transformation and inner renewal. Group and private sessions.",
+    title: dict.services.gongbath,
+    description: dict.services.gongbath_description,
     href: "/gongbath",
   },
   {
-    title: "Dancing Mindfulness",
-    description: "Awaken energy and creativity with mindful movement and dance meditation.",
+    title: dict.services.dancingmindfulness,
+    description: dict.services.dancingmindfulness_description,
     href: "/dancingmindfulness",
   },
 ];
@@ -70,21 +85,21 @@ export default function HomePage({
   const [dict, setDict] = useState<Dictionary | null>(null);
   const [hoveredService, setHoveredService] = useState<number | null>(null);
   
-  const testimonials = [
+  const getTestimonials = (dict: Dictionary) => [
     {
       img: "/eileen-hero.webp",
-      text: "After three sessions I regained full mobility in my shoulder. A deeply healing experience.",
-      author: "Nina, doctor",
+      text: dict.home.testimonial_1,
+      author: dict.home.testimonial_1_author,
     },
     {
       img: "/kari-hero.webp",
-      text: "Gong yourself back to life. I felt a transformation after the sound bath!",
-      author: "Kari, musician",
+      text: dict.home.testimonial_2,
+      author: dict.home.testimonial_2_author,
     },
     {
       img: "/qigong-servizio.webp",
-      text: "The Qigong workshop gave me new energy and inner peace. Highly recommended!",
-      author: "Sofia, therapist",
+      text: dict.home.testimonial_3,
+      author: dict.home.testimonial_3_author,
     },
   ];
 
@@ -97,6 +112,9 @@ export default function HomePage({
   }, [resolvedParams.locale]);
 
   if (!dict) return <div>Loading...</div>;
+
+  const services = getServices(dict);
+  const testimonials = getTestimonials(dict);
 
   return (
     <>
@@ -140,9 +158,9 @@ export default function HomePage({
           ))}
         </div>
         <div className="max-w-5xl mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-heading font-bold mb-10 text-center text-primary-dark">Our Services</h2>
+          <h2 className="text-3xl font-heading font-bold mb-10 text-center text-primary-dark">{dict.home.our_services}</h2>
           <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4 items-stretch mb-12">
-            {services.map((service, i) => (
+            {services.map((service: any, i: number) => (
               <div
                 key={service.title}
                 className="flex flex-col h-full justify-between rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 items-center text-center border border-primary/10 hover:-translate-y-1 hover:scale-105 min-w-0 group relative overflow-hidden"
@@ -162,7 +180,7 @@ export default function HomePage({
         <div className="h-1 w-24 rounded-full bg-primary/50 mb-12"></div>
       </div>
       <section className="py-16 bg-gradient-to-b from-accent-purple/10 via-background to-green-50 px-2 sm:px-4">
-        <h2 className="text-3xl font-heading font-bold text-center mb-12 text-primary-dark">{dict?.common.testimonials || "What People Say"}</h2>
+        <h2 className="text-3xl font-heading font-bold text-center mb-12 text-primary-dark">{dict.common.testimonials}</h2>
         {/* Testimonials scroller fixed */}
         <div className="relative w-full overflow-x-hidden">
           <motion.div
@@ -171,7 +189,7 @@ export default function HomePage({
             transition={{ repeat: Infinity, repeatType: 'loop', duration: 60, ease: 'linear' }}
             style={{ width: `${testimonials.length * 340 * 2}px` }}
           >
-            {[...testimonials, ...testimonials].map((t, i) => (
+            {[...testimonials, ...testimonials].map((t: any, i: number) => (
               <div
                 key={i}
                 className="flex-shrink-0 flex flex-col items-center justify-center w-[340px] max-w-full px-6"
@@ -190,12 +208,12 @@ export default function HomePage({
       </div>
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-heading font-bold mb-4 text-primary-dark">Stay Connected</h2>
-          <p className="mb-6 text-primary-dark/80">Subscribe to our newsletter for event updates, exclusive content, and wellness tips.</p>
+          <h2 className="text-2xl font-heading font-bold mb-4 text-primary-dark">{dict.common.stay_connected}</h2>
+          <p className="mb-6 text-primary-dark/80">{dict.common.newsletter_description}</p>
           <form className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-xl mx-auto">
-            <label htmlFor="newsletter-email" className="sr-only">Your email</label>
-            <input id="newsletter-email" name="email" type="email" placeholder="Your email" className="border border-primary rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-accent w-full sm:w-auto" />
-            <Button type="submit" variant="primary">Subscribe</Button>
+            <label htmlFor="newsletter-email" className="sr-only">{dict.common.your_email}</label>
+            <input id="newsletter-email" name="email" type="email" placeholder={dict.common.your_email} className="border border-primary rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-accent w-full sm:w-auto" />
+            <Button type="submit" variant="primary">{dict.common.subscribe}</Button>
           </form>
         </div>
       </section>

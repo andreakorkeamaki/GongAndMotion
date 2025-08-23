@@ -6,18 +6,91 @@
     "contact": "Kontakt",
     "book_now": "Boka nu",
     "learn_more": "Läs mer",
-    "testimonials": "Recensioner"
+    "testimonials": "Vad folk säger",
+    "sign_up_now": "Anmäl dig nu",
+    "subscribe": "Prenumerera",
+    "stay_connected": "Håll kontakten",
+    "newsletter_description": "Prenumerera på vårt nyhetsbrev för uppdateringar om evenemang, exklusivt innehåll och välbefinnande-tips.",
+    "your_email": "Din e-post",
+    "frequently_asked_questions": "Vanliga frågor"
   },
   "home": {
     "title": "Gong and Motion – Återskapa din kropp och sinne",
-    "description": "Upptäck Qigong, massage, gongbad och Dancing Mindfulness: evenemang och sessioner för ditt holistiska välbefinnande. Boka nu!",
+    "description": "Ljud, rörelse och holistisk healing för ditt välbefinnande. Upptäck våra unika evenemang och behandlingar i Sverige.",
     "hero_title": "Återskapa din kropp och sinne",
-    "hero_subtitle": "Upptäck Qigong, massage, gongbad och Dancing Mindfulness"
+    "hero_subtitle": "Ljud, rörelse och holistisk healing för ditt välbefinnande. Upptäck våra unika evenemang och behandlingar i Sverige.",
+    "our_services": "Våra tjänster",
+    "testimonial_1": "Efter tre sessioner återfick jag full rörlighet i axeln. En djupt helande upplevelse.",
+    "testimonial_1_author": "Nina, läkare",
+    "testimonial_2": "Gonga dig tillbaka till livet. Jag kände en förvandling efter ljudbadet!",
+    "testimonial_2_author": "Kari, musiker",
+    "testimonial_3": "Qigong-workshopen gav mig ny energi och inre frid. Starkt rekommenderat!",
+    "testimonial_3_author": "Sofia, terapeut"
   },
   "services": {
     "qigong": "Qigong",
-    "massage": "Massage",
+    "massage": "Biodynamisk massage",
     "gongbath": "Gongbad",
-    "dancingmindfulness": "Dancing Mindfulness"
+    "dancingmindfulness": "Dancing Mindfulness",
+    "qigong_description": "Självläkning, energibalans och andlig tillväxt genom urgamla rörelse- och andningstekniker.",
+    "massage_description": "Holistiska behandlingar anpassade efter dina behov. Kropp och sinne i harmoni för djup avslappning.",
+    "gongbath_description": "Uppslukande ljudresor för transformation och inre förnyelse. Grupp- och privatsessioner.",
+    "dancingmindfulness_description": "Väck energi och kreativitet med medveten rörelse och dansmeditation."
+  },
+  "qigong": {
+    "title": "Qigong – Självläkningstekniker | Gong and Motion",
+    "description": "Lär dig att odla hälsa, emotionell balans och andlig tillväxt med våra medicinska Qigong-workshops i Sverige.",
+    "hero_title": "Medicinsk Qigong",
+    "hero_subtitle": "Lär dig att odla hälsa, emotionell balans och andlig tillväxt med våra medicinska Qigong-workshops i Sverige.",
+    "benefits": {
+      "self_healing": "Självläkning och prevention",
+      "immune_system": "Reglering av immunsystemet",
+      "emotional_harmony": "Emotionell harmoni och sinnesro",
+      "spiritual_growth": "Andlig tillväxt och universell öppenhet"
+    },
+    "next_workshop": "Nästa workshop:",
+    "workshop_date": "14 juni 2025 – Stockholm",
+    "faq": {
+      "what_is_qigong": {
+        "question": "Vad är medicinsk Qigong?",
+        "answer": "Medicinsk Qigong är en urgammal kinesisk praktik som kombinerar rörelse, andning och intention för att främja hälsa, healing och andlig tillväxt. Den används för självläkning, prevention och som komplement till västerländsk medicin."
+      },
+      "experience_needed": {
+        "question": "Behöver jag någon erfarenhet för att delta?",
+        "answer": "Ingen erfarenhet behövs. Våra workshops passar alla nivåer, inklusive nybörjare. Du kommer att guidas steg för steg."
+      },
+      "what_to_bring": {
+        "question": "Vad ska jag ta med till en Qigong-klass?",
+        "answer": "Bär bekväma kläder som låter dig röra dig fritt. Ta med en vattenflaska och ett öppet sinne!"
+      },
+      "stress_anxiety": {
+        "question": "Kan Qigong hjälpa mot stress och ångest?",
+        "answer": "Ja! Qigong är känt för sina lugnande effekter på kropp och sinne. Många deltagare rapporterar minskad stress, förbättrad sömn och större emotionell balans."
+      }
+    }
+  },
+  "massage": {
+    "title": "Biodynamisk massage – Holistisk healing | Gong and Motion",
+    "description": "Upplev djup avslappning och healing med våra biodynamiska massagebehandlingar. Skräddarsydda sessioner för kropp och sinnes harmoni.",
+    "hero_title": "Biodynamisk massage",
+    "hero_subtitle": "Holistiska behandlingar anpassade efter dina behov. Kropp och sinne i harmoni för djup avslappning.",
+    "quote": "Kroppen drar nytta av rörelse, och sinnet drar nytta av stillhet.",
+    "quote_author": "Sakyong Mipham"
+  },
+  "gongbath": {
+    "title": "Gongbad – Ljudhealing | Gong and Motion",
+    "description": "Upplev transformativ ljudhealing med våra gongbad-sessioner. Djup avslappning och inre förnyelse genom ljudvibrationer.",
+    "hero_title": "Gongbad",
+    "hero_subtitle": "Uppslukande ljudresor för transformation och inre förnyelse. Grupp- och privatsessioner.",
+    "quote": "Ljud kommer att vara framtidens medicin.",
+    "quote_author": "Edgar Cayce"
+  },
+  "dancingmindfulness": {
+    "title": "Dancing Mindfulness – Rörelsemeditation | Gong and Motion",
+    "description": "Väck din energi och kreativitet genom medveten rörelse och dansmeditation. Uttryck dig fritt genom medveten rörelse.",
+    "hero_title": "Dancing Mindfulness",
+    "hero_subtitle": "Väck energi och kreativitet med medveten rörelse och dansmeditation.",
+    "quote": "Dans är själens dolda språk.",
+    "quote_author": "Martha Graham"
   }
 }

@@ -6,18 +6,91 @@
     "contact": "Contact",
     "book_now": "Book Now",
     "learn_more": "Learn More",
-    "testimonials": "Testimonials"
+    "testimonials": "What People Say",
+    "sign_up_now": "Sign up now",
+    "subscribe": "Subscribe",
+    "stay_connected": "Stay Connected",
+    "newsletter_description": "Subscribe to our newsletter for event updates, exclusive content, and wellness tips.",
+    "your_email": "Your email",
+    "frequently_asked_questions": "Frequently Asked Questions"
   },
   "home": {
     "title": "Gong and Motion – Regenerate your body and mind",
-    "description": "Discover Qigong, massage, gong bath and Dancing Mindfulness: events and sessions for your holistic well-being. Book now!",
+    "description": "Sound, movement, and holistic healing for your well-being. Discover our unique events and treatments in Sweden.",
     "hero_title": "Regenerate your body and mind",
-    "hero_subtitle": "Discover Qigong, massage, gong bath and Dancing Mindfulness"
+    "hero_subtitle": "Sound, movement, and holistic healing for your well-being. Discover our unique events and treatments in Sweden.",
+    "our_services": "Our Services",
+    "testimonial_1": "After three sessions I regained full mobility in my shoulder. A deeply healing experience.",
+    "testimonial_1_author": "Nina, doctor",
+    "testimonial_2": "Gong yourself back to life. I felt a transformation after the sound bath!",
+    "testimonial_2_author": "Kari, musician",
+    "testimonial_3": "The Qigong workshop gave me new energy and inner peace. Highly recommended!",
+    "testimonial_3_author": "Sofia, therapist"
   },
   "services": {
     "qigong": "Qigong",
-    "massage": "Massage",
+    "massage": "Biodynamic Massage",
     "gongbath": "Gong Bath",
-    "dancingmindfulness": "Dancing Mindfulness"
+    "dancingmindfulness": "Dancing Mindfulness",
+    "qigong_description": "Self-healing, energy balance, and spiritual growth through ancient movement and breath techniques.",
+    "massage_description": "Holistic treatments tailored to your needs. Mind and body in harmony for deep relaxation.",
+    "gongbath_description": "Immersive sound journeys for transformation and inner renewal. Group and private sessions.",
+    "dancingmindfulness_description": "Awaken energy and creativity with mindful movement and dance meditation."
+  },
+  "qigong": {
+    "title": "Qigong – Self-healing Techniques | Gong and Motion",
+    "description": "Learn to cultivate health, emotional balance, and spiritual growth with our medical Qigong workshops in Sweden.",
+    "hero_title": "Medical Qigong",
+    "hero_subtitle": "Learn to cultivate health, emotional balance, and spiritual growth with our medical Qigong workshops in Sweden.",
+    "benefits": {
+      "self_healing": "Self-healing and prevention",
+      "immune_system": "Immune system regulation",
+      "emotional_harmony": "Emotional harmony and peace of mind",
+      "spiritual_growth": "Spiritual growth and universal openness"
+    },
+    "next_workshop": "Next workshop:",
+    "workshop_date": "June 14, 2025 – Stockholm",
+    "faq": {
+      "what_is_qigong": {
+        "question": "What is Medical Qigong?",
+        "answer": "Medical Qigong is an ancient Chinese practice that combines movement, breath, and intention to promote health, healing, and spiritual growth. It is used for self-healing, prevention, and as a complement to Western medicine."
+      },
+      "experience_needed": {
+        "question": "Do I need any experience to join?",
+        "answer": "No experience is needed. Our workshops are suitable for all levels, including complete beginners. You will be guided step by step."
+      },
+      "what_to_bring": {
+        "question": "What should I bring to a Qigong class?",
+        "answer": "Wear comfortable clothes that allow you to move freely. Bring a water bottle and an open mind!"
+      },
+      "stress_anxiety": {
+        "question": "Can Qigong help with stress and anxiety?",
+        "answer": "Yes! Qigong is known for its calming effects on the mind and body. Many participants report reduced stress, improved sleep, and greater emotional balance."
+      }
+    }
+  },
+  "massage": {
+    "title": "Biodynamic Massage – Holistic Healing | Gong and Motion",
+    "description": "Experience deep relaxation and healing with our biodynamic massage treatments. Tailored sessions for mind and body harmony.",
+    "hero_title": "Biodynamic Massage",
+    "hero_subtitle": "Holistic treatments tailored to your needs. Mind and body in harmony for deep relaxation.",
+    "quote": "The body benefits from movement, and the mind benefits from stillness.",
+    "quote_author": "Sakyong Mipham"
+  },
+  "gongbath": {
+    "title": "Gong Bath – Sound Healing | Gong and Motion",
+    "description": "Experience transformative sound healing with our gong bath sessions. Deep relaxation and inner renewal through sound vibrations.",
+    "hero_title": "Gong Bath",
+    "hero_subtitle": "Immersive sound journeys for transformation and inner renewal. Group and private sessions.",
+    "quote": "Sound will be the medicine of the future.",
+    "quote_author": "Edgar Cayce"
+  },
+  "dancingmindfulness": {
+    "title": "Dancing Mindfulness – Movement Meditation | Gong and Motion",
+    "description": "Awaken your energy and creativity through mindful movement and dance meditation. Express yourself freely through conscious movement.",
+    "hero_title": "Dancing Mindfulness",
+    "hero_subtitle": "Awaken energy and creativity with mindful movement and dance meditation.",
+    "quote": "Dance is the hidden language of the soul.",
+    "quote_author": "Martha Graham"
   }
 }
