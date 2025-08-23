@@ -10,15 +10,12 @@ export default function RootRedirect() {
     // Client-side language detection as fallback
     const detectLanguage = () => {
       const browserLang = navigator.language || navigator.languages?.[0] || 'en';
-      console.log('Browser language detected:', browserLang);
       
       // Check if Swedish
       if (browserLang.toLowerCase().includes('sv') || 
           browserLang.toLowerCase().startsWith('sv-')) {
-        console.log('Redirecting to Swedish');
         router.replace('/sv');
       } else {
-        console.log('Redirecting to English');
         router.replace('/en');
       }
     };
