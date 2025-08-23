@@ -54,7 +54,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-primary-dark font-sans`}>
+      <body className={`${geistSans.className} ${geistMono.variable} antialiased bg-background text-primary-dark`}>
         <Header />
         <main className="min-h-[80vh]">{children}</main>
         <Footer />
