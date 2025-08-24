@@ -124,5 +124,19 @@
       "gong_bath": "Evening Gong Bath",
       "massage_intensive": "Biodynamic Massage Intensive"
     }
+  },
+  "practitioners": {
+    "eileen": {
+      "name": "Eileen Murray",
+      "bio": "Open Floor International Movement teacher, currently in training at BISO – Dynamic Movement Facilitator Training (2 years).<br/>Biodynamic massage therapist, psychotherapist, and medical qigong teacher. 35 years of experience in Australia, Sweden, the UK, and Ireland.<br/>\"I am passionate about creating a safe and supportive space for people to explore their inner world and find their own path to healing and growth.\"",
+      "button_label": "Discover Qigong",
+      "button_href": "/qigong"
+    },
+    "kari": {
+      "name": "Kari Korkeamaki",
+      "bio": "Has played gong for 12 years and offered many gong baths in various formats—together with yoga, at festivals, individual sessions, with hypnosis, and outdoors in nature.<br/>Assisted with gong at Open Floor in Ireland and Sweden. Sees both gong and dance as beautiful ways to discover your inner world, free from inhibitions and to let in new, fresh life.",
+      "button_label": "Discover Gong Bath",
+      "button_href": "/gongbath"
+    }
   }
 }

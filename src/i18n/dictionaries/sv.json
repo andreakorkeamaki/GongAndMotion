@@ -120,9 +120,23 @@
     "book": "Boka",
     "contact_more_info": "Kontakta oss för mer info",
     "events_list": {
-      "qigong_workshop": "Medicinsk Qigong-workshop",
+      "qigong_workshop": "Medicinsk Qigong Workshop",
       "gong_bath": "Kvällsgongbad",
-      "massage_intensive": "Biodynamisk massage-intensiv"
+      "massage_intensive": "Biodynamisk Massage Intensiv"
+    }
+  },
+  "practitioners": {
+    "eileen": {
+      "name": "Eileen Murray",
+      "bio": "Open Floor International Movement-lärare, för närvarande i utbildning på BISO – Dynamic Movement Facilitator Training (2 år).<br/>Biodynamisk massageterapeut, psykoterapeut och medicinsk qigong-lärare. 35 års erfarenhet i Australien, Sverige, Storbritannien och Irland.<br/>\"Jag brinner för att skapa en trygg och stödjande miljö för människor att utforska sin inre värld och hitta sin egen väg till läkning och tillväxt.\"",
+      "button_label": "Upptäck Qigong",
+      "button_href": "/qigong"
+    },
+    "kari": {
+      "name": "Kari Korkeamaki",
+      "bio": "Har spelat gong i 12 år och erbjudit många gongbad i olika format—tillsammans med yoga, på festivaler, individuella sessioner, med hypnos och utomhus i naturen.<br/>Assisterat med gong på Open Floor i Irland och Sverige. Ser både gong och dans som vackra sätt att upptäcka sin inre värld, fri från hämningar och för att släppa in nytt, friskt liv.",
+      "button_label": "Upptäck Gongbad",
+      "button_href": "/gongbad"
     }
   }
 }

@@ -149,7 +149,7 @@ export default function HomePage({
         </div>
       </section>
       {/* --- SLIDER PERSONE --- */}
-      <PersonSlider />
+      <PersonSlider locale={resolvedParams.locale} />
       <div className="w-full flex justify-center">
         <div className="h-1 w-24 rounded-full bg-accent-purple/60 mb-12"></div>
       </div>

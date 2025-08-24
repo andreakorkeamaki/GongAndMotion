@@ -43,17 +43,5 @@ export const testimonials = [
     },
 ];
 
-export const practitioners = [
-    {
-      name: "Eileen Murray",
-      image: "/eileen-hero.webp",
-      bio: 'Open Floor International Movement teacher, currently in training at BISO – Dynamic Movement Facilitator Training (2 years).<br/>Biodynamic massage therapist, psychotherapist, and medical qigong teacher. 35 years of experience in Australia, Sweden, the UK, and Ireland.<br/>“I am passionate about creating a safe and supportive space for people to explore their inner world and find their own path to healing and growth.”',
-      button: { href: "/qigong", label: "Discover Qigong" },
-    },
-    {
-      name: "Kari Korkeamaki",
-      image: "/kari-hero.webp",
-      bio: 'Has played gong for 12 years and offered many gong baths in various formats—together with yoga, at festivals, individual sessions, with hypnosis, and outdoors in nature.<br/>Assisted with gong at Open Floor in Ireland and Sweden. Sees both gong and dance as beautiful ways to discover your inner world, free from inhibitions and to let in new, fresh life.',
-      button: { href: "/gongbath", label: "Discover Gong Bath" },
-    },
-];
+// This data will be replaced by dynamic content from translations
+export const practitioners = [];

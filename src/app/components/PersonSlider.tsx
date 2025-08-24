@@ -4,26 +4,69 @@ import { useState, useEffect } from "react";
 import Image from 'next/image';
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "./Button";
+import { getClientDictionary } from "@/i18n/client-dictionaries";
+import { type Locale } from "@/i18n/config";
 
 const MotionImage = motion(Image);
 
-import { practitioners } from '../data/home';
+interface PersonSliderProps {
+  locale: Locale;
+}
 
-const people = practitioners;
-
-export default function PersonSlider() {
+export default function PersonSlider({ locale }: PersonSliderProps) {
   const [idx, setIdx] = useState(0);
+  const [dict, setDict] = useState<any>(null);
+  const [people, setPeople] = useState<any[]>([]);
+  
   const gradients = [
     'bg-gradient-to-l from-green-100 via-white/80 to-transparent',
     'bg-gradient-to-l from-accent-purple/20 via-white/80 to-transparent'
   ];
 
   useEffect(() => {
+    const loadDictionary = async () => {
+      const dictionary = await getClientDictionary(locale);
+      setDict(dictionary);
+      
+      // Create people array from dictionary
+      const practitionersData = [
+        {
+          name: dictionary.practitioners.eileen.name,
+          image: "/eileen-hero.webp",
+          bio: dictionary.practitioners.eileen.bio,
+          button: { 
+            href: dictionary.practitioners.eileen.button_href, 
+            label: dictionary.practitioners.eileen.button_label 
+          },
+        },
+        {
+          name: dictionary.practitioners.kari.name,
+          image: "/kari-hero.webp",
+          bio: dictionary.practitioners.kari.bio,
+          button: { 
+            href: dictionary.practitioners.kari.button_href, 
+            label: dictionary.practitioners.kari.button_label 
+          },
+        },
+      ];
+      setPeople(practitionersData);
+    };
+    
+    loadDictionary();
+  }, [locale]);
+
+  useEffect(() => {
+    if (people.length === 0) return;
+    
     const timer = setTimeout(() => {
       setIdx((prevIdx) => (prevIdx + 1) % people.length);
     }, 5000);
     return () => clearTimeout(timer);
-  }, [idx]);
+  }, [idx, people.length]);
+
+  if (!dict || people.length === 0) {
+    return <div className="py-16 min-h-[480px] flex items-center justify-center">Loading...</div>;
+  }
 
   const person = people[idx];
 
