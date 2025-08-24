@@ -7,6 +7,18 @@ import { getClientDictionary } from "@/i18n/client-dictionaries";
 import { type Locale } from "@/i18n/config";
 import { useState, useEffect, use } from "react";
 
+interface Service {
+  title: string;
+  description: string;
+  href: string;
+}
+
+interface Testimonial {
+  text: string;
+  author: string;
+  img: string;
+}
+
 interface Dictionary {
   home: {
     title: string;
@@ -160,7 +172,7 @@ export default function HomePage({
         <div className="max-w-5xl mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-heading font-bold mb-10 text-center text-primary-dark">{dict.home.our_services}</h2>
           <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4 items-stretch mb-12">
-            {services.map((service: any, i: number) => (
+            {services.map((service: Service, i: number) => (
               <div
                 key={service.title}
                 className="flex flex-col h-full justify-between rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 items-center text-center border border-primary/10 hover:-translate-y-1 hover:scale-105 min-w-0 group relative overflow-hidden"
@@ -189,7 +201,7 @@ export default function HomePage({
             transition={{ repeat: Infinity, repeatType: 'loop', duration: 60, ease: 'linear' }}
             style={{ width: `${testimonials.length * 340 * 2}px` }}
           >
-            {[...testimonials, ...testimonials].map((t: any, i: number) => (
+            {[...testimonials, ...testimonials].map((t: Testimonial, i: number) => (
               <div
                 key={i}
                 className="flex-shrink-0 flex flex-col items-center justify-center w-[340px] max-w-full px-6"
