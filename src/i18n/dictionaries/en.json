@@ -92,5 +92,37 @@
     "hero_subtitle": "Awaken energy and creativity with mindful movement and dance meditation.",
     "quote": "Dance is the hidden language of the soul.",
     "quote_author": "Martha Graham"
+  },
+  "contact": {
+    "title": "Contact – Gong and Motion",
+    "description": "Write or call us for information and bookings. We are here for you!",
+    "hero_title": "Contact Us",
+    "hero_subtitle": "Write or call us for information and bookings. We are here for you!",
+    "email": "Email:",
+    "phone": "Phone/WhatsApp:",
+    "form_description": "Or fill out the form below for a quick response.",
+    "your_name": "Your Name",
+    "your_email": "Your Email",
+    "your_message": "Your Message",
+    "send": "Send"
+  },
+  "events": {
+    "title": "Events – Gong and Motion",
+    "description": "Discover and book our events: sound healing, Qigong workshops, massage, and mindful dance.",
+    "hero_title": "Upcoming Events",
+    "hero_subtitle": "Discover and book our events: sound healing, Qigong workshops, massage, and mindful dance for your holistic well-being.",
+    "date": "Date",
+    "event": "Event",
+    "location": "Location",
+    "action": "Action",
+    "sign_up": "Sign Up",
+    "join": "Join",
+    "book": "Book",
+    "contact_more_info": "Contact us for more info",
+    "events_list": {
+      "qigong_workshop": "Medical Qigong Workshop",
+      "gong_bath": "Evening Gong Bath",
+      "massage_intensive": "Biodynamic Massage Intensive"
+    }
   }
 }

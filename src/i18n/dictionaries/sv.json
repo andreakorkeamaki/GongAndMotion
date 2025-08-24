@@ -92,5 +92,37 @@
     "hero_subtitle": "Väck energi och kreativitet med medveten rörelse och dansmeditation.",
     "quote": "Dans är själens dolda språk.",
     "quote_author": "Martha Graham"
+  },
+  "contact": {
+    "title": "Kontakt – Gong and Motion",
+    "description": "Skriv eller ring oss för information och bokningar. Vi finns här för dig!",
+    "hero_title": "Kontakta oss",
+    "hero_subtitle": "Skriv eller ring oss för information och bokningar. Vi finns här för dig!",
+    "email": "E-post:",
+    "phone": "Telefon/WhatsApp:",
+    "form_description": "Eller fyll i formuläret nedan för ett snabbt svar.",
+    "your_name": "Ditt namn",
+    "your_email": "Din e-post",
+    "your_message": "Ditt meddelande",
+    "send": "Skicka"
+  },
+  "events": {
+    "title": "Evenemang – Gong and Motion",
+    "description": "Upptäck och boka våra evenemang: ljudhealing, Qigong-workshops, massage och medveten dans.",
+    "hero_title": "Kommande evenemang",
+    "hero_subtitle": "Upptäck och boka våra evenemang: ljudhealing, Qigong-workshops, massage och medveten dans för ditt holistiska välbefinnande.",
+    "date": "Datum",
+    "event": "Evenemang",
+    "location": "Plats",
+    "action": "Åtgärd",
+    "sign_up": "Anmäl dig",
+    "join": "Delta",
+    "book": "Boka",
+    "contact_more_info": "Kontakta oss för mer info",
+    "events_list": {
+      "qigong_workshop": "Medicinsk Qigong-workshop",
+      "gong_bath": "Kvällsgongbad",
+      "massage_intensive": "Biodynamisk massage-intensiv"
+    }
   }
 }
