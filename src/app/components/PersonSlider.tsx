@@ -9,14 +9,41 @@ import { type Locale } from "@/i18n/config";
 
 const MotionImage = motion(Image);
 
+interface Practitioner {
+  name: string;
+  image: string;
+  bio: string;
+  button: {
+    href: string;
+    label: string;
+  };
+}
+
+interface Dictionary {
+  practitioners: {
+    eileen: {
+      name: string;
+      bio: string;
+      button_label: string;
+      button_href: string;
+    };
+    kari: {
+      name: string;
+      bio: string;
+      button_label: string;
+      button_href: string;
+    };
+  };
+}
+
 interface PersonSliderProps {
   locale: Locale;
 }
 
 export default function PersonSlider({ locale }: PersonSliderProps) {
   const [idx, setIdx] = useState(0);
-  const [dict, setDict] = useState<any>(null);
-  const [people, setPeople] = useState<any[]>([]);
+  const [dict, setDict] = useState<Dictionary | null>(null);
+  const [people, setPeople] = useState<Practitioner[]>([]);
   
   const gradients = [
     'bg-gradient-to-l from-green-100 via-white/80 to-transparent',
