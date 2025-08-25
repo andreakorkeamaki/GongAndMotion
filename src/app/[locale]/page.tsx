@@ -22,7 +22,7 @@ interface Testimonial {
 interface Dictionary {
   home: {
     title: string;
-    description: string;
+    description: string; 
     hero_title: string;
     hero_subtitle: string;
     our_services: string;
@@ -58,26 +58,26 @@ interface Dictionary {
   };
 }
 
-const getServices = (dict: Dictionary) => [
+const getServices = (dict: Dictionary, locale: string) => [
   {
     title: dict.services.qigong,
     description: dict.services.qigong_description,
-    href: "/qigong",
+    href: `/${locale}/qigong`,
   },
   {
     title: dict.services.massage,
     description: dict.services.massage_description,
-    href: "/massage",
+    href: `/${locale}/massage`,
   },
   {
     title: dict.services.gongbath,
     description: dict.services.gongbath_description,
-    href: "/gongbath",
+    href: `/${locale}/gongbath`,
   },
   {
     title: dict.services.dancingmindfulness,
     description: dict.services.dancingmindfulness_description,
-    href: "/dancingmindfulness",
+    href: `/${locale}/dancingmindfulness`,
   },
 ];
 
@@ -125,7 +125,7 @@ export default function HomePage({
 
   if (!dict) return <div>Loading...</div>;
 
-  const services = getServices(dict);
+  const services = getServices(dict, resolvedParams.locale);
   const testimonials = getTestimonials(dict);
 
   return (
