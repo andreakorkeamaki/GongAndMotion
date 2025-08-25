@@ -193,13 +193,18 @@ export default function HomePage({
       </div>
       <section className="py-16 bg-gradient-to-b from-accent-purple/10 via-background to-green-50 px-2 sm:px-4">
         <h2 className="text-3xl font-heading font-bold text-center mb-12 text-primary-dark">{dict.common.testimonials}</h2>
-        {/* Testimonials scroller fixed */}
+        {/* Testimonials infinite scroller */}
         <div className="relative w-full overflow-x-hidden">
           <motion.div
             className="flex gap-8"
-            animate={{ x: [0, `-${testimonials.length * 340}px`] }}
-            transition={{ repeat: Infinity, repeatType: 'loop', duration: 60, ease: 'linear' }}
-            style={{ width: `${testimonials.length * 340 * 2}px` }}
+            animate={{ x: [`0px`, `-${testimonials.length * 348}px`] }}
+            transition={{ 
+              repeat: Infinity, 
+              repeatType: 'loop', 
+              duration: testimonials.length * 8, 
+              ease: 'linear' 
+            }}
+            style={{ width: `${testimonials.length * 348 * 2}px` }}
           >
             {[...testimonials, ...testimonials].map((t: Testimonial, i: number) => (
               <div

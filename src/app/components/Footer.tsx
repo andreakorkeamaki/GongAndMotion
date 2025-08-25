@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-primary-dark text-background py-8 mt-16">
       <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
         <div>
-          <span className="font-heading font-bold text-xl">Gong and Motion</span>
+          <span className="font-heading font-bold text-xl">Gong & Motion</span>
           <p className="text-sm mt-1">&copy; {new Date().getFullYear()} All rights reserved.</p>
         </div>
         <div className="flex flex-col md:items-end gap-2 text-sm">

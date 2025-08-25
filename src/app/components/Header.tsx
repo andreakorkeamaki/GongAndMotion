@@ -56,7 +56,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-background shadow-sm">
       <nav className="flex justify-between items-center max-w-5xl mx-auto px-4 py-3">
         <Link href={`/${currentLocale}`} className="text-2xl font-heading font-bold text-primary-dark tracking-tight">
-          Gong and Motion
+          Gong & Motion
         </Link>
         <div className="hidden md:flex items-center gap-4 xl:gap-6">
           <ul className="flex gap-4 xl:gap-6 text-primary-dark font-medium text-sm xl:text-base">

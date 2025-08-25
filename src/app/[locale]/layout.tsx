@@ -31,14 +31,14 @@ export async function generateMetadata({
       title: dict.home.title,
       description: dict.home.description,
       url: `/${resolvedParams.locale}`,
-      siteName: "Gong and Motion",
+      siteName: "Gong & Motion",
       type: "website",
       images: [
         {
           url: "/header-bg.jpg",
           width: 1200,
           height: 630,
-          alt: "Gong and Motion",
+          alt: "Gong & Motion",
         },
       ],
     },

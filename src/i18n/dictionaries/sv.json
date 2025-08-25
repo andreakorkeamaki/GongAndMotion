@@ -15,7 +15,7 @@
     "frequently_asked_questions": "Vanliga frågor"
   },
   "home": {
-    "title": "Gong and Motion – Återskapa din kropp och sinne",
+    "title": "Gong & Motion – Återskapa din kropp och sinne",
     "description": "Ljud, rörelse och holistisk healing för ditt välbefinnande. Upptäck våra unika evenemang och behandlingar i Sverige.",
     "hero_title": "Återskapa din kropp och sinne",
     "hero_subtitle": "Ljud, rörelse och holistisk healing för ditt välbefinnande. Upptäck våra unika evenemang och behandlingar i Sverige.",
@@ -38,7 +38,7 @@
     "dancingmindfulness_description": "Väck energi och kreativitet med medveten rörelse och dansmeditation."
   },
   "qigong": {
-    "title": "Qigong – Självläkningstekniker | Gong and Motion",
+    "title": "Qigong – Självläkningstekniker | Gong & Motion",
     "description": "Lär dig att odla hälsa, emotionell balans och andlig tillväxt med våra medicinska Qigong-workshops i Sverige.",
     "hero_title": "Medicinsk Qigong",
     "hero_subtitle": "Lär dig att odla hälsa, emotionell balans och andlig tillväxt med våra medicinska Qigong-workshops i Sverige.",
@@ -70,7 +70,7 @@
     }
   },
   "massage": {
-    "title": "Biodynamisk massage – Holistisk healing | Gong and Motion",
+    "title": "Biodynamisk massage – Holistisk healing | Gong & Motion",
     "description": "Upplev djup avslappning och healing med våra biodynamiska massagebehandlingar. Skräddarsydda sessioner för kropp och sinnes harmoni.",
     "hero_title": "Biodynamisk massage",
     "hero_subtitle": "Holistiska behandlingar anpassade efter dina behov. Kropp och sinne i harmoni för djup avslappning.",
@@ -78,7 +78,7 @@
     "quote_author": "Sakyong Mipham"
   },
   "gongbath": {
-    "title": "Gongbad – Ljudhealing | Gong and Motion",
+    "title": "Gongbad – Ljudhealing | Gong & Motion",
     "description": "Upplev transformativ ljudhealing med våra gongbad-sessioner. Djup avslappning och inre förnyelse genom ljudvibrationer.",
     "hero_title": "Gongbad",
     "hero_subtitle": "Uppslukande ljudresor för transformation och inre förnyelse. Grupp- och privatsessioner.",
@@ -86,7 +86,7 @@
     "quote_author": "Edgar Cayce"
   },
   "dancingmindfulness": {
-    "title": "Dancing Mindfulness – Rörelsemeditation | Gong and Motion",
+    "title": "Dancing Mindfulness – Rörelsemeditation | Gong & Motion",
     "description": "Väck din energi och kreativitet genom medveten rörelse och dansmeditation. Uttryck dig fritt genom medveten rörelse.",
     "hero_title": "Dancing Mindfulness",
     "hero_subtitle": "Väck energi och kreativitet med medveten rörelse och dansmeditation.",
@@ -94,7 +94,7 @@
     "quote_author": "Martha Graham"
   },
   "contact": {
-    "title": "Kontakt – Gong and Motion",
+    "title": "Kontakt – Gong & Motion",
     "description": "Skriv eller ring oss för information och bokningar. Vi finns här för dig!",
     "hero_title": "Kontakta oss",
     "hero_subtitle": "Skriv eller ring oss för information och bokningar. Vi finns här för dig!",
@@ -107,7 +107,7 @@
     "send": "Skicka"
   },
   "events": {
-    "title": "Evenemang – Gong and Motion",
+    "title": "Evenemang – Gong & Motion",
     "description": "Upptäck och boka våra evenemang: ljudhealing, Qigong-workshops, massage och medveten dans.",
     "hero_title": "Kommande evenemang",
     "hero_subtitle": "Upptäck och boka våra evenemang: ljudhealing, Qigong-workshops, massage och medveten dans för ditt holistiska välbefinnande.",
