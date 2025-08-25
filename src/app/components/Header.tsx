@@ -58,19 +58,27 @@ export default function Header() {
         <Link href={`/${currentLocale}`} className="text-2xl font-heading font-bold text-primary-dark tracking-tight">
           Gong and Motion
         </Link>
-        <div className="hidden md:flex items-center gap-6">
-          <ul className="flex gap-6 text-primary-dark font-semibold">
+        <div className="hidden lg:flex items-center gap-8">
+          <ul className="flex gap-8 text-primary-dark font-medium">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <Link href={getLocalizedHref(link.href)} className="hover:text-accent transition-colors">{link.label}</Link>
+                <Link 
+                  href={getLocalizedHref(link.href)} 
+                  className="hover:text-accent transition-colors duration-200 py-2 px-1 relative group"
+                >
+                  {link.label}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-200 group-hover:w-full"></span>
+                </Link>
               </li>
             ))}
           </ul>
-          <LanguageSwitcher />
+          <div className="ml-4 pl-4 border-l border-gray-200">
+            <LanguageSwitcher />
+          </div>
         </div>
         {/* Mobile menu hamburger */}
         <button
-          className="md:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none"
+          className="lg:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none"
           aria-label="Open menu"
           aria-expanded={open}
           aria-controls="mobile-menu"

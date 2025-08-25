@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -49,11 +51,18 @@ export async function generateMetadata({
   };
 }
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
   params: Promise<{ locale: Locale }>;
 }) {
-  return children;
+  return (
+    <>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
 }

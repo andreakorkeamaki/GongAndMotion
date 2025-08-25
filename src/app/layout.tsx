@@ -1,15 +1,15 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Nunito, Quicksand } from "next/font/google";
 import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const nunito = Nunito({ 
+  subsets: ["latin"],
+  variable: "--font-nunito",
+});
 
-export const metadata: Metadata = {
-  title: "Gong and Motion",
-  description: "Sound, movement, and holistic healing for your well-being",
-};
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  variable: "--font-quicksand",
+});
 
 export default function RootLayout({
   children,
@@ -17,11 +17,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+    <html suppressHydrationWarning={true}>
+      <body className={`${nunito.variable} ${quicksand.variable} font-sans`} suppressHydrationWarning={true}>
+        {children}
       </body>
     </html>
   );

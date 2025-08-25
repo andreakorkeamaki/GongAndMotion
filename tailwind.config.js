@@ -24,8 +24,8 @@ module.exports = {
         white: '#FFFFFF',
       },
       fontFamily: {
-        sans: ['Nunito', 'ui-sans-serif', 'system-ui'],
-        heading: ['Quicksand', 'Nunito', 'ui-sans-serif'],
+        sans: ['var(--font-nunito)', 'ui-sans-serif', 'system-ui'],
+        heading: ['var(--font-quicksand)', 'var(--font-nunito)', 'ui-sans-serif'],
       },
     },
   },
