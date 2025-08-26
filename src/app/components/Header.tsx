@@ -10,7 +10,7 @@ const navLinks = [
   { href: '/qigong', label: 'Qigong' },
   { href: '/massage', label: 'Massage' },
   { href: '/gongbath', label: 'Gong Bath' },
-  { href: '/dancingmindfulness', label: 'Dancing Mindfulness' },
+  { href: '/dancingmindfulness', label: 'Conscious Dance' },
   { href: '/events', label: 'Events' },
   { href: '/contact', label: 'Contact' },
 ];

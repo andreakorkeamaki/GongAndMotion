@@ -31,43 +31,62 @@
     "qigong": "Qigong",
     "massage": "Biodynamisk massage",
     "gongbath": "Gongbad",
-    "dancingmindfulness": "Dancing Mindfulness",
+    "dancingmindfulness": "Medveten Dans",
     "qigong_description": "Självläkning, energibalans och andlig tillväxt genom urgamla rörelse- och andningstekniker.",
     "massage_description": "Holistiska behandlingar anpassade efter dina behov. Kropp och sinne i harmoni för djup avslappning.",
     "gongbath_description": "Uppslukande ljudresor för transformation och inre förnyelse. Grupp- och privatsessioner.",
-    "dancingmindfulness_description": "Väck energi och kreativitet med medveten rörelse och dansmeditation."
+    "dancingmindfulness_description": "Väck energi och kreativitet med medveten rörelse och medveten dans."
   },
   "qigong": {
-    "title": "Qigong – Självläkningstekniker | Gong & Motion",
-    "description": "Lär dig att odla hälsa, emotionell balans och andlig tillväxt med våra medicinska Qigong-workshops i Sverige.",
-    "hero_title": "Medicinsk Qigong",
-    "hero_subtitle": "Lär dig att odla hälsa, emotionell balans och andlig tillväxt med våra medicinska Qigong-workshops i Sverige.",
-    "benefits": {
-      "self_healing": "Självläkning och prevention",
-      "immune_system": "Reglering av immunsystemet",
-      "emotional_harmony": "Emotionell harmoni och sinnesro",
-      "spiritual_growth": "Andlig tillväxt och universell öppenhet"
+    "title": "Qigong – Återanslutning genom rörelse | Gong & Motion",
+    "description": "En mild, meditativ praktik för att harmonisera kropp, sinne och ande. Delta i våra Qigong-workshops för självläkning och återanslutning.",
+    "hero_title": "Qigong – Återanslutning genom rörelse",
+    "hero_subtitle": "En mild, meditativ praktik för att harmonisera kropp, sinne och ande.",
+    "hero_cta": "Delta i nästa workshop →",
+    "what_is_qigong_title": "Vad är Qigong?",
+    "what_is_qigong_content": "I våra moderna liv tillbringar många av oss mycket tid i våra tankar, ofta känner vi oss frånkopplade från vårt djupare jag och från världen omkring oss. Qigong erbjuder en väg tillbaka—en väg till återanslutning. Denna milda, meditativa praktik har använts i tusentals år för att harmonisera kropp, sinne och ande.<br/><br/>Qigongs sanna ursprung sträcker sig långt tillbaka i det gamla Kina, bortom räckvidden för tydliga historiska register. Medan dokumenterade referenser går tillbaka omkring 2 500 år, har kinesiska historiker och arkeologer hittat bevis på liknande praktiker så långt tillbaka som 5 000 år sedan.<br/><br/>Över århundradena har Qigong varit känt under många namn. Ett av de tidigaste var Dao Yin, som betyder \"vägleda och leda energin.\" Termen Qigong själv kom inte i allmän användning förrän det tjugonde århundradet.<br/><br/>I sitt hjärta uppmuntrar Qigong oss att sakta ner, bli närvarande och återansluta—med oss själva, med andra och med naturen. Genom regelmässig praktik börjar vi röra oss i rytm med livet, odla en känsla av balans, medvetenhet och vitalitet. Mer än bara en övning är Qigong en levande tradition som stöder välbefinnande på alla nivåer.",
+    "workshop_title": "Qigong Workshop – 18+ år",
+    "workshop_intro": "Gå med oss på en avslappnad och välkomnande endagsworkshop där du lär dig den enkla men kraftfulla praktiken av Qigong för självläkning.",
+    "workshop_benefits": {
+      "one_to_one": "Få individuell undervisning",
+      "gentle_movements": "Lär dig milda, flytande rörelser som stöder hälsa och välbefinnande",
+      "stress_relief": "Upptäck hur Qigong kan lindra stress och främja inre lugn",
+      "guided_practice": "Upplev guidad praktik i en stödjande och interaktiv miljö",
+      "daily_tools": "Få praktiska verktyg att integrera i ditt dagliga liv"
     },
-    "next_workshop": "Nästa workshop:",
-    "workshop_date": "14 juni 2025 – Stockholm",
+    "workshop_note": "Qigong är lätt att lära och kan anpassas för alla förmågor—det kan praktiseras stående eller sittande. Oavsett om du är ny inom Qigong eller har viss erfarenhet, är du välkommen att delta!",
+    "upcoming_workshop_title": "Kommande Workshop",
+    "workshop_details": {
+      "where": "Var: Online (Zoom)",
+      "when": "När: 13 september, 10.00 – 17.00",
+      "cost": "Kostnad: €180 (inkluderar undervisning, skriftligt material, ljud och övningsklasser)"
+    },
+    "book_cta": "Boka din plats nu →",
+    "teacher_title": "Möt din lärare",
+    "teacher_bio": "Eileen Murray är en Qigong-instruktör med över 30 års erfarenhet inom mental hälsa. En certifierad släktlinjehållare av Essence Qigong, hon utbildar och certifierar också Qigong-lärare.<br/><br/>Med en bakgrund som sjuksköterska, psykoterapeut, Biodynamisk kroppsterapiterapeut och Medveten Rörelse-lärare, bidrar Eileen med en djup förståelse av kropp-sinne-kopplingen till sin undervisning. Hon har arbetat i Australien, Sverige, Storbritannien och Irland, och erbjuder en mängd erfarenhet inom hälsa och välbefinnande.",
+    "testimonials_title": "Vad deltagare säger",
+    "testimonials": {
+      "mary": "Online Qigong-workshopen var en mycket värdefull upplevelse. Eileen är en utmärkt lärare som levererar kursen på ett grundligt men avslappnande sätt. Hennes lugna undervisningsmetod gjorde det mycket trevligt, med gott om tid för praktik, diskussion och frågor. – Mary, Cork, Irland",
+      "joan": "Zoom-upplevelsen var mycket upplyftande. Den erbjud alla fördelar med personlig inlärning, med tydliga instruktioner, en varm och uppmuntrande miljö, och gott om tid för frågor. Jag praktiserar nu Qigong dagligen igen och är så tacksam för denna upplevelse. – Joan, Sligo, Irland (80 år gammal)"
+    },
+    "faq_title": "Vanliga frågor",
     "faq": {
-      "what_is_qigong": {
-        "question": "Vad är medicinsk Qigong?",
-        "answer": "Medicinsk Qigong är en urgammal kinesisk praktik som kombinerar rörelse, andning och intention för att främja hälsa, healing och andlig tillväxt. Den används för självläkning, prevention och som komplement till västerländsk medicin."
-      },
       "experience_needed": {
-        "question": "Behöver jag någon erfarenhet för att delta?",
-        "answer": "Ingen erfarenhet behövs. Våra workshops passar alla nivåer, inklusive nybörjare. Du kommer att guidas steg för steg."
+        "question": "Behöver jag tidigare erfarenhet?",
+        "answer": "Nej, Qigong är lätt att lära och lämplig för nybörjare såväl som mer erfarna utövare."
       },
-      "what_to_bring": {
-        "question": "Vad ska jag ta med till en Qigong-klass?",
-        "answer": "Bär bekväma kläder som låter dig röra dig fritt. Ta med en vattenflaska och ett öppet sinne!"
+      "limited_mobility": {
+        "question": "Kan jag praktisera om jag har begränsad rörlighet?",
+        "answer": "Ja, Qigong kan praktiseras antingen stående eller sittande, och rörelser kan anpassas till olika förmågor."
       },
-      "stress_anxiety": {
-        "question": "Kan Qigong hjälpa mot stress och ångest?",
-        "answer": "Ja! Qigong är känt för sina lugnande effekter på kropp och sinne. Många deltagare rapporterar minskad stress, förbättrad sömn och större emotionell balans."
+      "online_requirements": {
+        "question": "Vad behöver jag för online-workshopen?",
+        "answer": "Ett tyst utrymme, bekväma kläder och en stabil internetanslutning. En stol är också användbar om du föredrar att praktisera sittande."
       }
-    }
+    },
+    "closing_title": "Upptäck Qigong för dig själv",
+    "closing_text": "Kom och upplev Qigongs milda, transformativa kraft för dig själv. 🌿✨",
+    "contact_info": "Bokningar och information: eileenmurray100@gmail.com"
   },
   "massage": {
     "title": "Biodynamisk massage – Holistisk healing | Gong & Motion",
@@ -86,10 +105,10 @@
     "quote_author": "Edgar Cayce"
   },
   "dancingmindfulness": {
-    "title": "Dancing Mindfulness – Rörelsemeditation | Gong & Motion",
-    "description": "Väck din energi och kreativitet genom medveten rörelse och dansmeditation. Uttryck dig fritt genom medveten rörelse.",
-    "hero_title": "Dancing Mindfulness",
-    "hero_subtitle": "Väck energi och kreativitet med medveten rörelse och dansmeditation.",
+    "title": "Medveten Dans – Rörelsemeditation | Gong & Motion",
+    "description": "Väck din energi och kreativitet genom medveten rörelse och medveten dans. Uttryck dig fritt genom medveten rörelse.",
+    "hero_title": "Medveten Dans",
+    "hero_subtitle": "Väck energi och kreativitet med medveten rörelse och medveten dans.",
     "quote": "Dans är själens dolda språk.",
     "quote_author": "Martha Graham"
   },
@@ -128,7 +147,7 @@
   "practitioners": {
     "eileen": {
       "name": "Eileen Murray",
-      "bio": "Open Floor International Movement-lärare, för närvarande i utbildning på BISO – Dynamic Movement Facilitator Training (2 år).<br/>Biodynamisk massageterapeut, psykoterapeut och medicinsk qigong-lärare. 35 års erfarenhet i Australien, Sverige, Storbritannien och Irland.<br/>\"Jag brinner för att skapa en trygg och stödjande miljö för människor att utforska sin inre värld och hitta sin egen väg till läkning och tillväxt.\"",
+      "bio": "Eileen Murray är en Qigong-lärare, kroppspsykoterapeut och rörelsefacilitator med över 30 års erfarenhet inom mental hälsa och holistiskt välbefinnande. Hennes arbete blandar rörelse, stillhet och djup lyssning för att hjälpa människor att återansluta till sig själva—emotionellt, mentalt och fysiskt.",
       "button_label": "Upptäck Qigong",
       "button_href": "/qigong"
     },

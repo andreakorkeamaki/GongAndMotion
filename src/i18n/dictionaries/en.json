@@ -31,43 +31,62 @@
     "qigong": "Qigong",
     "massage": "Biodynamic Massage",
     "gongbath": "Gong Bath",
-    "dancingmindfulness": "Dancing Mindfulness",
+    "dancingmindfulness": "Conscious Dance",
     "qigong_description": "Self-healing, energy balance, and spiritual growth through ancient movement and breath techniques.",
     "massage_description": "Holistic treatments tailored to your needs. Mind and body in harmony for deep relaxation.",
     "gongbath_description": "Immersive sound journeys for transformation and inner renewal. Group and private sessions.",
-    "dancingmindfulness_description": "Awaken energy and creativity with mindful movement and dance meditation."
+    "dancingmindfulness_description": "Awaken energy and creativity with mindful movement and conscious dance."
   },
   "qigong": {
-    "title": "Qigong – Self-healing Techniques | Gong & Motion",
-    "description": "Learn to cultivate health, emotional balance, and spiritual growth with our medical Qigong workshops in Sweden.",
-    "hero_title": "Medical Qigong",
-    "hero_subtitle": "Learn to cultivate health, emotional balance, and spiritual growth with our medical Qigong workshops in Sweden.",
-    "benefits": {
-      "self_healing": "Self-healing and prevention",
-      "immune_system": "Immune system regulation",
-      "emotional_harmony": "Emotional harmony and peace of mind",
-      "spiritual_growth": "Spiritual growth and universal openness"
+    "title": "Qigong – Reconnection Through Movement | Gong & Motion",
+    "description": "A gentle, meditative practice to harmonise body, mind, and spirit. Join our Qigong workshops for self-healing and reconnection.",
+    "hero_title": "Qigong – Reconnection Through Movement",
+    "hero_subtitle": "A gentle, meditative practice to harmonise body, mind, and spirit.",
+    "hero_cta": "Join the next workshop →",
+    "what_is_qigong_title": "What is Qigong?",
+    "what_is_qigong_content": "In our modern lives, many of us spend much of our time in our thoughts, often feeling disconnected from our deeper selves and from the world around us. Qigong offers a way back—a path to reconnection. This gentle, meditative practice has been used for thousands of years to harmonise body, mind, and spirit.<br/><br/>Qigong's true origins stretch far back into ancient China, beyond the reach of clear historical records. While documented references date back around 2,500 years, Chinese historians and archaeologists have found evidence of similar practices as far back as 5,000 years ago.<br/><br/>Over the centuries, Qigong has been known by many names. One of the earliest was Dao Yin, meaning \"guiding and leading the energy.\" The term Qigong itself did not come into common use until the twentieth century.<br/><br/>At its heart, Qigong encourages us to slow down, become present, and reconnect—with ourselves, with others, and with nature. Through regular practice, we begin to move in rhythm with life, cultivating a sense of balance, awareness, and vitality. More than just an exercise, Qigong is a living tradition that supports well-being on every level.",
+    "workshop_title": "Qigong Workshop – Ages 18+",
+    "workshop_intro": "Join us for a relaxed and welcoming one-day workshop where you'll learn the simple yet powerful practice of Qigong for self-healing.",
+    "workshop_benefits": {
+      "one_to_one": "Receive one-to-one teaching",
+      "gentle_movements": "Learn gentle, flowing movements that support health and well-being",
+      "stress_relief": "Discover how Qigong can ease stress and promote inner calm",
+      "guided_practice": "Experience guided practice in a supportive and interactive space",
+      "daily_tools": "Gain practical tools to integrate into your daily life"
     },
-    "next_workshop": "Next workshop:",
-    "workshop_date": "June 14, 2025 – Stockholm",
+    "workshop_note": "Qigong is easy to learn and can be adapted for all abilities—it can be practiced standing or sitting. Whether you're new to Qigong or have some experience, you are welcome to join!",
+    "upcoming_workshop_title": "Upcoming Workshop",
+    "workshop_details": {
+      "where": "Where: Online (Zoom)",
+      "when": "When: 13 September, 10.00 – 17.00",
+      "cost": "Cost: €180 (includes tuition, written materials, audio and practice classes)"
+    },
+    "book_cta": "Book your place now →",
+    "teacher_title": "Meet Your Teacher",
+    "teacher_bio": "Eileen Murray is a Qigong Instructor with over 30 years of experience in mental health. A certified lineage holder of Essence Qigong, she also trains and certifies Qigong teachers.<br/><br/>With a background as a nurse, psychotherapist, Biodynamic bodywork therapist, and Conscious Movement Teacher, Eileen brings a deep understanding of mind-body connection to her teaching. She has worked in Australia, Sweden, the UK, and Ireland, offering a wealth of experience in health and well-being.",
+    "testimonials_title": "What Participants Say",
+    "testimonials": {
+      "mary": "The online Qigong workshop was a very worthwhile experience. Eileen is an excellent teacher, delivering the course in a thorough yet relaxing way. Her calm teaching method made it very enjoyable, with ample time for practice, discussion, and questions. – Mary, Cork, Ireland",
+      "joan": "The Zoom experience was very uplifting. It offered all the benefits of in-person learning, with clear instructions, a warm and encouraging environment, and ample time for queries. I am now practicing Qigong daily again and so grateful for this experience. – Joan, Sligo, Ireland (80 years old)"
+    },
+    "faq_title": "Frequently Asked Questions",
     "faq": {
-      "what_is_qigong": {
-        "question": "What is Medical Qigong?",
-        "answer": "Medical Qigong is an ancient Chinese practice that combines movement, breath, and intention to promote health, healing, and spiritual growth. It is used for self-healing, prevention, and as a complement to Western medicine."
-      },
       "experience_needed": {
-        "question": "Do I need any experience to join?",
-        "answer": "No experience is needed. Our workshops are suitable for all levels, including complete beginners. You will be guided step by step."
+        "question": "Do I need previous experience?",
+        "answer": "No, Qigong is easy to learn and suitable for beginners as well as more experienced practitioners."
       },
-      "what_to_bring": {
-        "question": "What should I bring to a Qigong class?",
-        "answer": "Wear comfortable clothes that allow you to move freely. Bring a water bottle and an open mind!"
+      "limited_mobility": {
+        "question": "Can I practice if I have limited mobility?",
+        "answer": "Yes, Qigong can be practiced either standing or sitting, and movements can be adapted to different abilities."
       },
-      "stress_anxiety": {
-        "question": "Can Qigong help with stress and anxiety?",
-        "answer": "Yes! Qigong is known for its calming effects on the mind and body. Many participants report reduced stress, improved sleep, and greater emotional balance."
+      "online_requirements": {
+        "question": "What do I need for the online workshop?",
+        "answer": "A quiet space, comfortable clothing, and a stable internet connection. A chair is also useful if you prefer to practice seated."
       }
-    }
+    },
+    "closing_title": "Discover Qigong for Yourself",
+    "closing_text": "Come along and experience the gentle, transformative power of Qigong for yourself. 🌿✨",
+    "contact_info": "Bookings and information: eileenmurray100@gmail.com"
   },
   "massage": {
     "title": "Biodynamic Massage – Holistic Healing | Gong & Motion",
@@ -86,10 +105,10 @@
     "quote_author": "Edgar Cayce"
   },
   "dancingmindfulness": {
-    "title": "Dancing Mindfulness – Movement Meditation | Gong & Motion",
-    "description": "Awaken your energy and creativity through mindful movement and dance meditation. Express yourself freely through conscious movement.",
-    "hero_title": "Dancing Mindfulness",
-    "hero_subtitle": "Awaken energy and creativity with mindful movement and dance meditation.",
+    "title": "Conscious Dance – Movement Meditation | Gong & Motion",
+    "description": "Awaken your energy and creativity through mindful movement and conscious dance. Express yourself freely through conscious movement.",
+    "hero_title": "Conscious Dance",
+    "hero_subtitle": "Awaken energy and creativity with mindful movement and conscious dance.",
     "quote": "Dance is the hidden language of the soul.",
     "quote_author": "Martha Graham"
   },
@@ -128,7 +147,7 @@
   "practitioners": {
     "eileen": {
       "name": "Eileen Murray",
-      "bio": "Open Floor International Movement teacher, currently in training at BISO – Dynamic Movement Facilitator Training (2 years).<br/>Biodynamic massage therapist, psychotherapist, and medical qigong teacher. 35 years of experience in Australia, Sweden, the UK, and Ireland.<br/>\"I am passionate about creating a safe and supportive space for people to explore their inner world and find their own path to healing and growth.\"",
+      "bio": "Eileen Murray is a Qigong teacher, body psychotherapist, and movement facilitator with over 30 years of experience in mental health and holistic well-being. Her work blends movement, stillness, and deep listening to help people reconnect with themselves—emotionally, mentally, and physically.",
       "button_label": "Discover Qigong",
       "button_href": "/qigong"
     },

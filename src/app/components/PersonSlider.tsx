@@ -113,7 +113,7 @@ export default function PersonSlider({ locale }: PersonSliderProps) {
       </div>
       <div className="max-w-5xl mx-auto w-full flex flex-col-reverse md:flex-row items-center px-4 relative z-10">
         <div className="relative w-full md:w-[48%] max-w-lg md:ml-8 bg-white/80 rounded-2xl p-6 shadow-lg">
-          <div className="flex flex-col h-[320px] md:h-[360px]">
+          <div className="flex flex-col min-h-[280px]">
             <AnimatePresence mode="wait">
               <motion.div
                 key={person.name + '-content'}
@@ -126,7 +126,7 @@ export default function PersonSlider({ locale }: PersonSliderProps) {
                 <h2 className="text-3xl font-heading font-bold mb-4 text-primary-dark">
                   {person.name}
                 </h2>
-                <div className="mb-6 text-primary-dark/80 text-base flex-grow overflow-y-auto" dangerouslySetInnerHTML={{ __html: person.bio }} />
+                <div className="mb-6 text-primary-dark/80 text-base flex-grow" dangerouslySetInnerHTML={{ __html: person.bio }} />
                 <div className="mt-auto">
                   <Button href={person.button.href} variant="primary">{person.button.label}</Button>
                 </div>
