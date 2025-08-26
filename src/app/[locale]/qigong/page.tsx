@@ -108,10 +108,10 @@ export default function Qigong({
           <h2 className="text-3xl font-heading font-bold mb-12 text-primary-dark text-center">{dict.qigong.testimonials_title}</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-green-50 to-accent-purple/10 rounded-2xl p-6 border border-accent-purple/10">
-              <p className="text-primary-dark/80 italic mb-4">"{dict.qigong.testimonials.mary}"</p>
+              <p className="text-primary-dark/80 italic mb-4">&ldquo;{dict.qigong.testimonials.mary}&rdquo;</p>
             </div>
             <div className="bg-gradient-to-br from-accent-purple/10 to-green-50 rounded-2xl p-6 border border-accent-purple/10">
-              <p className="text-primary-dark/80 italic mb-4">"{dict.qigong.testimonials.joan}"</p>
+              <p className="text-primary-dark/80 italic mb-4">&ldquo;{dict.qigong.testimonials.joan}&rdquo;</p>
             </div>
           </div>
         </div>
