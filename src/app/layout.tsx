@@ -1,5 +1,6 @@
 import { Nunito, Quicksand } from "next/font/google";
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 
 const nunito = Nunito({ 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={`${nunito.variable} ${quicksand.variable} font-sans`} suppressHydrationWarning={true}>
         {children}
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
