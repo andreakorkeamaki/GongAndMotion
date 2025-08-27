@@ -89,12 +89,42 @@
     "contact_info": "Bookings and information: eileenmurray100@gmail.com"
   },
   "massage": {
-    "title": "Biodynamic Massage – Holistic Healing | Gong & Motion",
-    "description": "Experience deep relaxation and healing with our biodynamic massage treatments. Tailored sessions for mind and body harmony.",
-    "hero_title": "Biodynamic Massage",
-    "hero_subtitle": "Holistic treatments tailored to your needs. Mind and body in harmony for deep relaxation.",
-    "quote": "The body benefits from movement, and the mind benefits from stillness.",
-    "quote_author": "Sakyong Mipham"
+    "title": "Biodynamic Massage – Healing Through Deep Listening | Gong & Motion",
+    "description": "A gentle body-oriented psychotherapy that harmonises body, mind, and emotions through deep listening and therapeutic touch.",
+    "hero_title": "Biodynamic Massage – Healing Through Deep Listening",
+    "hero_subtitle": "A gentle body-oriented psychotherapy that harmonises body, mind, and emotions.",
+    "hero_cta": "Book a session →",
+    "what_is_title": "What is Biodynamic Massage?",
+    "what_is_content": "Biodynamic massage is a therapeutic approach that listens to the body's inner language. During treatment, the therapist uses a stethoscope to follow the intestines' activity — showing how the body processes and releases stress.<br/><br/>Developed by Gerda Boyesen, a pioneer of modern body-oriented psychotherapy, this method recognises that unresolved emotions can remain in the body and block the natural flow of life energy. Through biodynamic massage and psychotherapy, these blockages can be released, allowing more vitality, calm, and balance.",
+    "benefits_title": "Benefits of Biodynamic Massage",
+    "benefits_intro": "Biodynamic massage is used both as a healing practice and a form of gentle psychotherapy. It can support:",
+    "benefits": {
+      "pain_relief": "Relief from pain and back problems",
+      "stress_reduction": "Reduction of stress, anxiety, and tension",
+      "depression_support": "Support with depression or burnout",
+      "life_transitions": "Guidance during crisis, life transitions, and change"
+    },
+    "benefits_conclusion": "By integrating experiences and emotions, what once felt like a burden can instead become a source of strength and resilience.",
+    "about_eileen_title": "About Eileen Murray",
+    "about_eileen_content": "Eileen Murray is a specialised massage therapist and body psychotherapist with over 25 years of experience, and a background in psychiatric nursing since 1980.<br/><br/>She holds a postgraduate qualification in Biodynamic Psychotherapy from the Institute of Biodynamic Medicine. In addition, Eileen is a Medical Qigong teacher and lineage holder, Conscious Dance teacher, and Therapy in Motion practitioner.<br/><br/>She offers individual therapy (live and online), as well as classes and workshops that integrate movement, stillness, and deep listening for holistic healing and transformation.",
+    "faq_title": "FAQ",
+    "faq": {
+      "difference": {
+        "question": "Is biodynamic massage the same as a regular massage?",
+        "answer": "No. Biodynamic massage is a form of body psychotherapy. It works not only on muscles and tissues, but also on the emotions and stress stored in the body."
+      },
+      "who_benefits": {
+        "question": "Who can benefit from biodynamic massage?",
+        "answer": "It is suitable for anyone experiencing stress, anxiety, tension, depression, physical pain, or those going through life transitions."
+      },
+      "online_sessions": {
+        "question": "Can sessions be done online?",
+        "answer": "Yes. While the hands-on massage is in person, biodynamic psychotherapy sessions can also be offered online."
+      }
+    },
+    "closing_title": "Transform Stress into Strength",
+    "closing_text": "Discover how biodynamic massage and psychotherapy can transform stress into strength and restore emotional balance. 🌿",
+    "contact_cta": "Book a session: eileenmurray100@gmail.com"
   },
   "gongbath": {
     "title": "Gong Bath – Sound Healing | Gong & Motion",

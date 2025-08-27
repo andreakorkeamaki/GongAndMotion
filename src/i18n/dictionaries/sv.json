@@ -89,12 +89,42 @@
     "contact_info": "Bokningar och information: eileenmurray100@gmail.com"
   },
   "massage": {
-    "title": "Biodynamisk massage – Holistisk healing | Gong & Motion",
-    "description": "Upplev djup avslappning och healing med våra biodynamiska massagebehandlingar. Skräddarsydda sessioner för kropp och sinnes harmoni.",
-    "hero_title": "Biodynamisk massage",
-    "hero_subtitle": "Holistiska behandlingar anpassade efter dina behov. Kropp och sinne i harmoni för djup avslappning.",
-    "quote": "Kroppen drar nytta av rörelse, och sinnet drar nytta av stillhet.",
-    "quote_author": "Sakyong Mipham"
+    "title": "Biodynamisk Massage – Healing genom djup lyssning | Gong & Motion",
+    "description": "En mild kroppsorienterad psykoterapi som harmoniserar kropp, sinne och känslor genom djup lyssning och terapeutisk beröring.",
+    "hero_title": "Biodynamisk Massage – Healing genom djup lyssning",
+    "hero_subtitle": "En mild kroppsorienterad psykoterapi som harmoniserar kropp, sinne och känslor.",
+    "hero_cta": "Boka en session →",
+    "what_is_title": "Vad är Biodynamisk Massage?",
+    "what_is_content": "Biodynamisk massage är ett terapeutiskt tillvägagångssätt som lyssnar till kroppens inre språk. Under behandlingen använder terapeuten ett stetoskop för att följa tarmaktiviteten — vilket visar hur kroppen bearbetar och släpper stress.<br/><br/>Utvecklad av Gerda Boyesen, en pionjär inom modern kroppsorienterad psykoterapi, erkänner denna metod att olösta känslor kan finnas kvar i kroppen och blockera det naturliga flödet av livsenergi. Genom biodynamisk massage och psykoterapi kan dessa blockeringar släppas, vilket möjliggör mer vitalitet, lugn och balans.",
+    "benefits_title": "Fördelar med Biodynamisk Massage",
+    "benefits_intro": "Biodynamisk massage används både som en healingpraktik och en form av mild psykoterapi. Den kan stödja:",
+    "benefits": {
+      "pain_relief": "Lindring av smärta och ryggproblem",
+      "stress_reduction": "Minskning av stress, ångest och spänning",
+      "depression_support": "Stöd vid depression eller utbrändhet",
+      "life_transitions": "Vägledning under kriser, livsövergångar och förändringar"
+    },
+    "benefits_conclusion": "Genom att integrera upplevelser och känslor kan det som en gång kändes som en börda istället bli en källa till styrka och motståndskraft.",
+    "about_eileen_title": "Om Eileen Murray",
+    "about_eileen_content": "Eileen Murray är en specialiserad massageterapeut och kroppspsykoterapeut med över 25 års erfarenhet och en bakgrund inom psykiatrisk omvårdnad sedan 1980.<br/><br/>Hon har en påbyggnadsutbildning i Biodynamisk Psykoterapi från Institute of Biodynamic Medicine. Dessutom är Eileen en Medicinsk Qigong-lärare och släktlinjehållare, Medveten Dans-lärare och Therapy in Motion-utövare.<br/><br/>Hon erbjuder individuell terapi (live och online), samt klasser och workshops som integrerar rörelse, stillhet och djup lyssning för holistisk healing och transformation.",
+    "faq_title": "FAQ",
+    "faq": {
+      "difference": {
+        "question": "Är biodynamisk massage samma sak som vanlig massage?",
+        "answer": "Nej. Biodynamisk massage är en form av kroppspsykoterapi. Den arbetar inte bara på muskler och vävnader, utan också på känslorna och stressen som lagras i kroppen."
+      },
+      "who_benefits": {
+        "question": "Vem kan ha nytta av biodynamisk massage?",
+        "answer": "Den är lämplig för alla som upplever stress, ångest, spänning, depression, fysisk smärta, eller de som går igenom livsövergångar."
+      },
+      "online_sessions": {
+        "question": "Kan sessioner göras online?",
+        "answer": "Ja. Medan den praktiska massagen sker personligen, kan biodynamiska psykoterapisessioner också erbjudas online."
+      }
+    },
+    "closing_title": "Förvandla stress till styrka",
+    "closing_text": "Upptäck hur biodynamisk massage och psykoterapi kan förvandla stress till styrka och återställa emotionell balans. 🌿",
+    "contact_cta": "Boka en session: eileenmurray100@gmail.com"
   },
   "gongbath": {
     "title": "Gongbad – Ljudhealing | Gong & Motion",
