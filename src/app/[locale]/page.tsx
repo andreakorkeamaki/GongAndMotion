@@ -32,6 +32,10 @@ interface Dictionary {
     testimonial_2_author: string;
     testimonial_3: string;
     testimonial_3_author: string;
+    testimonial_4: string;
+    testimonial_4_author: string;
+    testimonial_5: string;
+    testimonial_5_author: string;
   };
   common: {
     home: string;
@@ -113,6 +117,16 @@ export default function HomePage({
       text: dict.home.testimonial_3,
       author: dict.home.testimonial_3_author,
     },
+    {
+      img: "/dancingmindfulness-servizio.webp",
+      text: dict.home.testimonial_4,
+      author: dict.home.testimonial_4_author,
+    },
+    {
+      img: "/massage-servizio.webp",
+      text: dict.home.testimonial_5,
+      author: dict.home.testimonial_5_author,
+    },
   ];
 
   useEffect(() => {
@@ -191,29 +205,41 @@ export default function HomePage({
       <div className="w-full flex justify-center">
         <div className="h-1 w-24 rounded-full bg-primary/50 mb-12"></div>
       </div>
-      <section className="py-16 bg-gradient-to-b from-accent-purple/10 via-background to-green-50 px-2 sm:px-4">
+      <section className="py-16 bg-gradient-to-b from-accent-purple/10 to-background px-2 sm:px-4 -mb-12">
         <h2 className="text-3xl font-heading font-bold text-center mb-12 text-primary-dark">{dict.common.testimonials}</h2>
         {/* Testimonials infinite scroller */}
-        <div className="relative w-full overflow-x-hidden">
+        <div className="relative w-full overflow-hidden pb-8">
           <motion.div
             className="flex gap-8"
-            animate={{ x: [`0px`, `-${testimonials.length * 348}px`] }}
+            animate={{ x: [0, -testimonials.length * 380] }}
             transition={{ 
               repeat: Infinity, 
               repeatType: 'loop', 
-              duration: testimonials.length * 8, 
+              duration: testimonials.length * 10, 
               ease: 'linear' 
             }}
-            style={{ width: `${testimonials.length * 348 * 2}px` }}
+            style={{ width: `${testimonials.length * 380 * 2}px` }}
           >
             {[...testimonials, ...testimonials].map((t: Testimonial, i: number) => (
               <div
                 key={i}
-                className="flex-shrink-0 flex flex-col items-center justify-center w-[340px] max-w-full px-6"
+                className="flex-shrink-0 flex flex-col items-center justify-center w-[360px] max-w-full px-6"
               >
-                <Image src={t.img} alt={t.author} width={56} height={56} className="w-14 h-14 rounded-full object-cover mb-4 border-2 border-accent-purple/40 shadow" />
-                <p className="italic text-primary-dark/90 text-base sm:text-lg text-center mb-4">&ldquo;{t.text}&rdquo;</p>
-                <span className="block text-accent-purple font-semibold text-base text-center">{t.author}</span>
+                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg flex flex-col items-center text-center h-full border border-white/20">
+                  <Image 
+                    src={t.img} 
+                    alt={t.author} 
+                    width={56} 
+                    height={56} 
+                    className="w-14 h-14 rounded-full object-cover mb-4 border-2 border-accent-purple/40 shadow" 
+                  />
+                  <p className="italic text-primary-dark/90 text-base sm:text-lg text-center mb-4 flex-1">
+                    &ldquo;{t.text}&rdquo;
+                  </p>
+                  <span className="block text-accent-purple font-semibold text-base text-center">
+                    {t.author}
+                  </span>
+                </div>
               </div>
             ))}
           </motion.div>
