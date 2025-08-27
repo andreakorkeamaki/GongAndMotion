@@ -135,12 +135,44 @@
     "quote_author": "Edgar Cayce"
   },
   "dancingmindfulness": {
-    "title": "Medveten Dans – Rörelsemeditation | Gong & Motion",
-    "description": "Väck din energi och kreativitet genom medveten rörelse och medveten dans. Uttryck dig fritt genom medveten rörelse.",
-    "hero_title": "Medveten Dans",
-    "hero_subtitle": "Väck energi och kreativitet med medveten rörelse och medveten dans.",
-    "quote": "Dans är själens dolda språk.",
-    "quote_author": "Martha Graham"
+    "title": "Medveten Dans – Mindfulness i rörelse | Gong & Motion",
+    "description": "En praktik av medveten rörelse för självupptäckt, kontakt och healing genom fri rörelse och terapeutisk dans.",
+    "hero_title": "Medveten Dans – Mindfulness i rörelse",
+    "hero_subtitle": "En praktik av medveten rörelse för självupptäckt, kontakt och healing.",
+    "hero_cta": "Delta i en klass →",
+    "what_is_title": "Vad är Medveten Dans?",
+    "what_is_content": "Medveten Dans är ett utrymme där mindfulness och fri rörelse möts. Det är en utforskning av kropp, sinne och ande som stöder självupptäckt, emotionell healing och personlig tillväxt.<br/><br/>Till skillnad från strukturerad dans finns det inga steg att följa — bara en inbjudan att röra sig fritt, återansluta till dig själv och uppleva rörelsens terapeutiska kraft.",
+    "benefits_title": "Fördelar med Medveten Dans",
+    "benefits_intro": "7 sätt som medveten dans kan stödja dig:",
+    "benefits": {
+      "mind_holiday": "En semester för sinnet. Fri rörelse ger det överaktiva sinnet en välbehövlig vila när vi sjunker ner i kroppen.",
+      "overcome_blockages": "Övervinna blockeringar. Hjälper till att släppa mentala hinder och öppnar nya vägar för kreativitet och motståndskraft.",
+      "confidence": "Självförtroende. Förbättrar självbild och självkänsla, samtidigt som det ökar den övergripande närvaron.",
+      "feel_good_hormones": "Må-bra-hormoner. Dans ökar neuroplasticitet, frisätter endorfiner och minskar till och med risken för demens med 76% (Albert Einstein College of Medicine, New York).",
+      "emotional_strength": "Emotionell styrka. Dans erbjuder ett terapeutiskt sätt att bearbeta stress, depression och känslor utan att behöva prata — skapar frihet fysiskt och emotionellt.",
+      "connection": "Kontakt. Att röra sig med andra genererar glädje, tillhörighet och hopp.",
+      "spiritual_creativity": "Andlig kontakt & kreativitet. Medveten dans väcker naturlig kreativitet och inre kraft, möjliggör tillgång till djupare medvetenhetstillstånd och insikt."
+    },
+    "about_eileen_title": "Om Eileen Murray",
+    "about_eileen_content": "Eileen Murray har ägnat sitt liv åt att stödja andra på deras resa mot psykologiskt välbefinnande.<br/><br/>Hennes professionella väg började 1980 som psykiatrisk sjuksköterska, och för över 30 år sedan utbildade hon sig till kroppspsykoterapeut. Några år senare förändrade hennes första medvetna rörelseklass djupt hennes väg och tände en livslång hängivenhet för rörelse som terapi.<br/><br/>Eileen har genomfört omfattande utbildning med:<br/>• Open Floor International (openfloor.org)<br/>• Body in Soul Movement (bodyinsoul.be)<br/><br/>Hon är också en certifierad Open Floor Therapy in Motion-utövare.<br/><br/>Genom individuella sessioner, klasser och workshops skapar Eileen ett utrymme där rörelse, stillhet och djup lyssning kommer samman. Hennes tillvägagångssätt är medkännande, stadigt och rotat i decennier av erfarenhet.",
+    "faq_title": "FAQ",
+    "faq": {
+      "experience_needed": {
+        "question": "Behöver jag danserfarenhet?",
+        "answer": "Nej. Medveten dans är öppen för alla — det finns inga steg att lära sig, bara rörelse och närvaro."
+      },
+      "what_needed": {
+        "question": "Vad behöver jag för en session?",
+        "answer": "Bekväma kläder, ett öppet sinne och en vilja att röra sig i din egen takt."
+      },
+      "what_to_expect": {
+        "question": "Vad kan jag förvänta mig av en klass?",
+        "answer": "Ett stödjande utrymme med musik och guidade inbjudningar, där du är fri att utforska rörelse, kreativitet och kontakt."
+      }
+    },
+    "closing_title": "Upptäck frihet och healing",
+    "closing_text": "Upptäck friheten och healingen i Medveten Dans. 🌿",
+    "contact_cta": "Delta i en klass: eileenmurray100@gmail.com"
   },
   "contact": {
     "title": "Kontakt – Gong & Motion",

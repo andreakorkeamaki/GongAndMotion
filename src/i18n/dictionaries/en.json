@@ -135,12 +135,44 @@
     "quote_author": "Edgar Cayce"
   },
   "dancingmindfulness": {
-    "title": "Conscious Dance – Movement Meditation | Gong & Motion",
-    "description": "Awaken your energy and creativity through mindful movement and conscious dance. Express yourself freely through conscious movement.",
-    "hero_title": "Conscious Dance",
-    "hero_subtitle": "Awaken energy and creativity with mindful movement and conscious dance.",
-    "quote": "Dance is the hidden language of the soul.",
-    "quote_author": "Martha Graham"
+    "title": "Conscious Dance – Mindfulness in Motion | Gong & Motion",
+    "description": "A practice of mindful movement for self-discovery, connection, and healing through free movement and therapeutic dance.",
+    "hero_title": "Conscious Dance – Mindfulness in Motion",
+    "hero_subtitle": "A practice of mindful movement for self-discovery, connection, and healing.",
+    "hero_cta": "Join a class →",
+    "what_is_title": "What is Conscious Dance?",
+    "what_is_content": "Conscious Dance is a space where mindfulness and free movement meet. It is an exploration of body, mind, and spirit that supports self-discovery, emotional healing, and personal growth.<br/><br/>Unlike structured dance, there are no steps to follow — only an invitation to move freely, reconnect with yourself, and experience the therapeutic power of movement.",
+    "benefits_title": "Benefits of Conscious Dance",
+    "benefits_intro": "7 ways conscious dance can support you:",
+    "benefits": {
+      "mind_holiday": "A holiday for the mind. Free movement gives the overactive mind a much-needed rest as we drop into the body.",
+      "overcome_blockages": "Overcoming blockages. Helps release mental obstacles and opens new pathways for creativity and resilience.",
+      "confidence": "Confidence. Improves self-image and self-esteem, while boosting overall presence.",
+      "feel_good_hormones": "Feel-good hormones. Dancing increases neuroplasticity, releases endorphins, and even reduces the risk of dementia by 76% (Albert Einstein College of Medicine, New York).",
+      "emotional_strength": "Emotional strength. Dance offers a therapeutic way to process stress, depression, and emotions without needing to talk — creating freedom physically and emotionally.",
+      "connection": "Connection. Moving with others generates joy, belonging, and hope.",
+      "spiritual_creativity": "Spiritual connection & creativity. Conscious dance awakens natural creativity and inner power, allowing access to deeper states of awareness and insight."
+    },
+    "about_eileen_title": "About Eileen Murray",
+    "about_eileen_content": "Eileen Murray has dedicated her life to supporting others on their journey to psychological well-being.<br/><br/>Her professional path began in 1980 as a psychiatric nurse, and over 30 years ago she trained as a body psychotherapist. A few years later, her first conscious movement class profoundly shifted her path, igniting a lifelong dedication to movement as therapy.<br/><br/>Eileen has completed extensive training with:<br/>• Open Floor International (openfloor.org)<br/>• Body in Soul Movement (bodyinsoul.be)<br/><br/>She is also a certified Open Floor Therapy in Motion practitioner.<br/><br/>Through one-to-one sessions, classes, and workshops, Eileen creates a space where movement, stillness, and deep listening come together. Her approach is compassionate, steady, and rooted in decades of experience.",
+    "faq_title": "FAQ",
+    "faq": {
+      "experience_needed": {
+        "question": "Do I need dance experience?",
+        "answer": "No. Conscious dance is open to everyone — there are no steps to learn, only movement and presence."
+      },
+      "what_needed": {
+        "question": "What do I need for a session?",
+        "answer": "Comfortable clothing, an open mind, and a willingness to move at your own pace."
+      },
+      "what_to_expect": {
+        "question": "What can I expect from a class?",
+        "answer": "A supportive space with music and guided invitations, where you are free to explore movement, creativity, and connection."
+      }
+    },
+    "closing_title": "Discover Freedom and Healing",
+    "closing_text": "Discover the freedom and healing of Conscious Dance. 🌿",
+    "contact_cta": "Join a class: eileenmurray100@gmail.com"
   },
   "contact": {
     "title": "Contact – Gong & Motion",
