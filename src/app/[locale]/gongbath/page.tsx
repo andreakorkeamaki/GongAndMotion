@@ -52,17 +52,13 @@ export default function GongBath({
           <div className="bg-white/90 rounded-2xl shadow-lg p-8 border border-accent-purple/10 mb-8">
             <h3 className="text-xl font-semibold mb-6 text-primary-dark">{dict.gongbath.designed_for_title}</h3>
             <ul className="space-y-3 mb-6">
-              <li className="flex items-start">
-                <span className="text-accent-purple mr-3 mt-1">•</span>
-                <span className="text-primary-dark/80">{dict.gongbath.benefits.stress_release}</span>
+              <li className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-accent-purple rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700">{dict.gongbath.main_benefits.spiritual_renewal}</span>
               </li>
-              <li className="flex items-start">
-                <span className="text-accent-purple mr-3 mt-1">•</span>
-                <span className="text-primary-dark/80">{dict.gongbath.benefits.deep_rest}</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent-purple mr-3 mt-1">•</span>
-                <span className="text-primary-dark/80">{dict.gongbath.benefits.clear_blockages}</span>
+              <li className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-accent-purple rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700">{dict.gongbath.main_benefits.energy_balance}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-accent-purple mr-3 mt-1">•</span>
