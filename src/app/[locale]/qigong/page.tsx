@@ -28,10 +28,26 @@ export default function Qigong({
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-light via-accent-purple/20 to-background py-16 px-4 text-center">
-        <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">{dict.qigong.hero_title}</h1>
-        <p className="text-lg mb-8 text-primary-dark/80 max-w-2xl mx-auto">{dict.qigong.hero_subtitle}</p>
-        <Button href="#workshop" variant="primary" className="text-lg px-8 py-3">{dict.qigong.hero_cta}</Button>
+      <section className="relative overflow-hidden text-center bg-gradient-to-br from-primary-light via-accent-purple/20 to-background min-h-[50vh]">
+        <video
+          className="absolute inset-0 w-full h-full object-cover motion-reduce:hidden"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/Videos/qigong-poster.jpeg"
+          aria-hidden="true"
+        >
+          <source src="/Videos/qigong.mp4" type="video/mp4" />
+        </video>
+        <div className="relative z-10 py-2 px-4 sm:py-10">
+          <div className="bg-white/80 rounded-2xl shadow-lg inline-block px-6 sm:px-8 py-4 sm:py-6">
+            <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">{dict.qigong.hero_title}</h1>
+            <p className="text-lg mb-8 text-primary-dark/80 max-w-2xl mx-auto">{dict.qigong.hero_subtitle}</p>
+            <Button href="#workshop" variant="primary" className="text-lg px-8 py-3">{dict.qigong.hero_cta}</Button>
+          </div>
+        </div>
       </section>
 
       {/* What is Qigong Section */}
