@@ -131,12 +131,52 @@
     "contact_cta": "Boka en session: eileenmurray100@gmail.com"
   },
   "gongbath": {
-    "title": "Gongbad – Ljudhealing | Gong & Motion",
-    "description": "Upplev transformativ ljudhealing med våra gongbad-sessioner. Djup avslappning och inre förnyelse genom ljudvibrationer.",
-    "hero_title": "Gongbad",
-    "hero_subtitle": "Uppslukande ljudresor för transformation och inre förnyelse. Grupp- och privatsessioner.",
-    "quote": "Ljud kommer att vara framtidens medicin.",
-    "quote_author": "Edgar Cayce"
+    "title": "Gongbad – Ljudläkning för djup avslappning | Gong & Motion",
+    "description": "En omslutande ljudupplevelse för att släppa spänningar, lugna sinnet och återställa balans. Boka din transformativa gongbadssession.",
+    "hero_title": "Gongbad – Ljudläkning för djup avslappning",
+    "hero_subtitle": "En omslutande ljudupplevelse för att släppa spänningar, lugna sinnet och återställa balans.",
+    "hero_cta": "Boka ett Gongbad →",
+    "what_is_title": "Vad är ett Gongbad?",
+    "what_is_content": "Ett Gongbad är en ljudläkningspraktik där deltagare omsluts av gongens djupa, resonanta toner.<br><br>Du ligger eller sitter bekvämt medan ljudvågor sköljt över dig, hjälper sinnet att lugna ner sig och kroppen att slappna av.",
+    "designed_for_title": "Denna urgamla praktik är utformad för att:",
+    "benefits": {
+      "stress_release": "Släppa stress och spänningar",
+      "deep_rest": "Främja djup vila och förnyelse",
+      "clear_blockages": "Rensa mentala och emotionella blockeringar",
+      "meditation_support": "Stödja meditation och inre balans"
+    },
+    "unique_note": "Varje session är unik och erbjuder en transformativ resa genom ljud och vibrationer.",
+    "benefits_title": "Fördelar med Gongbad",
+    "main_benefits": {
+      "deep_relaxation": "Djup avslappning för kropp och sinne",
+      "anxiety_relief": "Lindring från ångest, stress och trötthet",
+      "healing_stimulation": "Stimulering av självläkande processer",
+      "creativity_clarity": "Förbättrad kreativitet, intuition och klarhet",
+      "spiritual_renewal": "En känsla av samhörighet och andlig förnyelse"
+    },
+    "meet_kari_title": "Möt Kari Korkeamaki",
+    "kari_bio": "Kari Korkeamaki har spelat gong i över 12 år och erbjuder gongbad i många format:<br><br>• Yogaklasser och festivaler<br>• Individuella ljudläkningssessioner<br>• Utomhussessioner i naturen<br>• Upplevelser med hypnos och meditation<br><br>Han har också assisterat med gongarbete vid Open Floor-evenemang i Irland och Sverige.<br><br>För Kari är både gong och dans kraftfulla verktyg för inre utforskning, som hjälper människor att återansluta till sitt sanna jag, släppa hämningar och välkomna ny energi i livet.",
+    "faq_title": "Vanliga frågor",
+    "faq": {
+      "experience_needed": {
+        "question": "Behöver jag någon erfarenhet för att delta i ett Gongbad?",
+        "answer": "Nej. Gongbad är öppna för alla, oavsett bakgrund eller meditationserfarenhet."
+      },
+      "what_to_bring": {
+        "question": "Vad ska jag ta med till en session?",
+        "answer": "En yogamatta, filt och bekväma kläder. Du kan ligga ner eller sitta, vad som känns bäst."
+      },
+      "what_feels_like": {
+        "question": "Hur känns ett Gongbad?",
+        "answer": "Många deltagare upplever ett djupt meditativt tillstånd, avslappning, emotionell befrielse och förnyad klarhet."
+      }
+    },
+    "closing_title": "Upplev ljudets och vibrationernas transformativa kraft",
+    "closing_subtitle": "🌿",
+    "contact_info": "Boka ett Gongbad med Kari:",
+    "book_cta": "Boka ett Gongbad",
+    "quote": "Gongen är inte ett instrument, det är en port till kosmos.",
+    "quote_author": "Yogi Bhajan"
   },
   "dancingmindfulness": {
     "title": "Medveten Dans – Mindfulness i rörelse | Gong & Motion",

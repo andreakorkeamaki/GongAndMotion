@@ -131,12 +131,52 @@
     "contact_cta": "Book a session: eileenmurray100@gmail.com"
   },
   "gongbath": {
-    "title": "Gong Bath – Sound Healing | Gong & Motion",
-    "description": "Experience transformative sound healing with our gong bath sessions. Deep relaxation and inner renewal through sound vibrations.",
-    "hero_title": "Gong Bath",
-    "hero_subtitle": "Immersive sound journeys for transformation and inner renewal. Group and private sessions.",
-    "quote": "Sound will be the medicine of the future.",
-    "quote_author": "Edgar Cayce"
+    "title": "Gong Bath – Sound Healing for Deep Relaxation | Gong & Motion",
+    "description": "An immersive sound experience to release tension, calm the mind, and restore balance. Book your transformative gong bath session.",
+    "hero_title": "Gong Bath – Sound Healing for Deep Relaxation",
+    "hero_subtitle": "An immersive sound experience to release tension, calm the mind, and restore balance.",
+    "hero_cta": "Book a Gong Bath →",
+    "what_is_title": "What is a Gong Bath?",
+    "what_is_content": "A Gong Bath is a sound healing practice where participants are immersed in the deep, resonant tones of the gong.<br><br>You simply lie down or sit comfortably while waves of sound gently wash over you, helping the mind to quieten and the body to relax.",
+    "designed_for_title": "This ancient practice is designed to:",
+    "benefits": {
+      "stress_release": "Release stress and tension",
+      "deep_rest": "Promote deep rest and rejuvenation",
+      "clear_blockages": "Clear mental and emotional blockages",
+      "meditation_support": "Support meditation and inner balance"
+    },
+    "unique_note": "Each session is unique, offering a transformative journey through sound and vibration.",
+    "benefits_title": "Benefits of Gong Bath",
+    "main_benefits": {
+      "deep_relaxation": "Deep relaxation for body and mind",
+      "anxiety_relief": "Relief from anxiety, stress, and fatigue",
+      "healing_stimulation": "Stimulation of self-healing processes",
+      "creativity_clarity": "Enhanced creativity, intuition, and clarity",
+      "spiritual_renewal": "A sense of connection and spiritual renewal"
+    },
+    "meet_kari_title": "Meet Kari Korkeamaki",
+    "kari_bio": "Kari Korkeamaki has been playing the gong for over 12 years, offering gong baths in many formats:<br><br>• Yoga classes and festivals<br>• Individual sound healing sessions<br>• Outdoor sessions in nature<br>• Experiences with hypnosis and meditation<br><br>He has also assisted with gong work at Open Floor events in Ireland and Sweden.<br><br>For Kari, both gong and dance are powerful tools for inner exploration, helping people reconnect with their true selves, release inhibitions, and welcome new energy into life.",
+    "faq_title": "Frequently Asked Questions",
+    "faq": {
+      "experience_needed": {
+        "question": "Do I need any experience to join a Gong Bath?",
+        "answer": "No. Gong baths are open to everyone, regardless of background or meditation experience."
+      },
+      "what_to_bring": {
+        "question": "What should I bring to a session?",
+        "answer": "A yoga mat, blanket, and comfortable clothing. You can lie down or sit, whichever feels best."
+      },
+      "what_feels_like": {
+        "question": "What does a Gong Bath feel like?",
+        "answer": "Many participants experience a deep meditative state, relaxation, emotional release, and renewed clarity."
+      }
+    },
+    "closing_title": "Experience the transformative power of sound and vibration",
+    "closing_subtitle": "🌿",
+    "contact_info": "Book a Gong Bath with Kari:",
+    "book_cta": "Book a Gong Bath",
+    "quote": "The gong is not an instrument, it is a gateway to the cosmos.",
+    "quote_author": "Yogi Bhajan"
   },
   "dancingmindfulness": {
     "title": "Conscious Dance – Mindfulness in Motion | Gong & Motion",
