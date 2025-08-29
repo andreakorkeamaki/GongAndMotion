@@ -87,8 +87,11 @@ export default function GongBath({
             <div className="bg-gradient-to-br from-accent-purple/10 to-primary-light/20 rounded-xl p-6 border border-accent-purple/10">
               <h3 className="font-semibold text-primary-dark mb-2">• {dict.gongbath.main_benefits.creativity_clarity}</h3>
             </div>
-            <div className="bg-gradient-to-br from-primary-light/20 to-accent-purple/10 rounded-xl p-6 border border-accent-purple/10 md:col-span-2">
+            <div className="bg-gradient-to-br from-primary-light/20 to-accent-purple/10 rounded-xl p-6 border border-accent-purple/10">
               <h3 className="font-semibold text-primary-dark mb-2">• {dict.gongbath.main_benefits.spiritual_renewal}</h3>
+            </div>
+            <div className="bg-gradient-to-br from-accent-purple/10 to-primary-light/20 rounded-xl p-6 border border-accent-purple/10">
+              <h3 className="font-semibold text-primary-dark mb-2">• {dict.gongbath.main_benefits.energy_balance}</h3>
             </div>
           </div>
         </div>
