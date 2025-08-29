@@ -47,25 +47,34 @@ export default function GongBath({
       <section className="py-16 bg-background px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-8 text-primary-dark text-center">{dict.gongbath.what_is_title}</h2>
-          <div className="prose prose-lg max-w-none text-primary-dark/80 leading-relaxed mb-8" dangerouslySetInnerHTML={{ __html: dict.gongbath.what_is_content }} />
-          
-          <div className="bg-white/90 rounded-2xl shadow-lg p-8 border border-accent-purple/10 mb-8">
-            <h3 className="text-xl font-semibold mb-6 text-primary-dark">{dict.gongbath.designed_for_title}</h3>
-            <ul className="space-y-3 mb-6">
+          <div className="prose prose-lg max-w-none text-primary-dark/80 leading-relaxed mb-12" dangerouslySetInnerHTML={{ __html: dict.gongbath.what_is_content }} />
+        </div>
+      </section>
+
+      {/* Benefits Overview Section */}
+      <section className="py-16 bg-white px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-primary-light/20 to-accent-purple/10 rounded-2xl shadow-lg p-8 border border-accent-purple/10">
+            <h3 className="text-2xl font-semibold mb-6 text-primary-dark text-center">{dict.gongbath.designed_for_title}</h3>
+            <ul className="grid md:grid-cols-2 gap-4 mb-6">
               <li className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-accent-purple rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">{dict.gongbath.main_benefits.spiritual_renewal}</span>
+                <span className="text-gray-700">{dict.gongbath.benefits.stress_release}</span>
               </li>
               <li className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-accent-purple rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">{dict.gongbath.main_benefits.energy_balance}</span>
+                <span className="text-gray-700">{dict.gongbath.benefits.deep_rest}</span>
               </li>
-              <li className="flex items-start">
-                <span className="text-accent-purple mr-3 mt-1">•</span>
-                <span className="text-primary-dark/80">{dict.gongbath.benefits.meditation_support}</span>
+              <li className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-accent-purple rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700">{dict.gongbath.benefits.clear_blockages}</span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-accent-purple rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700">{dict.gongbath.benefits.meditation_support}</span>
               </li>
             </ul>
-            <p className="text-primary-dark/80 italic">{dict.gongbath.unique_note}</p>
+            <p className="text-primary-dark/80 italic text-center">{dict.gongbath.unique_note}</p>
           </div>
         </div>
       </section>
