@@ -41,9 +41,9 @@ export default function Qigong({
         >
           <source src="/Videos/qigong.mp4" type="video/mp4" />
         </video>
-        <div className="relative z-10 py-2 px-4 sm:py-10">
-          <div className="bg-white/80 rounded-2xl shadow-lg inline-block px-6 sm:px-8 py-4 sm:py-6">
-            <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">{dict.qigong.hero_title}</h1>
+        <div className="relative z-10 py-20 sm:py-24 px-4 flex items-center justify-center min-h-[50vh]">
+          <div className="bg-white/80 rounded-2xl shadow-lg inline-block px-6 sm:px-8 py-6 sm:py-8">
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">{dict.qigong.hero_title}</h1>
             <p className="text-lg mb-8 text-primary-dark/80 max-w-2xl mx-auto">{dict.qigong.hero_subtitle}</p>
             <Button href="#workshop" variant="primary" className="text-lg px-8 py-3">{dict.qigong.hero_cta}</Button>
           </div>
@@ -113,7 +113,18 @@ export default function Qigong({
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-8 text-primary-dark text-center">{dict.qigong.teacher_title}</h2>
           <div className="bg-white/90 rounded-2xl shadow-lg p-8 border border-accent-purple/10">
-            <div className="prose prose-lg max-w-none text-primary-dark/80" dangerouslySetInnerHTML={{ __html: dict.qigong.teacher_bio }} />
+            <div className="grid md:grid-cols-3 gap-8 items-center">
+              <div className="md:col-span-1">
+                <img 
+                  src="/eileen-hero.webp" 
+                  alt="Eileen Murray - Qigong Teacher"
+                  className="w-full rounded-xl shadow-md object-cover aspect-square"
+                />
+              </div>
+              <div className="md:col-span-2">
+                <div className="prose prose-lg max-w-none text-primary-dark/80" dangerouslySetInnerHTML={{ __html: dict.qigong.teacher_bio }} />
+              </div>
+            </div>
           </div>
         </div>
       </section>

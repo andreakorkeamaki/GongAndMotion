@@ -16,7 +16,6 @@ interface Service {
 interface Testimonial {
   text: string;
   author: string;
-  img: string;
 }
 
 interface Dictionary {
@@ -103,27 +102,22 @@ export default function HomePage({
   
   const getTestimonials = (dict: Dictionary) => [
     {
-      img: "/eileen-hero.webp",
       text: dict.home.testimonial_1,
       author: dict.home.testimonial_1_author,
     },
     {
-      img: "/kari-hero.webp",
       text: dict.home.testimonial_2,
       author: dict.home.testimonial_2_author,
     },
     {
-      img: "/qigong-servizio.webp",
       text: dict.home.testimonial_3,
       author: dict.home.testimonial_3_author,
     },
     {
-      img: "/dancingmindfulness-servizio.webp",
       text: dict.home.testimonial_4,
       author: dict.home.testimonial_4_author,
     },
     {
-      img: "/massage-servizio.webp",
       text: dict.home.testimonial_5,
       author: dict.home.testimonial_5_author,
     },
@@ -226,13 +220,6 @@ export default function HomePage({
                 className="flex-shrink-0 flex flex-col items-center justify-center w-[360px] max-w-full px-6"
               >
                 <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg flex flex-col items-center text-center h-full border border-white/20">
-                  <Image 
-                    src={t.img} 
-                    alt={t.author} 
-                    width={56} 
-                    height={56} 
-                    className="w-14 h-14 rounded-full object-cover mb-4 border-2 border-accent-purple/40 shadow" 
-                  />
                   <p className="italic text-primary-dark/90 text-base sm:text-lg text-center mb-4 flex-1">
                     &ldquo;{t.text}&rdquo;
                   </p>

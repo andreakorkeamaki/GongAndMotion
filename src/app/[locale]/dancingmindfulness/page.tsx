@@ -110,10 +110,21 @@ export default function DancingMindfulness({
             {dict.dancingmindfulness.about_eileen_title}
           </h2>
           <div className="bg-gradient-to-br from-primary-light/30 to-accent-purple/10 rounded-2xl p-8 shadow-lg">
-            <div 
-              className="text-lg text-primary-dark/90 leading-relaxed"
-              dangerouslySetInnerHTML={{ __html: dict.dancingmindfulness.about_eileen_content }}
-            />
+            <div className="grid md:grid-cols-3 gap-8 items-center">
+              <div className="md:col-span-1">
+                <img 
+                  src="/eileen-hero.webp" 
+                  alt="Eileen Murray - Conscious Dance Facilitator"
+                  className="w-full rounded-xl shadow-md object-cover aspect-square"
+                />
+              </div>
+              <div className="md:col-span-2">
+                <div 
+                  className="text-lg text-primary-dark/90 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: dict.dancingmindfulness.about_eileen_content }}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
