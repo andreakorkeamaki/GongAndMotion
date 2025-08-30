@@ -68,23 +68,23 @@ export default function Qigong({
             <h3 className="text-xl font-semibold mb-6 text-primary-dark">In this workshop, you will:</h3>
             <ul className="space-y-3 mb-6">
               <li className="flex items-start">
-                <span className="text-accent-purple mr-3 mt-1">•</span>
+                <span className="text-accent-purple mr-3 flex-shrink-0">•</span>
                 <span className="text-primary-dark/80">{dict.qigong.workshop_benefits.one_to_one}</span>
               </li>
               <li className="flex items-start">
-                <span className="text-accent-purple mr-3 mt-1">•</span>
+                <span className="text-accent-purple mr-3 flex-shrink-0">•</span>
                 <span className="text-primary-dark/80">{dict.qigong.workshop_benefits.gentle_movements}</span>
               </li>
               <li className="flex items-start">
-                <span className="text-accent-purple mr-3 mt-1">•</span>
+                <span className="text-accent-purple mr-3 flex-shrink-0">•</span>
                 <span className="text-primary-dark/80">{dict.qigong.workshop_benefits.stress_relief}</span>
               </li>
               <li className="flex items-start">
-                <span className="text-accent-purple mr-3 mt-1">•</span>
+                <span className="text-accent-purple mr-3 flex-shrink-0">•</span>
                 <span className="text-primary-dark/80">{dict.qigong.workshop_benefits.guided_practice}</span>
               </li>
               <li className="flex items-start">
-                <span className="text-accent-purple mr-3 mt-1">•</span>
+                <span className="text-accent-purple mr-3 flex-shrink-0">•</span>
                 <span className="text-primary-dark/80">{dict.qigong.workshop_benefits.daily_tools}</span>
               </li>
             </ul>

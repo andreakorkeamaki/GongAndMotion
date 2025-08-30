@@ -204,7 +204,7 @@
     "faq": {
       "experience_needed": {
         "question": "Do I need dance experience?",
-        "answer": "No. Conscious dance is open to everyone — there are no steps to learn, only movement and presence."
+        "answer": "No. Conscious dance is open to everyone, there are no steps to learn, only movement and presence."
       },
       "what_needed": {
         "question": "What do I need for a session?",
@@ -245,6 +245,8 @@
     "join": "Join",
     "book": "Book",
     "contact_more_info": "Contact us for more info",
+    "call_us": "Call Us",
+    "email_us": "Email Us",
     "events_list": {
       "qigong_workshop": "Medical Qigong Workshop",
       "gong_bath": "Evening Gong Bath",

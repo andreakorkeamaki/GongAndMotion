@@ -33,37 +33,43 @@ export default function Events({
       </section>
       <section className="bg-background py-12 px-4">
         <div className="max-w-4xl mx-auto rounded-2xl shadow-lg bg-white/90 p-8 border border-accent-purple/10">
-          <table className="min-w-full mb-6">
+          <table className="min-w-full mb-8">
             <thead>
               <tr>
                 <th className="text-left pb-2">{dict.events.date}</th>
                 <th className="text-left pb-2">{dict.events.event}</th>
                 <th className="text-left pb-2">{dict.events.location}</th>
-                <th className="text-left pb-2">{dict.events.action}</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>14 juni 2025</td>
-                <td>{dict.events.events_list.qigong_workshop}</td>
-                <td>Stockholm</td>
-                <td><Button href="/contact" variant="primary" className="text-sm">{dict.events.sign_up}</Button></td>
+                <td className="py-2">14 juni 2025</td>
+                <td className="py-2">{dict.events.events_list.qigong_workshop}</td>
+                <td className="py-2">Stockholm</td>
               </tr>
               <tr>
-                <td>21 juni 2025</td>
-                <td>{dict.events.events_list.gong_bath}</td>
-                <td>Göteborg</td>
-                <td><Button href="/contact" variant="primary" className="text-sm">{dict.events.join}</Button></td>
+                <td className="py-2">21 juni 2025</td>
+                <td className="py-2">{dict.events.events_list.gong_bath}</td>
+                <td className="py-2">Göteborg</td>
               </tr>
               <tr>
-                <td>28 juni 2025</td>
-                <td>{dict.events.events_list.massage_intensive}</td>
-                <td>Malmö</td>
-                <td><Button href="/contact" variant="primary" className="text-sm">{dict.events.book}</Button></td>
+                <td className="py-2">28 juni 2025</td>
+                <td className="py-2">{dict.events.events_list.massage_intensive}</td>
+                <td className="py-2">Malmö</td>
               </tr>
             </tbody>
           </table>
-          <Button href="/contact" variant="secondary">{dict.events.contact_more_info}</Button>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button href="tel:+46123456789" variant="primary" className="flex items-center justify-center gap-2">
+              <span>📞</span>
+              {dict.events.call_us}
+            </Button>
+            <Button href="mailto:eileenmurray100@gmail.com" variant="primary" className="flex items-center justify-center gap-2">
+              <span>✉️</span>
+              {dict.events.email_us}
+            </Button>
+          </div>
         </div>
       </section>
     </>

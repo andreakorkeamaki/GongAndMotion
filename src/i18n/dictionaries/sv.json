@@ -204,7 +204,7 @@
     "faq": {
       "experience_needed": {
         "question": "Behöver jag danserfarenhet?",
-        "answer": "Nej. Medveten dans är öppen för alla — det finns inga steg att lära sig, bara rörelse och närvaro."
+        "answer": "Nej. Medveten dans är öppen för alla, det finns inga steg att lära sig, bara rörelse och närvaro."
       },
       "what_needed": {
         "question": "Vad behöver jag för en session?",
@@ -245,6 +245,8 @@
     "join": "Delta",
     "book": "Boka",
     "contact_more_info": "Kontakta oss för mer info",
+    "call_us": "Ring oss",
+    "email_us": "Maila oss",
     "events_list": {
       "qigong_workshop": "Medicinsk Qigong Workshop",
       "gong_bath": "Kvällsgongbad",

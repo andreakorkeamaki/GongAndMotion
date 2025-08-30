@@ -151,7 +151,7 @@ export default function HomePage({
           <p className="text-lg sm:text-xl mb-8 text-primary-dark/80">
             {dict.home.hero_subtitle}
           </p>
-          <Button href="/events" variant="primary" className="text-lg px-8 py-3 shadow-lg">
+          <Button href={`/${resolvedParams.locale}/events`} variant="primary" className="text-lg px-8 py-3 shadow-lg">
             {dict.common.book_now}
           </Button>
         </div>
