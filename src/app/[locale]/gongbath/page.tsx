@@ -56,22 +56,30 @@ export default function GongBath({
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-br from-primary-light/20 to-accent-purple/10 rounded-2xl shadow-lg p-8 border border-accent-purple/10">
             <h3 className="text-2xl font-semibold mb-6 text-primary-dark text-center">{dict.gongbath.designed_for_title}</h3>
-            <ul className="grid md:grid-cols-2 gap-4 mb-6">
-              <li className="flex items-start">
-                <span className="text-accent-purple mr-3 flex-shrink-0">•</span>
-                <span className="text-primary-dark/80">{dict.gongbath.benefits.stress_release}</span>
+            <ul className="grid md:grid-cols-2 gap-4 mb-6 max-w-3xl mx-auto">
+              <li className="flex items-center justify-center text-center">
+                <div className="flex items-start">
+                  <span className="text-accent-purple mr-3 flex-shrink-0">•</span>
+                  <span className="text-primary-dark/80">{dict.gongbath.benefits.stress_release}</span>
+                </div>
               </li>
-              <li className="flex items-start">
-                <span className="text-accent-purple mr-3 flex-shrink-0">•</span>
-                <span className="text-primary-dark/80">{dict.gongbath.benefits.deep_rest}</span>
+              <li className="flex items-center justify-center text-center">
+                <div className="flex items-start">
+                  <span className="text-accent-purple mr-3 flex-shrink-0">•</span>
+                  <span className="text-primary-dark/80">{dict.gongbath.benefits.deep_rest}</span>
+                </div>
               </li>
-              <li className="flex items-start">
-                <span className="text-accent-purple mr-3 flex-shrink-0">•</span>
-                <span className="text-primary-dark/80">{dict.gongbath.benefits.clear_blockages}</span>
+              <li className="flex items-center justify-center text-center">
+                <div className="flex items-start">
+                  <span className="text-accent-purple mr-3 flex-shrink-0">•</span>
+                  <span className="text-primary-dark/80">{dict.gongbath.benefits.clear_blockages}</span>
+                </div>
               </li>
-              <li className="flex items-start">
-                <span className="text-accent-purple mr-3 flex-shrink-0">•</span>
-                <span className="text-primary-dark/80">{dict.gongbath.benefits.meditation_support}</span>
+              <li className="flex items-center justify-center text-center">
+                <div className="flex items-start">
+                  <span className="text-accent-purple mr-3 flex-shrink-0">•</span>
+                  <span className="text-primary-dark/80">{dict.gongbath.benefits.meditation_support}</span>
+                </div>
               </li>
             </ul>
             <p className="text-primary-dark/80 italic text-center">{dict.gongbath.unique_note}</p>
