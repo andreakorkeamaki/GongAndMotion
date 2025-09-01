@@ -248,9 +248,9 @@
     "call_us": "Ring oss",
     "email_us": "Maila oss",
     "events_list": {
-      "qigong_workshop": "Medicinsk Qigong Workshop",
-      "gong_bath": "Kvällsgongbad",
-      "massage_intensive": "Biodynamisk Massage Intensiv"
+      "qigong_online": "Qigong Workshop (Online)",
+      "essence_qigong": "Essence Qigong • Nivå 1 Workshop",
+      "gong_bath": "Kvällsgongbad"
     }
   },
   "practitioners": {

@@ -248,9 +248,9 @@
     "call_us": "Call Us",
     "email_us": "Email Us",
     "events_list": {
-      "qigong_workshop": "Medical Qigong Workshop",
-      "gong_bath": "Evening Gong Bath",
-      "massage_intensive": "Biodynamic Massage Intensive"
+      "qigong_online": "Qigong Workshop (Online)",
+      "essence_qigong": "Essence Qigong • Level 1 Workshop",
+      "gong_bath": "Evening Gong Bath"
     }
   },
   "practitioners": {

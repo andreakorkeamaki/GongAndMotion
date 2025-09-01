@@ -43,19 +43,14 @@ export default function Events({
             </thead>
             <tbody>
               <tr>
-                <td className="py-2">14 juni 2025</td>
-                <td className="py-2">{dict.events.events_list.qigong_workshop}</td>
-                <td className="py-2">Stockholm</td>
+                <td className="py-2">13 September 2024</td>
+                <td className="py-2">{dict.events.events_list.qigong_online}</td>
+                <td className="py-2">Online (Zoom)</td>
               </tr>
               <tr>
-                <td className="py-2">21 juni 2025</td>
-                <td className="py-2">{dict.events.events_list.gong_bath}</td>
-                <td className="py-2">Göteborg</td>
-              </tr>
-              <tr>
-                <td className="py-2">28 juni 2025</td>
-                <td className="py-2">{dict.events.events_list.massage_intensive}</td>
-                <td className="py-2">Malmö</td>
+                <td className="py-2">4 October 2024</td>
+                <td className="py-2">{dict.events.events_list.essence_qigong}</td>
+                <td className="py-2">Wilton, Cork</td>
               </tr>
             </tbody>
           </table>
