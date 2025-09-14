@@ -258,13 +258,13 @@
       "name": "Eileen Murray",
       "bio": "Eileen Murray is a Qigong teacher, body psychotherapist, and movement facilitator with over 30 years of experience in mental health and holistic well-being. Her work blends movement, stillness, and deep listening to help people reconnect with themselves—emotionally, mentally, and physically.",
       "button_label": "Discover Qigong",
-      "button_href": "/qigong"
+      "button_href": "/en/qigong"
     },
     "kari": {
       "name": "Kari Korkeamaki",
       "bio": "Has played gong for 12 years and offered many gong baths in various formats—together with yoga, at festivals, individual sessions, with hypnosis, and outdoors in nature.<br/>Assisted with gong at Open Floor in Ireland and Sweden. Sees both gong and dance as beautiful ways to discover your inner world, free from inhibitions and to let in new, fresh life.",
       "button_label": "Discover Gong Bath",
-      "button_href": "/gongbath"
+      "button_href": "/en/gongbath"
     }
   }
 }
