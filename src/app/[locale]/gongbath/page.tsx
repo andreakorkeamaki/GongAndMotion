@@ -28,7 +28,7 @@ export default function GongBath({
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden text-center bg-gradient-to-br from-primary-light via-background to-accent-purple/30 min-h-[50vh]">
+      <section className="relative overflow-hidden text-center bg-gradient-to-br from-primary-light via-accent-light/60 to-accent-purple/30 min-h-[50vh]">
         <img
           src="/gongbath-servizio.webp"
           alt="Gong Bath Sound Healing"
@@ -133,7 +133,7 @@ export default function GongBath({
       </section>
 
       {/* Meet Kari Section */}
-      <section className="py-16 bg-gradient-to-b from-background to-accent-purple/10 px-4">
+      <section className="py-16 bg-gradient-to-b from-background to-accent-light/60 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-8 text-primary-dark text-center">{dict.gongbath.meet_kari_title}</h2>
           <div className="bg-white/90 rounded-2xl shadow-lg p-8 border border-accent-purple/10">
@@ -175,7 +175,7 @@ export default function GongBath({
       </section>
 
       {/* Closing CTA Section */}
-      <section id="book" className="py-16 bg-gradient-to-br from-primary-light via-accent-purple/20 to-background px-4 text-center">
+      <section id="book" className="py-16 bg-gradient-to-br from-primary-light via-accent-purple/20 to-accent-light/60 px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-6 text-primary-dark">{dict.gongbath.closing_title}</h2>
           <p className="text-lg mb-8 text-primary-dark/80">{dict.gongbath.closing_subtitle}</p>

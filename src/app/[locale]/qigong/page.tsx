@@ -28,7 +28,7 @@ export default function Qigong({
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden text-center bg-gradient-to-br from-primary-light via-accent-purple/20 to-background min-h-[50vh]">
+      <section className="relative overflow-hidden text-center bg-gradient-to-br from-primary-light via-accent-purple/20 to-accent-light/60 min-h-[50vh]">
         <video
           className="absolute inset-0 w-full h-full object-cover motion-reduce:hidden"
           autoPlay
@@ -59,7 +59,7 @@ export default function Qigong({
       </section>
 
       {/* Workshop Section */}
-      <section id="workshop" className="py-16 bg-gradient-to-b from-green-50 to-background px-4">
+      <section id="workshop" className="py-16 bg-gradient-to-b from-accent-light/70 to-background px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-6 text-primary-dark text-center">{dict.qigong.workshop_title}</h2>
           <p className="text-lg mb-8 text-primary-dark/80 text-center max-w-3xl mx-auto">{dict.qigong.workshop_intro}</p>
@@ -109,7 +109,7 @@ export default function Qigong({
       </section>
 
       {/* Meet Your Teacher Section */}
-      <section className="py-16 bg-gradient-to-b from-background to-green-50 px-4">
+      <section className="py-16 bg-gradient-to-b from-background to-accent-light/70 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-8 text-primary-dark text-center">{dict.qigong.teacher_title}</h2>
           <div className="bg-white/90 rounded-2xl shadow-lg p-8 border border-accent-purple/10">
@@ -134,10 +134,10 @@ export default function Qigong({
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-12 text-primary-dark text-center">{dict.qigong.testimonials_title}</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-green-50 to-accent-purple/10 rounded-2xl p-6 border border-accent-purple/10">
+            <div className="bg-gradient-to-br from-accent-light/70 to-accent-purple/10 rounded-2xl p-6 border border-accent-purple/10">
               <p className="text-primary-dark/80 italic mb-4">&ldquo;{dict.qigong.testimonials.mary}&rdquo;</p>
             </div>
-            <div className="bg-gradient-to-br from-accent-purple/10 to-green-50 rounded-2xl p-6 border border-accent-purple/10">
+            <div className="bg-gradient-to-br from-accent-purple/10 to-accent-light/70 rounded-2xl p-6 border border-accent-purple/10">
               <p className="text-primary-dark/80 italic mb-4">&ldquo;{dict.qigong.testimonials.joan}&rdquo;</p>
             </div>
           </div>
@@ -145,7 +145,7 @@ export default function Qigong({
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gradient-to-b from-green-50 via-background to-accent-purple/10 px-4">
+      <section className="py-16 bg-gradient-to-b from-accent-light/70 via-background to-accent-purple/10 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-12 text-primary-dark text-center">{dict.qigong.faq_title}</h2>
           <div className="space-y-6">
@@ -166,7 +166,7 @@ export default function Qigong({
       </section>
 
       {/* Closing CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-primary-light via-accent-purple/20 to-background px-4 text-center">
+      <section className="py-16 bg-gradient-to-br from-primary-light via-accent-purple/20 to-accent-light/60 px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-6 text-primary-dark">{dict.qigong.closing_title}</h2>
           <p className="text-lg mb-8 text-primary-dark/80">{dict.qigong.closing_text}</p>

@@ -29,7 +29,7 @@ export default function Massage({
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden text-center bg-gradient-to-br from-accent-purple/20 via-primary-light to-background min-h-[50vh]">
+      <section className="relative overflow-hidden text-center bg-gradient-to-br from-primary-dark/20 via-primary-light to-accent-light/60 min-h-[50vh]">
         <img
           src="/massage-servizio.webp"
           alt="Biodynamic Massage"
@@ -154,7 +154,7 @@ export default function Massage({
       </section>
 
       {/* Closing CTA Section */}
-      <section className="bg-gradient-to-br from-primary-light via-accent-purple/20 to-background py-16 px-4 text-center">
+      <section className="bg-gradient-to-br from-primary-light via-accent-purple/20 to-accent-light/60 py-16 px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-6 text-primary-dark">
             {dict.massage.closing_title}

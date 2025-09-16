@@ -46,8 +46,8 @@ export default function PersonSlider({ locale }: PersonSliderProps) {
   const [people, setPeople] = useState<Practitioner[]>([]);
   
   const gradients = [
-    'bg-gradient-to-l from-green-100 via-white/80 to-transparent',
-    'bg-gradient-to-l from-accent-purple/20 via-white/80 to-transparent'
+    'bg-gradient-to-l from-accent-light/60 via-white/80 to-transparent',
+    'bg-gradient-to-l from-primary-light/40 via-white/80 to-transparent'
   ];
 
   useEffect(() => {

@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-primary-dark text-background py-8 mt-16">
+    <footer className="bg-primary-dark text-white py-8 mt-16">
       <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
         <div>
           <span className="font-heading font-bold text-xl">Gong & Motion</span>

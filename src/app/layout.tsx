@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning={true}>
-      <body className={`${nunito.variable} ${quicksand.variable} font-sans`} suppressHydrationWarning={true}>
+      <body className={`${nunito.variable} ${quicksand.variable} font-sans bg-background text-primary-dark`} suppressHydrationWarning={true}>
         {children}
         <SpeedInsights />
         <Analytics />

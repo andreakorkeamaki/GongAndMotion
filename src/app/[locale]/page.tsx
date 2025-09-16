@@ -199,7 +199,7 @@ export default function HomePage({
       <div className="w-full flex justify-center">
         <div className="h-1 w-24 rounded-full bg-primary/50 mb-12"></div>
       </div>
-      <section className="py-16 bg-gradient-to-b from-accent-purple/10 to-background px-2 sm:px-4 -mb-12">
+      <section className="py-16 bg-gradient-to-b from-accent-purple/10 to-accent-light/40 px-2 sm:px-4 -mb-12">
         <h2 className="text-3xl font-heading font-bold text-center mb-12 text-primary-dark">{dict.common.testimonials}</h2>
         {/* Testimonials infinite scroller */}
         <div className="relative w-full overflow-hidden pb-8">

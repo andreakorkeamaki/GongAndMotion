@@ -27,7 +27,7 @@ export default function Events({
   const dict = use(getDictionary(resolvedParams.locale));
   return (
     <>
-      <section className="bg-gradient-to-br from-accent-purple/30 via-primary-light to-background py-16 px-4 text-center">
+      <section className="bg-gradient-to-br from-primary-dark/20 via-primary-light to-accent-light/60 py-16 px-4 text-center">
         <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">{dict.events.hero_title}</h1>
         <p className="text-lg mb-8 text-primary-dark/80 max-w-2xl mx-auto">{dict.events.hero_subtitle}</p>
       </section>

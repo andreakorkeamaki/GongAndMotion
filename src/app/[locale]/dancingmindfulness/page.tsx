@@ -29,7 +29,7 @@ export default function DancingMindfulness({
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-accent-purple/20 via-background to-primary-light py-16 px-4 text-center">
+      <section className="bg-gradient-to-br from-primary-dark/20 via-primary-light to-accent-light/60 py-16 px-4 text-center">
         <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">
           {dict.dancingmindfulness.hero_title}
         </h1>
@@ -165,7 +165,7 @@ export default function DancingMindfulness({
       </section>
 
       {/* Closing CTA Section */}
-      <section className="bg-gradient-to-br from-primary-light via-accent-purple/20 to-background py-16 px-4 text-center">
+      <section className="bg-gradient-to-br from-primary-light via-accent-purple/20 to-accent-light/60 py-16 px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-6 text-primary-dark">
             {dict.dancingmindfulness.closing_title}

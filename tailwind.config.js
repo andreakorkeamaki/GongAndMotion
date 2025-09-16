@@ -10,18 +10,20 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#7FC7AF', // sage green
-          dark: '#4F6F52',    // deep sage
-          light: '#E6F2EA',   // light background
+          DEFAULT: '#4A1B8C', // royal purple
+          dark: '#3F0FA6',    // deep violet
+          light: '#9D84BF',   // soft lavender
         },
         accent: {
-          DEFAULT: '#E8B954', // gold accent
-          purple: '#A78BFA',  // soft violet
+          DEFAULT: '#FFCB7B', // warm gold
+          light: '#FFDDA5',   // soft sunrise gold
+          purple: '#3F0FA6',  // keeps gradients tied to the violet hue
         },
         background: {
-          DEFAULT: '#FAF8F6', // cream
+          DEFAULT: '#FFF6ED', // parchment-inspired tint for readability
         },
         white: '#FFFFFF',
+        black: '#0B0B0B',
       },
       fontFamily: {
         sans: ['var(--font-nunito)', 'ui-sans-serif', 'system-ui'],
