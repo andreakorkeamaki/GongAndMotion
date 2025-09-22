@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "../../components/Button";
+import AnimatedSection from "../../components/AnimatedSection";
 import { getDictionary } from "@/i18n/dictionaries";
 import { type Locale } from "@/i18n/config";
 import { use } from "react";
@@ -30,7 +31,7 @@ export default function DancingMindfulness({
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden text-center bg-gradient-to-br from-primary-dark/20 via-primary-light to-accent-light/60 min-h-[50vh]">
+      <AnimatedSection className="relative overflow-hidden text-center bg-gradient-to-br from-primary-dark/20 via-primary-light to-accent-light/60 min-h-[50vh]">
         <Image
           src="/dancingmindfulness-servizio.webp"
           alt="Dancing Mindfulness"
@@ -52,10 +53,10 @@ export default function DancingMindfulness({
             </Button>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* What is Conscious Dance Section */}
-      <section className="bg-white py-16 px-4">
+      <AnimatedSection className="bg-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-8 text-primary-dark text-center">
             {dict.dancingmindfulness.what_is_title}
@@ -65,10 +66,10 @@ export default function DancingMindfulness({
             dangerouslySetInnerHTML={{ __html: dict.dancingmindfulness.what_is_content }}
           />
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Benefits Section */}
-      <section className="bg-background py-16 px-4">
+      <AnimatedSection className="bg-background py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-8 text-primary-dark text-center">
             {dict.dancingmindfulness.benefits_title}
@@ -114,10 +115,10 @@ export default function DancingMindfulness({
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* About Eileen Section */}
-      <section className="bg-white py-16 px-4">
+      <AnimatedSection className="bg-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-8 text-primary-dark text-center">
             {dict.dancingmindfulness.about_eileen_title}
@@ -144,10 +145,10 @@ export default function DancingMindfulness({
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* FAQ Section */}
-      <section className="bg-background py-16 px-4">
+      <AnimatedSection className="bg-background py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-12 text-primary-dark text-center">
             {dict.dancingmindfulness.faq_title}
@@ -179,10 +180,10 @@ export default function DancingMindfulness({
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Closing CTA Section */}
-      <section className="bg-gradient-to-br from-primary-light via-accent-purple/20 to-accent-light/60 py-16 px-4 text-center">
+      <AnimatedSection className="bg-gradient-to-br from-primary-light via-accent-purple/20 to-accent-light/60 py-16 px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-6 text-primary-dark">
             {dict.dancingmindfulness.closing_title}
@@ -198,7 +199,7 @@ export default function DancingMindfulness({
             {dict.dancingmindfulness.contact_cta}
           </Button>
         </div>
-      </section>
+      </AnimatedSection>
     </>
   );
 }

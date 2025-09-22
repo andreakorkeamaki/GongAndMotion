@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Button from "../../components/Button";
+import AnimatedSection from "../../components/AnimatedSection";
 import { getDictionary } from "@/i18n/dictionaries";
 import { type Locale } from "@/i18n/config";
 import { use } from "react";
@@ -27,11 +28,11 @@ export default function Contact({
   const dict = use(getDictionary(resolvedParams.locale));
   return (
     <>
-      <section className="bg-gradient-to-br from-primary-dark/20 via-primary-light to-accent-light/60 py-16 px-4 text-center">
+      <AnimatedSection className="bg-gradient-to-br from-primary-dark/20 via-primary-light to-accent-light/60 py-16 px-4 text-center">
         <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">{dict.contact.hero_title}</h1>
         <p className="text-lg mb-8 text-primary-dark/80 max-w-2xl mx-auto">{dict.contact.hero_subtitle}</p>
-      </section>
-      <section className="bg-background py-12 px-4">
+      </AnimatedSection>
+      <AnimatedSection className="bg-background py-12 px-4">
         <div className="max-w-xl mx-auto rounded-2xl shadow-lg bg-white/90 p-8 border border-accent-purple/10">
           <p className="mb-2 text-primary-dark/90">{dict.contact.email} <a className="text-accent-purple underline" href="mailto:gongandmotion@gmail.com">gongandmotion@gmail.com</a></p>
           <p className="mb-2 text-primary-dark/90">{dict.contact.phone} <a className="text-accent-purple underline" href="tel:+46700501673">+46 70 050 1673</a></p>
@@ -52,7 +53,7 @@ export default function Contact({
             <Button type="submit" variant="primary" className="mt-2">{dict.contact.send}</Button>
           </form>
         </div>
-      </section>
+      </AnimatedSection>
     </>
   );
 }

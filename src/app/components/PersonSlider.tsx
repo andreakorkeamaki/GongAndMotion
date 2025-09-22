@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from 'next/image';
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "./Button";
+import AnimatedSection from "./AnimatedSection";
 import { getClientDictionary } from "@/i18n/client-dictionaries";
 import { type Locale } from "@/i18n/config";
 
@@ -98,7 +99,9 @@ export default function PersonSlider({ locale }: PersonSliderProps) {
   const person = people[idx];
 
   return (
-    <section className="relative py-16 min-h-[480px]">
+    <AnimatedSection className="relative py-16 min-h-[480px]"
+      animation="fade"
+    >
       <div className="absolute inset-0 w-full h-full z-0">
         <AnimatePresence mode="wait">
           <motion.div
@@ -155,6 +158,6 @@ export default function PersonSlider({ locale }: PersonSliderProps) {
           </AnimatePresence>
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

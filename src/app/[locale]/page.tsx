@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Button from "../components/Button";
 import PersonSlider from "../components/PersonSlider";
+import AnimatedSection from "../components/AnimatedSection";
 import { motion } from "framer-motion";
 import { getClientDictionary } from "@/i18n/client-dictionaries";
 import { type Locale } from "@/i18n/config";
@@ -138,7 +139,7 @@ export default function HomePage({
 
   return (
     <>
-      <section className="relative py-20 px-4 flex flex-col items-center justify-center text-center min-h-[60vh]">
+      <AnimatedSection className="relative py-20 px-4 flex flex-col items-center justify-center text-center min-h-[60vh]">
         {/* Background image */}
         <div className="absolute inset-0 -z-10">
           <Image src="/header-bg.webp" alt="Holistic Healing" fill priority className="object-cover object-right" />
@@ -155,14 +156,14 @@ export default function HomePage({
             {dict.common.book_now}
           </Button>
         </div>
-      </section>
+      </AnimatedSection>
       {/* --- SLIDER PERSONE --- */}
       <PersonSlider locale={resolvedParams.locale} />
       <div className="w-full flex justify-center">
         <div className="h-1 w-24 rounded-full bg-accent-purple/60 mb-12"></div>
       </div>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+      <AnimatedSection className="relative min-h-screen flex items-center justify-center text-center px-4 overflow-hidden">
         {/* Background Images */}
         <div className="absolute inset-0 z-0">
           {serviceImages.map((img, i) => (
@@ -194,12 +195,12 @@ export default function HomePage({
             ))}
           </div>
         </div>
-      </section>
+      </AnimatedSection>
       {/* Section Divider */}
       <div className="w-full flex justify-center">
         <div className="h-1 w-24 rounded-full bg-primary/50 mb-12"></div>
       </div>
-      <section className="py-16 bg-gradient-to-b from-accent-purple/10 to-accent-light/40 px-2 sm:px-4 -mb-12">
+      <AnimatedSection className="py-16 bg-gradient-to-b from-accent-purple/10 to-accent-light/40 px-2 sm:px-4 -mb-12">
         <h2 className="text-3xl font-heading font-bold text-center mb-12 text-primary-dark">{dict.common.testimonials}</h2>
         {/* Testimonials infinite scroller */}
         <div className="relative w-full overflow-hidden pb-8">
@@ -231,12 +232,12 @@ export default function HomePage({
             ))}
           </motion.div>
         </div>
-      </section>
+      </AnimatedSection>
       {/* Section Divider */}
       <div className="w-full flex justify-center">
         <div className="h-1 w-24 rounded-full bg-accent/60 mb-12"></div>
       </div>
-      <section className="py-16 bg-white">
+      <AnimatedSection className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-heading font-bold mb-4 text-primary-dark">{dict.common.stay_connected}</h2>
           <p className="mb-6 text-primary-dark/80">{dict.common.newsletter_description}</p>
@@ -246,7 +247,7 @@ export default function HomePage({
             <Button type="submit" variant="primary">{dict.common.subscribe}</Button>
           </form>
         </div>
-      </section>
+      </AnimatedSection>
     </>
   );
 }

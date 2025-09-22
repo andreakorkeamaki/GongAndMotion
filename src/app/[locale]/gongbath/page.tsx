@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "../../components/Button";
+import AnimatedSection from "../../components/AnimatedSection";
 import { getDictionary } from "@/i18n/dictionaries";
 import { type Locale } from "@/i18n/config";
 import { use } from "react";
@@ -29,7 +30,7 @@ export default function GongBath({
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden text-center bg-gradient-to-br from-primary-light via-accent-light/60 to-accent-purple/30 min-h-[50vh]">
+      <AnimatedSection className="relative overflow-hidden text-center bg-gradient-to-br from-primary-light via-accent-light/60 to-accent-purple/30 min-h-[50vh]">
         <Image
           src="/gongbath-servizio.webp"
           alt="Gong Bath Sound Healing"
@@ -45,18 +46,18 @@ export default function GongBath({
             <Button href="#book" variant="primary" className="text-lg px-8 py-3">{dict.gongbath.hero_cta}</Button>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* What is a Gong Bath Section */}
-      <section className="py-16 bg-background px-4">
+      <AnimatedSection className="py-16 bg-background px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-8 text-primary-dark text-center">{dict.gongbath.what_is_title}</h2>
           <div className="prose prose-lg max-w-none text-primary-dark/80 leading-relaxed mb-12" dangerouslySetInnerHTML={{ __html: dict.gongbath.what_is_content }} />
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Benefits Overview Section */}
-      <section className="py-16 bg-white px-4">
+      <AnimatedSection className="py-16 bg-white px-4">
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-br from-primary-light/20 to-accent-purple/10 rounded-2xl shadow-lg p-8 border border-accent-purple/10">
             <h3 className="text-2xl font-semibold mb-6 text-primary-dark text-center">{dict.gongbath.designed_for_title}</h3>
@@ -89,10 +90,10 @@ export default function GongBath({
             <p className="text-primary-dark/80 italic text-center">{dict.gongbath.unique_note}</p>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Benefits Section */}
-      <section className="py-16 bg-white px-4">
+      <AnimatedSection className="py-16 bg-white px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-8 text-primary-dark text-center">{dict.gongbath.benefits_title}</h2>
           <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -134,10 +135,10 @@ export default function GongBath({
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Meet Kari Section */}
-      <section className="py-16 bg-gradient-to-b from-background to-accent-light/60 px-4">
+      <AnimatedSection className="py-16 bg-gradient-to-b from-background to-accent-light/60 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-8 text-primary-dark text-center">{dict.gongbath.meet_kari_title}</h2>
           <div className="bg-white/90 rounded-2xl shadow-lg p-8 border border-accent-purple/10">
@@ -159,10 +160,10 @@ export default function GongBath({
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white px-4">
+      <AnimatedSection className="py-16 bg-white px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-12 text-primary-dark text-center">{dict.gongbath.faq_title}</h2>
           <div className="space-y-6">
@@ -180,10 +181,10 @@ export default function GongBath({
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Closing CTA Section */}
-      <section id="book" className="py-16 bg-gradient-to-br from-primary-light via-accent-purple/20 to-accent-light/60 px-4 text-center">
+      <AnimatedSection id="book" className="py-16 bg-gradient-to-br from-primary-light via-accent-purple/20 to-accent-light/60 px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-6 text-primary-dark">{dict.gongbath.closing_title}</h2>
           <p className="text-lg mb-8 text-primary-dark/80">{dict.gongbath.closing_subtitle}</p>
@@ -192,7 +193,7 @@ export default function GongBath({
             <Button href="mailto:kari.korkeamaki@gmail.com" variant="primary" className="text-lg px-8 py-3">{dict.gongbath.book_cta}</Button>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
     </>
   );
 }

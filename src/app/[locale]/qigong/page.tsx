@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "../../components/Button";
+import AnimatedSection from "../../components/AnimatedSection";
 import { getDictionary } from "@/i18n/dictionaries";
 import { type Locale } from "@/i18n/config";
 import { use } from "react";
@@ -29,7 +30,7 @@ export default function Qigong({
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden text-center bg-gradient-to-br from-primary-light via-accent-purple/20 to-accent-light/60 min-h-[50vh]">
+      <AnimatedSection className="relative overflow-hidden text-center bg-gradient-to-br from-primary-light via-accent-purple/20 to-accent-light/60 min-h-[50vh]">
         <video
           className="absolute inset-0 w-full h-full object-cover motion-reduce:hidden"
           autoPlay
@@ -49,18 +50,18 @@ export default function Qigong({
             <Button href="#workshop" variant="primary" className="text-lg px-8 py-3">{dict.qigong.hero_cta}</Button>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* What is Qigong Section */}
-      <section className="py-16 bg-background px-4">
+      <AnimatedSection className="py-16 bg-background px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-8 text-primary-dark text-center">{dict.qigong.what_is_qigong_title}</h2>
           <div className="prose prose-lg max-w-none text-primary-dark/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: dict.qigong.what_is_qigong_content }} />
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Workshop Section */}
-      <section id="workshop" className="py-16 bg-gradient-to-b from-accent-light/70 to-background px-4">
+      <AnimatedSection id="workshop" className="py-16 bg-gradient-to-b from-accent-light/70 to-background px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-6 text-primary-dark text-center">{dict.qigong.workshop_title}</h2>
           <p className="text-lg mb-8 text-primary-dark/80 text-center max-w-3xl mx-auto">{dict.qigong.workshop_intro}</p>
@@ -92,10 +93,10 @@ export default function Qigong({
             <p className="text-primary-dark/80 italic">{dict.qigong.workshop_note}</p>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Upcoming Workshop Section */}
-      <section className="py-16 bg-white px-4">
+      <AnimatedSection className="py-16 bg-white px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-heading font-bold mb-8 text-primary-dark">{dict.qigong.upcoming_workshop_title}</h2>
           <div className="bg-gradient-to-br from-accent-purple/10 to-primary-light/20 rounded-2xl p-8 mb-8">
@@ -107,10 +108,10 @@ export default function Qigong({
             <Button href="mailto:eileenmurray100@gmail.com" variant="primary" className="text-lg px-8 py-3">{dict.qigong.book_cta}</Button>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Meet Your Teacher Section */}
-      <section className="py-16 bg-gradient-to-b from-background to-accent-light/70 px-4">
+      <AnimatedSection className="py-16 bg-gradient-to-b from-background to-accent-light/70 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-8 text-primary-dark text-center">{dict.qigong.teacher_title}</h2>
           <div className="bg-white/90 rounded-2xl shadow-lg p-8 border border-accent-purple/10">
@@ -132,10 +133,10 @@ export default function Qigong({
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Testimonials Section */}
-      <section className="py-16 bg-white px-4">
+      <AnimatedSection className="py-16 bg-white px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-12 text-primary-dark text-center">{dict.qigong.testimonials_title}</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -147,10 +148,10 @@ export default function Qigong({
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gradient-to-b from-accent-light/70 via-background to-accent-purple/10 px-4">
+      <AnimatedSection className="py-16 bg-gradient-to-b from-accent-light/70 via-background to-accent-purple/10 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-12 text-primary-dark text-center">{dict.qigong.faq_title}</h2>
           <div className="space-y-6">
@@ -168,10 +169,10 @@ export default function Qigong({
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Closing CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-primary-light via-accent-purple/20 to-accent-light/60 px-4 text-center">
+      <AnimatedSection className="py-16 bg-gradient-to-br from-primary-light via-accent-purple/20 to-accent-light/60 px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-heading font-bold mb-6 text-primary-dark">{dict.qigong.closing_title}</h2>
           <p className="text-lg mb-8 text-primary-dark/80">{dict.qigong.closing_text}</p>
@@ -179,7 +180,7 @@ export default function Qigong({
             <p className="text-primary-dark font-medium">{dict.qigong.contact_info}</p>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
     </>
   );
 }
