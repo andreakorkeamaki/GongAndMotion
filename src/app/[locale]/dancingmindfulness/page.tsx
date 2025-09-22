@@ -30,16 +30,28 @@ export default function DancingMindfulness({
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-dark/20 via-primary-light to-accent-light/60 py-16 px-4 text-center">
-        <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">
-          {dict.dancingmindfulness.hero_title}
-        </h1>
-        <p className="text-lg mb-8 text-primary-dark/80 max-w-2xl mx-auto">
-          {dict.dancingmindfulness.hero_subtitle}
-        </p>
-        <Button href="mailto:eileenmurray100@gmail.com" variant="primary" className="text-lg px-8 py-3">
-          {dict.dancingmindfulness.hero_cta}
-        </Button>
+      <section className="relative overflow-hidden text-center bg-gradient-to-br from-primary-dark/20 via-primary-light to-accent-light/60 min-h-[50vh]">
+        <Image
+          src="/dancingmindfulness-servizio.webp"
+          alt="Dancing Mindfulness"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-30"
+        />
+        <div className="relative z-10 py-20 sm:py-24 px-4 flex items-center justify-center min-h-[50vh]">
+          <div className="bg-white/80 rounded-2xl shadow-lg inline-block px-6 sm:px-8 py-6 sm:py-8">
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-bold mb-4 text-primary-dark drop-shadow">
+              {dict.dancingmindfulness.hero_title}
+            </h1>
+            <p className="text-lg mb-8 text-primary-dark/80 max-w-2xl mx-auto">
+              {dict.dancingmindfulness.hero_subtitle}
+            </p>
+            <Button href="mailto:eileenmurray100@gmail.com" variant="primary" className="text-lg px-8 py-3">
+              {dict.dancingmindfulness.hero_cta}
+            </Button>
+          </div>
+        </div>
       </section>
 
       {/* What is Conscious Dance Section */}
