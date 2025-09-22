@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Button from "../../components/Button";
 import { getDictionary } from "@/i18n/dictionaries";
 import { type Locale } from "@/i18n/config";
@@ -30,10 +31,13 @@ export default function Massage({
     <>
       {/* Hero Section */}
       <section className="relative overflow-hidden text-center bg-gradient-to-br from-primary-dark/20 via-primary-light to-accent-light/60 min-h-[50vh]">
-        <img
+        <Image
           src="/massage-servizio.webp"
           alt="Biodynamic Massage"
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-30"
         />
         <div className="relative z-10 py-20 sm:py-24 px-4 flex items-center justify-center min-h-[50vh]">
           <div className="bg-white/80 rounded-2xl shadow-lg inline-block px-6 sm:px-8 py-6 sm:py-8">
@@ -101,11 +105,15 @@ export default function Massage({
           <div className="bg-gradient-to-br from-primary-light/30 to-accent-purple/10 rounded-2xl p-8 shadow-lg">
             <div className="grid md:grid-cols-3 gap-8 items-center">
               <div className="md:col-span-1">
-                <img 
-                  src="/eileen-hero.webp" 
-                  alt="Eileen Murray - Biodynamic Massage Therapist"
-                  className="w-full rounded-xl shadow-md object-cover aspect-square"
-                />
+                <div className="relative w-full aspect-square">
+                  <Image 
+                    src="/eileen-hero.webp" 
+                    alt="Eileen Murray - Biodynamic Massage Therapist"
+                    fill
+                    sizes="(min-width: 768px) 33vw, 100vw"
+                    className="rounded-xl shadow-md object-cover"
+                  />
+                </div>
               </div>
               <div className="md:col-span-2">
                 <div 

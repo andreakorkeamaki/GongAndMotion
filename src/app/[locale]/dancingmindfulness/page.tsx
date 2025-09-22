@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Button from "../../components/Button";
 import { getDictionary } from "@/i18n/dictionaries";
 import { type Locale } from "@/i18n/config";
@@ -112,11 +113,15 @@ export default function DancingMindfulness({
           <div className="bg-gradient-to-br from-primary-light/30 to-accent-purple/10 rounded-2xl p-8 shadow-lg">
             <div className="grid md:grid-cols-3 gap-8 items-center">
               <div className="md:col-span-1">
-                <img 
-                  src="/eileen-hero.webp" 
-                  alt="Eileen Murray - Conscious Dance Facilitator"
-                  className="w-full rounded-xl shadow-md object-cover aspect-square"
-                />
+                <div className="relative w-full aspect-square">
+                  <Image 
+                    src="/eileen-hero.webp" 
+                    alt="Eileen Murray - Conscious Dance Facilitator"
+                    fill
+                    sizes="(min-width: 768px) 33vw, 100vw"
+                    className="rounded-xl shadow-md object-cover"
+                  />
+                </div>
               </div>
               <div className="md:col-span-2">
                 <div 

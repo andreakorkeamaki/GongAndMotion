@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Button from "../../components/Button";
 import { getDictionary } from "@/i18n/dictionaries";
 import { type Locale } from "@/i18n/config";
@@ -29,10 +30,13 @@ export default function GongBath({
     <>
       {/* Hero Section */}
       <section className="relative overflow-hidden text-center bg-gradient-to-br from-primary-light via-accent-light/60 to-accent-purple/30 min-h-[50vh]">
-        <img
+        <Image
           src="/gongbath-servizio.webp"
           alt="Gong Bath Sound Healing"
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-30"
         />
         <div className="relative z-10 py-20 sm:py-24 px-4 flex items-center justify-center min-h-[50vh]">
           <div className="bg-white/80 rounded-2xl shadow-lg inline-block px-6 sm:px-8 py-6 sm:py-8">
@@ -139,11 +143,15 @@ export default function GongBath({
           <div className="bg-white/90 rounded-2xl shadow-lg p-8 border border-accent-purple/10">
             <div className="grid md:grid-cols-3 gap-8 items-center">
               <div className="md:col-span-1">
-                <img 
-                  src="/kari-hero.webp" 
-                  alt="Kari Korkeamaki - Gong Bath Facilitator"
-                  className="w-full rounded-xl shadow-md object-cover aspect-square"
-                />
+                <div className="relative w-full aspect-square">
+                  <Image 
+                    src="/kari-hero.webp" 
+                    alt="Kari Korkeamaki - Gong Bath Facilitator"
+                    fill
+                    sizes="(min-width: 768px) 33vw, 100vw"
+                    className="rounded-xl shadow-md object-cover"
+                  />
+                </div>
               </div>
               <div className="md:col-span-2">
                 <div className="prose prose-lg max-w-none text-primary-dark/80" dangerouslySetInnerHTML={{ __html: dict.gongbath.kari_bio }} />
